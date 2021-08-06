@@ -3,3 +3,7 @@ pandas
 requests
 networkx
 matplotlib
+beautifulsoup4
+
+flask
+flask-sqlalchemy
