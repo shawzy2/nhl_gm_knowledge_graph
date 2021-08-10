@@ -37,16 +37,20 @@ def trades():
     '''Returns list of all trades matching team name
     Team name is passed in as a query string parameter'''
     team_name = request.args.get('name')
-    trade_list = Trade.query.filter( (Trade.team1==team_name) | (Trade.team2==team_name) ).all()
+    if team_name is None:
+        trade_list = Trade.query.all()
+    else:
+        trade_list = Trade.query.filter( (Trade.team1==team_name) | (Trade.team2==team_name) ).all()
+    
     trades = []
-
     for trade in trade_list:
         trades.append({'team1' : trade.team1, 
                         'team2' : trade.team2,
                         'date' : trade.date}
                     )
 
-    return jsonify({'trades': trades})
+    # return jsonify({'trades': trades})
+    return jsonify({'trades': convert_to_cytoscape_json(trades, False)})
 
 
 @main.route('/trades/gm')
@@ -54,16 +58,20 @@ def trades_by_gm():
     '''Returns list of all trades matching gm name
     Team name is passed in as a query string parameter'''
     gm_name = request.args.get('name')
-    trade_list = Trade.query.filter( (Trade.team1_gm==gm_name) | (Trade.team2_gm==gm_name) ).all()
+    if gm_name == 'All':
+        trade_list = Trade.query.all()
+    else:
+        trade_list = Trade.query.filter( (Trade.team1_gm==gm_name) | (Trade.team2_gm==gm_name) ).all()
+    
     trades = []
-
     for trade in trade_list:
         trades.append({'team1_gm' : trade.team1_gm, 
                         'team2_gm' : trade.team2_gm,  
                         'date' : trade.date}
                     )
 
-    return jsonify({'trades': trades})
+    # return jsonify({'trades': trades})
+    return jsonify({'trades': convert_to_cytoscape_json(trades, True)})
 
 
 @main.route('/trades/scrape', methods=['POST'])
@@ -197,3 +205,29 @@ def merge_trades_gms(trades, df_gms):
                 logging.warning(e)
 
     return trades_and_gms
+
+
+def convert_to_cytoscape_json(data, get_gm):
+    nodes_and_edges = []
+
+    # set nodes as team names or gm names?
+    key1 = 'team1'
+    key2 = 'team2'
+    if get_gm:
+        key1 = 'team1_gm'
+        key2 = 'team2_gm'
+
+    # get nodes
+    items = set()
+    for trade in data:
+        items.add(trade[key1])
+        items.add(trade[key2])    
+    nodes = [({ 'data': { 'id': item, 'name': item } }) for item in items]
+
+    # get edges
+    edges = [({'data': { 'source': trade[key1], 'target': trade[key2]}}) for trade in data]
+
+    nodes_and_edges.extend(nodes)
+    nodes_and_edges.extend(edges)
+
+    return nodes_and_edges
