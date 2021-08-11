@@ -58,10 +58,25 @@ def trades_by_gm():
     '''Returns list of all trades matching gm name
     Team name is passed in as a query string parameter'''
     gm_name = request.args.get('name')
-    if gm_name == 'All':
+    season = request.args.get('season')
+
+    logging.warning('gmName: ' + gm_name)
+    logging.warning('season: ' + season)
+
+    if gm_name == 'All' and season == 'All':
         trade_list = Trade.query.all()
-    else:
+    elif gm_name == 'All' and season != 'All':
+        start_date = season.split('-')[0] + '-04-15'
+        end_date = '20' + season.split('-')[1] + '-04-15'
+        logging.warning(start_date)
+        logging.warning(end_date)
+        trade_list = Trade.query.filter( (Trade.date>(start_date)) & (Trade.date<(end_date)) ).all()
+    elif gm_name != 'All' and season == 'All':
         trade_list = Trade.query.filter( (Trade.team1_gm==gm_name) | (Trade.team2_gm==gm_name) ).all()
+    else:
+        start_date = season.split('-')[0] + '-04-15'
+        end_date = '20' + season.split('-')[1] + '-04-15'
+        trade_list = Trade.query.filter( (Trade.date>(start_date)) & (Trade.date<(end_date)) & ((Trade.team1_gm==gm_name) | (Trade.team2_gm==gm_name)) ).all()
     
     trades = []
     for trade in trade_list:
@@ -102,9 +117,9 @@ def scrape_trades():
     '''Scrapes trades from website'''
     trades_by_season = {}
 
-    start_szn = 2020
+    start_szn = 2019
 
-    while start_szn < 2021:
+    while start_szn < 2022:
         
         # format http link
         szn_str = str(start_szn) + '-' + str(start_szn+1)[2:]
