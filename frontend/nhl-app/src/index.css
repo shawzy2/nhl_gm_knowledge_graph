@@ -52,11 +52,11 @@ a {
 }
 
 .nav-item {
-    width: calc(var(--nav-size) * 0.8);
+    width: calc(var(--nav-size) * 1.5);
     display: flex;
     align-items: center;
-    position: relative
-    /* justify-content: flex-end; */
+    position: relative;
+    justify-content: flex-end;
 }
 
 .navbar-title {
@@ -66,10 +66,27 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    transform: translateX(50px);
 }
 
 
 /* Icon Button */
+
+.nav-icon-button {
+    --button-size: calc(var(--nav-size) * 0.5);
+    width: fit-content;
+    height: var(--button-size);
+    background-color: #484a4d;
+    border-radius: 12px;
+    padding: 5px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: filter 300ms;
+    font-size: medium;
+    white-space: nowrap;
+}
 
 .icon-button {
     --button-size: calc(var(--nav-size) * 0.5);
@@ -91,6 +108,7 @@ a {
 
 .icon-button svg {
     /* fill: var(--text-color); */
+    border-radius: 50%;
     width: 30px;
     height: 30px;
 }
@@ -102,7 +120,7 @@ a {
     position: absolute;
     top: 58px;
     width: 300px;
-    transform: translateX(-75%);
+    transform: translateX(-25%);
     background-color: var(--bg);
     border: var(--border);
     border-radius: var(--border-radius);
