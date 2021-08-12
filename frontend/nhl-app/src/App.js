@@ -38,20 +38,20 @@ import { Trades } from './components/trades';
 import { CSSTransition } from 'react-transition-group';
 
 function App() {
-  var endpoint = '/trades/gm';
   const [trades, setTrades] = useState([]);
   const [generalManager, setGeneralManager] = useState('All');
-  const [startSeason, setStartSeason] = useState('All');
+  const [season, setSeason] = useState('All');
+  const [viewStats, setViewStats] = useState(true);
   const [graphLayout, setGraphLayout] = useState(false);
 
   useEffect(() => {
     // update trade data
     var gm_str = `${generalManager}`.replace(' ', '+')
-    fetch(`/trades/gm?name=${gm_str}&season=${startSeason}`).then(response => 
+    fetch(`/trades/gm?name=${gm_str}&season=${season}`).then(response => 
       response.json().then(data => {;
         setTrades(data.trades)
     }));
-  }, [generalManager, startSeason])
+  }, [generalManager, season])
 
   useEffect(() => {
     // force graph to re-render
@@ -59,42 +59,43 @@ function App() {
   }, [trades])
 
 
-  console.log(trades)
-  console.log(generalManager)
-  console.log(startSeason)
-  console.log(graphLayout)
+  console.log(trades);
+  console.log(generalManager);
+  console.log(season);
+  console.log(viewStats);
+  console.log(graphLayout);
 
   return (
     <div className="App">      
       <Navbar>
         {/* {generalManager}'s Trade Graph */}
-        <NavTitle generalManager={generalManager} startSeason={startSeason}></NavTitle>
+        <NavTitle>NHL Trade Graph</NavTitle>
 
         <NavItem icon="Select Season">
           <DropdownMenu>
-            <DropdownItem onClick={() => setStartSeason("All")}>All</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2021-22")}>2021-22</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2020-21")}>2020-21</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2019-20")}>2019-20</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2018-19")}>2018-19</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2017-18")}>2017-18</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2016-17")}>2016-17</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2015-16")}>2015-16</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2014-15")}>2014-15</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2013-14")}>2013-14</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2012-13")}>2012-13</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2011-12")}>2011-12</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2010-11")}>2010-11</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2009-10")}>2009-10</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2008-09")}>2008-09</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2007-08")}>2007-08</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2006-07")}>2006-07</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2005-06")}>2005-06</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2004-05")}>2004-05</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2003-04")}>2003-04</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2002-03")}>2002-03</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2002-03")}>2002-03</DropdownItem>
-            <DropdownItem onClick={() => setStartSeason("2000-01")}>2000-01</DropdownItem>
+            <DropdownItem onClick={() => setSeason("All")}>All</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2021-22")}>2021-22</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2020-21")}>2020-21</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2019-20")}>2019-20</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2018-19")}>2018-19</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2017-18")}>2017-18</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2016-17")}>2016-17</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2015-16")}>2015-16</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2014-15")}>2014-15</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2013-14")}>2013-14</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2012-13")}>2012-13</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2011-12")}>2011-12</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2010-11")}>2010-11</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2009-10")}>2009-10</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2008-09")}>2008-09</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2007-08")}>2007-08</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2006-07")}>2006-07</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2005-06")}>2005-06</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2004-05")}>2004-05</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2003-04")}>2003-04</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2002-03")}>2002-03</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2002-03")}>2002-03</DropdownItem>
+            <DropdownItem onClick={() => setSeason("2000-01")}>2000-01</DropdownItem>
           </DropdownMenu>
         </NavItem>
 
@@ -141,9 +142,11 @@ function App() {
         </NavItem>
       </Navbar>
 
-      <div>
+      <Body>
+        {viewStats && <TradeStats generalManager={generalManager} season={season} />}
+        <div className="trade-stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
         <TradeGraph trades={trades} graphLayout={graphLayout}></TradeGraph>
-      </div>
+      </Body>
       
       
 
@@ -162,7 +165,7 @@ function Navbar(props) {
 function NavTitle(props) {
   return (
     <h1 className="navbar-title">
-      {props.generalManager} Trade Graph Since {props.startSeason}
+      {props.children}
     </h1>
   )
 }
@@ -210,6 +213,34 @@ function DropdownItem(props) {
   )
 }
 
+function Body(props) {
+  return (
+    <div className="body">
+      {props.children}
+    </div>
+  )
+}
+
+function TradeStats(props) {
+  return (
+    <div className="trade-stats">
+      <h1>Season: {props.season}</h1>
+      <ul>
+        Total Trades: 100
+        Average Trades per GM: 4
+        Share of Trades: 2%
+      </ul>
+      <h1>GM: {props.generalManager}</h1>
+      <ul>
+        Total Trades: 100
+        Average Trades per GM: 4
+        Share of Trades: 2%
+      </ul>
+    </div>
+    
+  )
+}
+
 function TradeGraph(props) {
   var layout = {name: 'random'}
   if (props.graphLayout) {
@@ -218,7 +249,7 @@ function TradeGraph(props) {
   console.log(layout)
   return (
     <body className="App-body">
-      <Trades trades={props.trades} layout={layout}/>
+      <Trades className="trade-graph" trades={props.trades} layout={layout}/>
     </body>
   )
 }

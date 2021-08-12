@@ -29,7 +29,7 @@ const layout = {
     refresh: 20,
   };
 const style = {
-    width: '1920px',
+    width: '1600px',
     height: '850px',
 }
 const stylesheet = [

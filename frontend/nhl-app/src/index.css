@@ -66,7 +66,12 @@ a {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     transform: translateX(50px);
+    font-family: "Sintony", Arial, sans-serif;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 
@@ -197,4 +202,44 @@ a {
 .menu-secondary-exit-active {
     transform: translateX(110%);
     transition: all var(--speed) ease;
+}
+
+
+/* Body */
+
+.body {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.trade-stats-accordian {
+    /* border-top: 3px solid #FFB81C; */
+    border-right: 3px solid #FFB81C;
+    /* border-left: 3px solid #A2AAAD; */
+    /* border-bottom: 3px solid #FFB81C; */
+    /* background-color: #000000; */
+    background-color: var(--bg);
+    color: white;
+    text-align: center;
+    top: 50%;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.trade-stats {
+    /* border-top: 3px solid #FFB81C; */
+    /* border-left: 3px solid #FFB81C; */
+    /* border-bottom: 3px solid #FFB81C; */
+    /* background-color: #000000; */
+    background-color: var(--bg);
+    color: white;
+    min-width: 300px;
+    font-family: "Sintony", Arial, sans-serif;
+    /* font-family: "Oswald", Arial, sans-serif; */
+    font-weight: bold;
+}
+
+.trade-graph {
+    display: flex;
+    flex: auto;
 }
