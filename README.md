@@ -9,5 +9,10 @@ Creating a knowledge graph to visualize general manager relationships
 * Create virtual environment on machine `python3 -m venv env`
 * Start virtualenv `source env/bin/activate`
 * Install all packages from requirements.txt `pip install -r requirements.txt`
-* Start jupyter notebook `jupyter notebook`
-* Navigate to the notebook `notebook/miner.ipynb`
+
+## Running Backend (API & Database)
+* export flask environment variables `export FLASK_APP=backend` and `export FLASK_DEBUG=1`
+* start flask server from virtualenv `flask run`
+
+## Running Frontend (web application)
+
