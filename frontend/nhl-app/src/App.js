@@ -43,6 +43,7 @@ function App() {
   const [season, setSeason] = useState('All');
   const [viewStats, setViewStats] = useState(true);
   const [graphLayout, setGraphLayout] = useState(false);
+  const seasons = ["All","2020-21", "2019-20"]
 
   useEffect(() => {
     // update trade data
@@ -73,6 +74,7 @@ function App() {
 
         <NavItem icon="Select Season">
           <DropdownMenu>
+            { seasons.map(x => <DropdownItem onClick={() => setSeason(x)}>{ x }</DropdownItem>) }
             <DropdownItem onClick={() => setSeason("All")}>All</DropdownItem>
             <DropdownItem onClick={() => setSeason("2021-22")}>2021-22</DropdownItem>
             <DropdownItem onClick={() => setSeason("2020-21")}>2020-21</DropdownItem>
