@@ -44,7 +44,7 @@ function App() {
   const [stats, setStats] = useState('{}')
   const [viewStats, setViewStats] = useState(true);
   const [graphLayout, setGraphLayout] = useState(false);
-  const seasons = ["All","2020-21", "2019-20"]
+  // const seasons = ["All","2020-21", "2019-20"]
 
   useEffect(() => {
     // update trade data
@@ -81,7 +81,7 @@ function App() {
 
         <NavItem icon="Select Season">
           <DropdownMenu>
-            { seasons.map(x => <DropdownItem onClick={() => setSeason(x)}>{ x }</DropdownItem>) }
+            {/* { seasons.map(x => <DropdownItem onClick={() => setSeason(x)}>{ x }</DropdownItem>) } */}
             <DropdownItem onClick={() => setSeason("All")}>All</DropdownItem>
             <DropdownItem onClick={() => setSeason("2021-22")}>2021-22</DropdownItem>
             <DropdownItem onClick={() => setSeason("2020-21")}>2020-21</DropdownItem>
@@ -152,9 +152,10 @@ function App() {
       </Navbar>
 
       <Body>
-        {viewStats && <TradeStats generalManager={generalManager} season={season} stats={stats}/>}
+        {viewStats && <TradeStats width="100%" generalManager={generalManager} season={season} stats={stats}/>}
+        {/* {!viewStats && <TradeStats width="100%" generalManager={generalManager} season={season} stats={stats}/>} */}
         <div className="trade-stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
-        <TradeGraph trades={trades} graphLayout={graphLayout}></TradeGraph>
+        <TradeGraph trades={trades} graphLayout={graphLayout} viewStats={viewStats}></TradeGraph>
       </Body>
       
       
@@ -267,15 +268,31 @@ function TradeStats(props) {
 }
 
 function TradeGraph(props) {
-  var layout = {name: 'random'}
+  // need layout var to change 'coolingFactor' so that we can force trade graph to refresh
+  // without slight change, nodes will be stacked ontop of eachother when we select a new season/gm
+  var layout = layout = {
+                  name: 'cola',
+                  componentSpacing: 40,
+                  coolingFactor: 0.98
+                }
   if (props.graphLayout) {
-    layout = {name: 'cola'}
+    layout = {
+      name: 'cola',
+      componentSpacing: 40,
+      coolingFactor: 0.99
+    }
   }
   console.log(layout)
+
+  var style = {height: 'calc(100vh - 80px)', width: 'calc(100vw - 25px)'}
+  if(props.viewStats) {
+    style = {height: 'calc(100vh - 61px)', width: 'calc(100vw - 375px)'}
+  }
+
   return (
-    <body className="App-body">
-      <Trades className="trade-graph" trades={props.trades} layout={layout}/>
-    </body>
+    <div className="trade-graph">
+      <Trades trades={props.trades} layout={layout} style={style}/>
+    </div>
   )
 }
 
