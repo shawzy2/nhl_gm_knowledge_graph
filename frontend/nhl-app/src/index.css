@@ -25,6 +25,12 @@ ul {
     padding: 0;
 }
 
+li {
+    font-size: 16px;
+    margin-left: 30px;
+    list-style-type: circle;
+ }
+
 a {
     color: var(--text-color);
     text-decoration: none;
@@ -218,12 +224,13 @@ a {
     /* border-left: 3px solid #A2AAAD; */
     /* border-bottom: 3px solid #FFB81C; */
     /* background-color: #000000; */
-    background-color: var(--bg);
+    background-color: #333436;
     color: white;
     text-align: center;
     top: 50%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    cursor: pointer;
 }
 
 .trade-stats {

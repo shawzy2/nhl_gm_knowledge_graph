@@ -63,21 +63,8 @@ def trades_by_gm():
     logging.warning('gmName: ' + gm_name)
     logging.warning('season: ' + season)
 
-    if gm_name == 'All' and season == 'All':
-        trade_list = Trade.query.all()
-    elif gm_name == 'All' and season != 'All':
-        start_date = season.split('-')[0] + '-04-15'
-        end_date = '20' + season.split('-')[1] + '-04-15'
-        logging.warning(start_date)
-        logging.warning(end_date)
-        trade_list = Trade.query.filter( (Trade.date>(start_date)) & (Trade.date<(end_date)) ).all()
-    elif gm_name != 'All' and season == 'All':
-        trade_list = Trade.query.filter( (Trade.team1_gm==gm_name) | (Trade.team2_gm==gm_name) ).all()
-    else:
-        start_date = season.split('-')[0] + '-04-15'
-        end_date = '20' + season.split('-')[1] + '-04-15'
-        trade_list = Trade.query.filter( (Trade.date>(start_date)) & (Trade.date<(end_date)) & ((Trade.team1_gm==gm_name) | (Trade.team2_gm==gm_name)) ).all()
-    
+    trade_list = get_trade_list(gm_name, season)
+
     trades = []
     for trade in trade_list:
         trades.append({'team1_gm' : trade.team1_gm, 
@@ -87,6 +74,42 @@ def trades_by_gm():
 
     # return jsonify({'trades': trades})
     return jsonify({'trades': convert_to_cytoscape_json(trades, True)})
+
+
+
+#     /* season stats */
+#   var totalTradesSzn = statsParsed['totalTradesSzn']
+#   var avgTradesSzn = statsParsed['avgTradesSzn']
+#   var mostActiveManagerSzn = statsParsed['mostActiveManagerSzn']
+
+#   /* gm stats */
+#   var totalTradesGM = statsParsed['totalTradesGM']
+#   var shareOfTradesGM = statsParsed['shareOfTradesGM']
+#   var avgTradesGM = statsParsed['avgTradesGM']
+#   var tradeParterGM = statsParsed['tradeParterGM']
+#   var connectivityGM = statsParsed['connectivityGM']
+@main.route('/trades/stats')
+def stats_by_gm():
+    stats = {} # dict to hold data
+
+    # get query string params
+    gm_name = request.args.get('name')
+    season = request.args.get('season')
+
+    # calculate szn stats
+    trade_list = get_trade_list("All", season)
+    stats['totalTradesSzn'] = len(trade_list)
+    stats['avgTradesSzn'] = get_avg_trades_per_gm(stats['totalTradesSzn'], season)
+    stats['mostActiveManagerSzn'] = get_most_active_gm(trade_list)
+
+    # calculate gm stats
+    trade_list = get_trade_list(gm_name, season)
+    stats['totalTradesGM'] = len(trade_list)
+    stats['shareOfTradesGM'] = str(round(100 * stats['totalTradesGM'] / stats['totalTradesSzn'], 1)) + '%'
+    stats['tradePartnerGM'] = get_favorite_trade_partner(gm_name, trade_list)
+
+    logging.warning('this is the output: ' + json.dumps(stats))
+    return jsonify({'stats': json.dumps(stats)})
 
 
 @main.route('/trades/scrape', methods=['POST'])
@@ -246,3 +269,91 @@ def convert_to_cytoscape_json(data, get_gm):
     nodes_and_edges.extend(edges)
 
     return nodes_and_edges
+
+
+def get_trade_list(gm_name, season):
+    trade_list = []
+
+    if gm_name == 'All' and season == 'All':
+        trade_list = Trade.query.all()
+    elif gm_name == 'All' and season != 'All':
+        start_date = season.split('-')[0] + '-04-15'
+        end_date = '20' + season.split('-')[1] + '-04-15'
+        logging.warning(start_date)
+        logging.warning(end_date)
+        trade_list = Trade.query.filter( (Trade.date>(start_date)) & (Trade.date<(end_date)) ).all()
+    elif gm_name != 'All' and season == 'All':
+        trade_list = Trade.query.filter( (Trade.team1_gm==gm_name) | (Trade.team2_gm==gm_name) ).all()
+    else:
+        start_date = season.split('-')[0] + '-04-15'
+        end_date = '20' + season.split('-')[1] + '-04-15'
+        trade_list = Trade.query.filter( (Trade.date>(start_date)) & (Trade.date<(end_date)) & ((Trade.team1_gm==gm_name) | (Trade.team2_gm==gm_name)) ).all()
+    
+    return trade_list
+
+
+def get_avg_trades_per_gm(total_trades, season):
+    # control for expansion teams
+    if season >= '2021-22':
+        avg = total_trades / 32
+    elif season >= '2017-18':
+        avg = total_trades / 31
+    else:
+        avg = total_trades / 30
+    return round(avg, 1)
+
+
+def get_most_active_gm(trade_list):
+    counts = {}
+    for trade in trade_list:
+        if trade.team1_gm not in counts:
+            counts[trade.team1_gm] = 0
+        counts[trade.team1_gm] += 1
+
+        if trade.team2_gm not in counts:
+            counts[trade.team2_gm] = 0
+        counts[trade.team2_gm] += 1
+
+    # get the most active gm
+
+    most_active_gm = ''
+    most_active_numTrades = 0
+    for gm, numTrades in counts.items():
+        if numTrades > most_active_numTrades:
+            most_active_gm = gm
+            most_active_numTrades = numTrades
+    
+    return most_active_gm + ' (' + str(most_active_numTrades) + ' trades)'
+
+    
+def get_favorite_trade_partner(gm_name, trade_list):
+    counts = {}
+    for trade in trade_list:
+        if trade.team1_gm != gm_name:
+            if trade.team1_gm not in counts:
+                counts[trade.team1_gm] = 0
+            counts[trade.team1_gm] += 1
+
+        if trade.team2_gm != gm_name:
+            if trade.team2_gm not in counts:
+                counts[trade.team2_gm] = 0
+            counts[trade.team2_gm] += 1
+
+    # find this gm's favorite partner(s) to trade with
+    most_active_numTrades = 0
+    for gm, numTrades in counts.items():
+        if numTrades > most_active_numTrades:
+            most_active_numTrades = numTrades
+
+    favs = []
+    for gm, numTrades in counts.items():
+        if numTrades == most_active_numTrades:
+            favs.append(gm)
+
+    if len(favs) > 2:
+        return 'None'
+
+    elif len(favs) == 2:
+        return favs[0] + ' and ' + favs[1] + ' (' + str(most_active_numTrades) + ' trades)'
+    
+    return favs[0] + ' (' + str(most_active_numTrades) + ' trades)'

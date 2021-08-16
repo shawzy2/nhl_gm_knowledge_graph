@@ -41,6 +41,7 @@ function App() {
   const [trades, setTrades] = useState([]);
   const [generalManager, setGeneralManager] = useState('All');
   const [season, setSeason] = useState('All');
+  const [stats, setStats] = useState('{}')
   const [viewStats, setViewStats] = useState(true);
   const [graphLayout, setGraphLayout] = useState(false);
 
@@ -50,6 +51,11 @@ function App() {
     fetch(`/trades/gm?name=${gm_str}&season=${season}`).then(response => 
       response.json().then(data => {;
         setTrades(data.trades)
+    }));
+
+    fetch(`/trades/stats?name=${gm_str}&season=${season}`).then(response => 
+      response.json().then(data => {;
+        setStats(data.stats)
     }));
   }, [generalManager, season])
 
@@ -62,6 +68,7 @@ function App() {
   console.log(trades);
   console.log(generalManager);
   console.log(season);
+  console.log(stats)
   console.log(viewStats);
   console.log(graphLayout);
 
@@ -143,7 +150,7 @@ function App() {
       </Navbar>
 
       <Body>
-        {viewStats && <TradeStats generalManager={generalManager} season={season} />}
+        {viewStats && <TradeStats generalManager={generalManager} season={season} stats={stats}/>}
         <div className="trade-stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
         <TradeGraph trades={trades} graphLayout={graphLayout}></TradeGraph>
       </Body>
@@ -222,19 +229,35 @@ function Body(props) {
 }
 
 function TradeStats(props) {
+  var statsParsed = JSON.parse(props.stats);
+
+  /* season stats */
+  var totalTradesSzn = statsParsed['totalTradesSzn']
+  var avgTradesSzn = statsParsed['avgTradesSzn']
+  var mostActiveManagerSzn = statsParsed['mostActiveManagerSzn']
+
+  /* gm stats */
+  var totalTradesGM = statsParsed['totalTradesGM']
+  var shareOfTradesGM = statsParsed['shareOfTradesGM']
+  var avgTradesGM = statsParsed['avgTradesGM']
+  var tradePartnerGM = statsParsed['tradePartnerGM']
+  var connectivityGM = statsParsed['connectivityGM']
+
   return (
     <div className="trade-stats">
       <h1>Season: {props.season}</h1>
       <ul>
-        Total Trades: 100
-        Average Trades per GM: 4
-        Share of Trades: 2%
+        <li>Total Trades: {totalTradesSzn}</li>
+        <li>Average Trades per GM this Season: {avgTradesSzn}</li>
+        <li>Most Active GM: {mostActiveManagerSzn}</li>
       </ul>
       <h1>GM: {props.generalManager}</h1>
       <ul>
-        Total Trades: 100
-        Average Trades per GM: 4
-        Share of Trades: 2%
+        <li>Total Trades: {totalTradesGM}</li>
+        <li>Share of Trades: {shareOfTradesGM}</li>
+        <li>Average Trades per Season: {avgTradesGM}</li>
+        <li>Favorite Trade Partner: {tradePartnerGM}</li>
+        <li>GM connectiveness (experimental): {connectivityGM}</li>
       </ul>
     </div>
     
