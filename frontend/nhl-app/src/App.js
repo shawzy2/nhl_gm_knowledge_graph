@@ -260,7 +260,6 @@ function TradeStats(props) {
         <li>Share of Trades: {shareOfTradesGM}</li>
         <li>Average Trades per Season: {avgTradesGM}</li>
         <li>Favorite Trade Partner: {tradePartnerGM}</li>
-        <li>GM connectiveness (experimental): {connectivityGM}</li>
       </ul>
     </div>
     
