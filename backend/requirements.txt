@@ -1,8 +1,8 @@
 notebook
 pandas
 requests
-networkx
-matplotlib
+# networkx
+# matplotlib
 beautifulsoup4
 
 flask
