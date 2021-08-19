@@ -2,11 +2,9 @@ import React from 'react';
 import CytoscapeComponent from 'react-cytoscapejs';
 import cytoscape from 'cytoscape';
 import cola from 'cytoscape-cola';
-import coseBilkent from 'cytoscape-cose-bilkent';
 
 
 cytoscape.use( cola );
-cytoscape.use( coseBilkent );
 
 const layout = {
     animate: true,
