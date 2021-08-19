@@ -11,6 +11,7 @@ import datetime
 import os
 import pandas as pd
 import logging
+import ssl
 
 main = Blueprint('main', __name__)
 
@@ -138,9 +139,10 @@ def scrape():
 
 def scrape_trades():
     '''Scrapes trades from website'''
+    ssl._create_default_https_context = ssl._create_unverified_context
     trades_by_season = {}
 
-    start_szn = 2019
+    start_szn = 2000
 
     while start_szn < 2022:
         
@@ -150,15 +152,19 @@ def scrape_trades():
         
         trades_for_szn = []
         while True:
-            url = 'https://www.nhltradetracker.com/user/trade_list_by_season/' + szn_str + '/' + str(page_num)
-            page = urlopen(url)
-            html = page.read().decode("utf-8")
-            soup = BeautifulSoup(html, 'html.parser')
-            
-            trades_for_this_page = return_trades_from_html(soup)
-            if len(trades_for_this_page) == 0:
+            try:
+                url = 'https://www.nhltradetracker.com/user/trade_list_by_season/' + szn_str + '/' + str(page_num)
+                page = urlopen(url)
+                html = page.read().decode("utf-8")
+                soup = BeautifulSoup(html, 'html.parser')
+                
+                trades_for_this_page = return_trades_from_html(soup)
+                if len(trades_for_this_page) == 0:
+                    break
+                trades_for_szn.extend(trades_for_this_page)
+            except Exception as e:
+                logging.warning(e)
                 break
-            trades_for_szn.extend(trades_for_this_page)
             
             page_num += 1
         

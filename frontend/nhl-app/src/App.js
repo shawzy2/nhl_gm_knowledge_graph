@@ -40,7 +40,7 @@ import { CSSTransition } from 'react-transition-group';
 function App() {
   const [trades, setTrades] = useState([]);
   const [generalManager, setGeneralManager] = useState('All');
-  const [season, setSeason] = useState('All');
+  const [season, setSeason] = useState('2021-22');
   const [stats, setStats] = useState('{}')
   const [viewStats, setViewStats] = useState(true);
   const [graphLayout, setGraphLayout] = useState(false);
