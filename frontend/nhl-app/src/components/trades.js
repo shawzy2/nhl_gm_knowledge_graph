@@ -53,14 +53,13 @@ const stylesheet = [
     }
   ]
 
+var myCyRef = cytoscape();
+
 export const Trades = ({ trades, layout, style }) => {
-
-    return (
-        <div>
-            <CytoscapeComponent elements={trades} layout={layout} style={style} stylesheet={stylesheet}
-                                    minZoom={.5} maxZoom={4}/>
-        </div>
-    )
+  return (
+      <div>
+          <CytoscapeComponent elements={trades} layout={layout} style={style} stylesheet={stylesheet}
+                                  minZoom={.5} maxZoom={4} />
+      </div>
+  )
 }
-
-// style={style}

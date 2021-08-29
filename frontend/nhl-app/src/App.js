@@ -33,9 +33,14 @@ import { ReactComponent as Washington } from './logos/washington.svg';
 import { ReactComponent as Winnipeg } from './logos/winnipeg.svg';
 
 import './App.css';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Trades } from './components/trades';
 import { CSSTransition } from 'react-transition-group';
+import CytoscapeComponent from 'react-cytoscapejs';
+import cytoscape from 'cytoscape';
+import cola from 'cytoscape-cola';
+
+cytoscape.use( cola );
 
 function App() {
   const [trades, setTrades] = useState([]);
@@ -43,7 +48,10 @@ function App() {
   const [season, setSeason] = useState('2021-22');
   const [stats, setStats] = useState('{}')
   const [viewStats, setViewStats] = useState(true);
+  const [viewDetails, setViewDetails] = useState(false);
+  const [selectedGraphItem, setSelectedGraphItem] = useState('');
   const [graphLayout, setGraphLayout] = useState(false);
+  const myCyRef = useRef([]);
   // const seasons = ["All","2020-21", "2019-20"]
 
   useEffect(() => {
@@ -65,19 +73,26 @@ function App() {
     setGraphLayout(!graphLayout)
   }, [trades])
 
+  useEffect(() => {
+    for (const element of myCyRef.current) { if (element._private.selected) { setSelectedGraphItem(element._private.data); }}
+  }, [viewDetails])
+
 
   console.log(trades);
-  console.log(generalManager);
-  console.log(season);
-  console.log(stats)
-  console.log(viewStats);
+  console.log(stats);
+  console.log('gm: ' + generalManager);
+  console.log('season: ' + season);
+  console.log('viewStats: ' + viewStats);
+  console.log('viewDetails: ' + viewDetails);
   console.log(graphLayout);
+  console.log(selectedGraphItem)
+  for (const element of myCyRef.current) { if (element._private.selected) { console.log(element._private.data); }}
 
   return (
     <div className="App">      
       <Navbar>
         {/* {generalManager}'s Trade Graph */}
-        <NavTitle>NHL Trade Graph</NavTitle>
+        <NavTitle >NHL Trade Graph</NavTitle>
 
         <NavItem icon="Select Season">
           <DropdownMenu>
@@ -151,17 +166,43 @@ function App() {
         </NavItem>
       </Navbar>
 
-      <Body>
+      <div className="body">
         {viewStats && <TradeStats width="100%" generalManager={generalManager} season={season} stats={stats}/>}
-        {/* {!viewStats && <TradeStats width="100%" generalManager={generalManager} season={season} stats={stats}/>} */}
         <div className="trade-stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
-        <TradeGraph trades={trades} graphLayout={graphLayout} viewStats={viewStats}></TradeGraph>
-      </Body>
-      
-      
+        <TradeGraph trades={trades} graphLayout={graphLayout} viewStats={viewStats} viewDetails={viewDetails} myCyRef={myCyRef}></TradeGraph>
+        {/* <ShowDetailsButton onClick={() => setGraphLayout(!graphLayout)}>View Details</ShowDetailsButton> */}
+        <button class='show-details-button' onClick={() => setViewDetails(!viewDetails)}>View Details</button>
+      </div>
+      {viewDetails && <Details selectedGraphItem={selectedGraphItem}></Details>}
 
     </div>
   );
+}
+
+function Details(props) {
+  console.log(props.selectedGraphItem)
+  var selectedData = ''
+  console.log(
+    Object.entries(props.selectedGraphItem)
+    .map( ([key, value]) => `My key is ${key} and my value is ${value}` )
+  )
+  console.log(Object.entries(props.selectedGraphItem))
+  if (Object.entries(props.selectedGraphItem)[1][1] == 'name') {
+    selectedData = Object.entries(props.selectedGraphItem)[0][1]
+  } else {
+    selectedData = [Object.entries(props.selectedGraphItem)[0][1], Object.entries(props.selectedGraphItem)[1][1]]
+  }
+
+  // if (props.selectedGraphItem.get('source')) {
+  //   selectedData = 'edge'
+  // } else {
+  //   selectedData = 'Node'
+  // }
+  return (
+    <div className="view-details-display">
+      Trades for {selectedData}
+    </div>
+  )
 }
 
 function Navbar(props) {
@@ -223,14 +264,6 @@ function DropdownItem(props) {
   )
 }
 
-function Body(props) {
-  return (
-    <div className="body">
-      {props.children}
-    </div>
-  )
-}
-
 function TradeStats(props) {
   var statsParsed = JSON.parse(props.stats);
 
@@ -280,19 +313,44 @@ function TradeGraph(props) {
       componentSpacing: 40,
       coolingFactor: 0.99
     }
+  } else if (props.viewDetails) {
+    layout = {
+      name: 'cola',
+      componentSpacing: 40,
+      coolingFactor: 0.97
+    }
   }
-  console.log(layout)
 
   var style = {height: 'calc(100vh - 80px)', width: 'calc(100vw - 25px)'}
   if(props.viewStats) {
     style = {height: 'calc(100vh - 61px)', width: 'calc(100vw - 375px)'}
   }
 
+  const stylesheet = [
+    {
+      selector: 'node',
+      style: {
+        width: 20,
+        height: 20,
+        color: 'white',
+        label: 'data(id)'
+      }
+    },
+    {
+      selector: 'edge',
+      style: {
+        width: 2,
+        "curve-style": 'bezier'
+      }
+    }
+  ]
+
   return (
-    <div className="trade-graph">
-      <Trades trades={props.trades} layout={layout} style={style}/>
+    <div>
+      <CytoscapeComponent className="trade-graph" elements={props.trades} layout={layout} style={style} 
+                            stylesheet={stylesheet} minZoom={.5} maxZoom={4} cy={(cy) => { props.myCyRef.current = cy._private.elements }} />
     </div>
-  )
+  );
 }
 
 export default App;
