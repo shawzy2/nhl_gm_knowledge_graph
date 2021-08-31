@@ -283,5 +283,7 @@ a {
     height: 80vh;
     width: 80vw;
     align-items: center;
-    background-color: var(--bg-accent);
+    background-color: var(--bg);
+    color: white;
+    text-align: center;
 }

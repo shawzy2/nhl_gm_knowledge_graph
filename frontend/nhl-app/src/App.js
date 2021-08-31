@@ -48,10 +48,13 @@ function App() {
   const [season, setSeason] = useState('2021-22');
   const [stats, setStats] = useState('{}')
   const [viewStats, setViewStats] = useState(true);
+  const [details, setDetails] = useState([[]]);
   const [viewDetails, setViewDetails] = useState(false);
+  const [openViewDetails, setOpenViewDetails] = useState(true);
   const [selectedGraphItem, setSelectedGraphItem] = useState('');
   const [graphLayout, setGraphLayout] = useState(false);
   const myCyRef = useRef([]);
+  const [refreshData, setRefreshData] = useState(false);
   // const seasons = ["All","2020-21", "2019-20"]
 
   useEffect(() => {
@@ -74,9 +77,32 @@ function App() {
   }, [trades])
 
   useEffect(() => {
-    for (const element of myCyRef.current) { if (element._private.selected) { setSelectedGraphItem(element._private.data); }}
-  }, [viewDetails])
+    var noSelection = true;
+    for (const element of myCyRef.current) { 
+      if (element._private.selected) { 
+        setSelectedGraphItem(element._private.data); 
+        noSelection = false;
+      }
+    }
+    if (noSelection) {
+      setSelectedGraphItem('none');
+    }
+  }, [refreshData]);
 
+  useEffect(() => {
+    var name = selectedGraphItem.name; 
+    var apiEndpoint =  `/trades/gmlist?name1=${name}`;
+    if (!name) {
+      var source = selectedGraphItem.source;
+      var target = selectedGraphItem.target;
+      apiEndpoint = `/trades/gmlist?name1=${source}&name2=${target}`;
+    } 
+
+    fetch(apiEndpoint).then(response => 
+      response.json().then(data => 
+        setDetails(data)
+    ));
+  }, [selectedGraphItem]);
 
   console.log(trades);
   console.log(stats);
@@ -86,7 +112,7 @@ function App() {
   console.log('viewDetails: ' + viewDetails);
   console.log(graphLayout);
   console.log(selectedGraphItem)
-  for (const element of myCyRef.current) { if (element._private.selected) { console.log(element._private.data); }}
+  console.log(details)
 
   return (
     <div className="App">      
@@ -166,41 +192,40 @@ function App() {
         </NavItem>
       </Navbar>
 
-      <div className="body">
+      <div className="body" onClick={() => setRefreshData(!refreshData)}>
         {viewStats && <TradeStats width="100%" generalManager={generalManager} season={season} stats={stats}/>}
         <div className="trade-stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
         <TradeGraph trades={trades} graphLayout={graphLayout} viewStats={viewStats} viewDetails={viewDetails} myCyRef={myCyRef}></TradeGraph>
         {/* <ShowDetailsButton onClick={() => setGraphLayout(!graphLayout)}>View Details</ShowDetailsButton> */}
-        <button class='show-details-button' onClick={() => setViewDetails(!viewDetails)}>View Details</button>
+        <button class='show-details-button' disabled={selectedGraphItem=="none"} onClick={() => setViewDetails(!viewDetails)}>View Details</button>
       </div>
-      {viewDetails && <Details selectedGraphItem={selectedGraphItem}></Details>}
+      {viewDetails && <Details selectedGraphItem={selectedGraphItem} details={details}></Details>}
 
     </div>
   );
 }
 
 function Details(props) {
-  console.log(props.selectedGraphItem)
-  var selectedData = ''
-  console.log(
-    Object.entries(props.selectedGraphItem)
-    .map( ([key, value]) => `My key is ${key} and my value is ${value}` )
-  )
-  console.log(Object.entries(props.selectedGraphItem))
-  if (Object.entries(props.selectedGraphItem)[1][1] == 'name') {
-    selectedData = Object.entries(props.selectedGraphItem)[0][1]
+  var cols = ['Date', 'GM1', 'GM2']
+  if (props.selectedGraphItem.name) {
+    var header = 'Trade History for ' + props.selectedGraphItem.name
   } else {
-    selectedData = [Object.entries(props.selectedGraphItem)[0][1], Object.entries(props.selectedGraphItem)[1][1]]
+    var header = 'Trade History between ' + props.selectedGraphItem.source + ' and ' + props.selectedGraphItem.target
   }
 
-  // if (props.selectedGraphItem.get('source')) {
-  //   selectedData = 'edge'
-  // } else {
-  //   selectedData = 'Node'
-  // }
   return (
     <div className="view-details-display">
-      Trades for {selectedData}
+      <h2>{header}</h2>
+      <table>
+        <tr>
+          { cols.map(x => <th>{x}</th>) }
+        </tr>
+        { props.details.map( row => 
+          <tr>
+            { row.map( element => <td>{ element }</td> ) }
+          </tr>
+        ) }
+      </table>      
     </div>
   )
 }

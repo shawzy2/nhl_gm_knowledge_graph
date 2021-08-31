@@ -10,6 +10,7 @@ from bs4 import BeautifulSoup
 import datetime
 import os
 import pandas as pd
+import numpy as np
 import logging
 import ssl
 
@@ -77,18 +78,35 @@ def trades_by_gm():
     return jsonify({'trades': convert_to_cytoscape_json(trades, True)})
 
 
+@main.route('/trades/gmlist')
+def trades_by_gm_list():
+    '''Returns list of all trades matching one or two gm names
+    Team name is passed in as a query string parameter'''
+    gm_name1 = request.args.get('name1')
+    gm_name2 = request.args.get('name2')
 
-#     /* season stats */
-#   var totalTradesSzn = statsParsed['totalTradesSzn']
-#   var avgTradesSzn = statsParsed['avgTradesSzn']
-#   var mostActiveManagerSzn = statsParsed['mostActiveManagerSzn']
+    if gm_name2 is None:
+        trade_list = Trade.query.filter( (Trade.team1_gm==gm_name1) | (Trade.team2_gm==gm_name1) ).order_by(Trade.date.desc()).all()
+        trades = []
+        for trade in trade_list:
+            if trade.team1_gm == gm_name1:
+                trades.append([datetime.datetime.strftime(trade.date, '%d%b%Y'), trade.team1_gm, trade.team2_gm])
+            else:
+                trades.append([datetime.datetime.strftime(trade.date, '%d%b%Y'), trade.team2_gm, trade.team1_gm])
+        return jsonify(trades)
+    
+    else:
+        trade_list = Trade.query.filter( ((Trade.team1_gm==gm_name1) & (Trade.team2_gm==gm_name2)) | \
+                                            ((Trade.team1_gm==gm_name2) & (Trade.team2_gm==gm_name1)) ).order_by(Trade.date.desc()).all()
+        trades = []
+        for trade in trade_list:
+            if trade.team1_gm == gm_name1:
+                trades.append([datetime.datetime.strftime(trade.date, '%d%b%Y'), trade.team1_gm, trade.team2_gm])
+            else:
+                trades.append([datetime.datetime.strftime(trade.date, '%d%b%Y'), trade.team2_gm, trade.team1_gm])
+        return jsonify(trades)
 
-#   /* gm stats */
-#   var totalTradesGM = statsParsed['totalTradesGM']
-#   var shareOfTradesGM = statsParsed['shareOfTradesGM']
-#   var avgTradesGM = statsParsed['avgTradesGM']
-#   var tradeParterGM = statsParsed['tradeParterGM']
-#   var connectivityGM = statsParsed['connectivityGM']
+
 @main.route('/trades/stats')
 def stats_by_gm():
     stats = {} # dict to hold data
