@@ -38,6 +38,20 @@ a {
     ;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg);
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--bg-accent);
+    border-radius: 9px;
+    width: 9px;
+}
 
 /* nav bar */
 
@@ -141,7 +155,6 @@ a {
     transition: height var(--speed) ease;
     height: 600px;
     overflow-y: scroll;
-    scrollbar-color: dark;
     z-index: 1;
 }
 
