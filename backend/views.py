@@ -78,7 +78,7 @@ def trades_by_gm():
     return jsonify({'trades': convert_to_cytoscape_json(trades, True)})
 
 
-@main.route('/trades/gmlist')
+@main.route('/trades/list')
 def trades_by_gm_list():
     '''Returns list of all trades matching one or two gm names
     Team name is passed in as a query string parameter'''

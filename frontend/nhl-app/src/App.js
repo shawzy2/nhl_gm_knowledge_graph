@@ -34,7 +34,6 @@ import { ReactComponent as Winnipeg } from './logos/winnipeg.svg';
 
 import './App.css';
 import React, { useEffect, useState, useRef } from 'react';
-import { Trades } from './components/trades';
 import { CSSTransition } from 'react-transition-group';
 import CytoscapeComponent from 'react-cytoscapejs';
 import cytoscape from 'cytoscape';
@@ -50,7 +49,6 @@ function App() {
   const [viewStats, setViewStats] = useState(true);
   const [details, setDetails] = useState([[]]);
   const [viewDetails, setViewDetails] = useState(false);
-  const [openViewDetails, setOpenViewDetails] = useState(true);
   const [selectedGraphItem, setSelectedGraphItem] = useState('');
   const [graphLayout, setGraphLayout] = useState(false);
   const myCyRef = useRef([]);
@@ -91,11 +89,11 @@ function App() {
 
   useEffect(() => {
     var name = selectedGraphItem.name; 
-    var apiEndpoint =  `/trades/gmlist?name1=${name}`;
+    var apiEndpoint =  `/trades/list?name1=${name}`;
     if (!name) {
       var source = selectedGraphItem.source;
       var target = selectedGraphItem.target;
-      apiEndpoint = `/trades/gmlist?name1=${source}&name2=${target}`;
+      apiEndpoint = `/trades/list?name1=${source}&name2=${target}`;
     } 
 
     fetch(apiEndpoint).then(response => 
@@ -196,9 +194,9 @@ function App() {
         {viewStats && <TradeStats width="100%" generalManager={generalManager} season={season} stats={stats}/>}
         <div className="trade-stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
         <TradeGraph trades={trades} graphLayout={graphLayout} viewStats={viewStats} viewDetails={viewDetails} myCyRef={myCyRef}></TradeGraph>
-        {/* <ShowDetailsButton onClick={() => setGraphLayout(!graphLayout)}>View Details</ShowDetailsButton> */}
         <button class='show-details-button' disabled={selectedGraphItem=="none"} onClick={() => setViewDetails(!viewDetails)}>View Details</button>
       </div>
+      {viewDetails && <button className="close-details-button" onClick={() => setViewDetails(!viewDetails)}>x</button>}
       {viewDetails && <Details selectedGraphItem={selectedGraphItem} details={details}></Details>}
 
     </div>
@@ -225,7 +223,7 @@ function Details(props) {
             { row.map( element => <td>{ element }</td> ) }
           </tr>
         ) }
-      </table>      
+      </table>
     </div>
   )
 }
@@ -338,17 +336,11 @@ function TradeGraph(props) {
       componentSpacing: 40,
       coolingFactor: 0.99
     }
-  } else if (props.viewDetails) {
-    layout = {
-      name: 'cola',
-      componentSpacing: 40,
-      coolingFactor: 0.97
-    }
-  }
+  } 
 
-  var style = {height: 'calc(100vh - 80px)', width: 'calc(100vw - 25px)'}
+  var style = {height: 'calc(100vh - 80px)', width: 'calc(100vw - 21px)'}
   if(props.viewStats) {
-    style = {height: 'calc(100vh - 61px)', width: 'calc(100vw - 375px)'}
+    style = {height: 'calc(100vh - 61px)', width: 'calc(100vw - 371px)'}
   }
 
   const stylesheet = [
