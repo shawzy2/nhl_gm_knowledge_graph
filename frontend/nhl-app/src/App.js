@@ -42,7 +42,8 @@ import cola from 'cytoscape-cola';
 cytoscape.use( cola );
 
 function App() {
-  const [trades, setTrades] = useState([]);
+  const [category, setCategory] = useState('trades') /* i.e. 'trades', 'staff', ... */
+  const [graphData, setGraphData] = useState([]);
   const [generalManager, setGeneralManager] = useState('All');
   const [season, setSeason] = useState('2021-22');
   const [stats, setStats] = useState('{}')
@@ -56,14 +57,14 @@ function App() {
   // const seasons = ["All","2020-21", "2019-20"]
 
   useEffect(() => {
-    // update trade data
+    // update graph data
     var gm_str = `${generalManager}`.replace(' ', '+')
-    fetch(`/trades/gm?name=${gm_str}&season=${season}`).then(response => 
+    fetch(`/${category}/gm?name1=${gm_str}&season=${season}`).then(response => 
       response.json().then(data => {;
-        setTrades(data.trades)
+        setGraphData(data.graphData)
     }));
 
-    fetch(`/trades/stats?name=${gm_str}&season=${season}`).then(response => 
+    fetch(`/${category}/stats?name1=${gm_str}&season=${season}`).then(response => 
       response.json().then(data => {;
         setStats(data.stats)
     }));
@@ -72,9 +73,10 @@ function App() {
   useEffect(() => {
     // force graph to re-render
     setGraphLayout(!graphLayout)
-  }, [trades])
+  }, [graphData])
 
   useEffect(() => {
+    // get selected node/edge in graph
     var noSelection = true;
     for (const element of myCyRef.current) { 
       if (element._private.selected) { 
@@ -89,11 +91,11 @@ function App() {
 
   useEffect(() => {
     var name = selectedGraphItem.name; 
-    var apiEndpoint =  `/trades/list?name1=${name}`;
+    var apiEndpoint =  `/${category}/list?name1=${name}`;
     if (!name) {
       var source = selectedGraphItem.source;
       var target = selectedGraphItem.target;
-      apiEndpoint = `/trades/list?name1=${source}&name2=${target}`;
+      apiEndpoint = `/${category}/list?name1=${source}&name2=${target}`;
     } 
 
     fetch(apiEndpoint).then(response => 
@@ -102,7 +104,7 @@ function App() {
     ));
   }, [selectedGraphItem]);
 
-  console.log(trades);
+  console.log(graphData);
   console.log(stats);
   console.log('gm: ' + generalManager);
   console.log('season: ' + season);
@@ -191,9 +193,9 @@ function App() {
       </Navbar>
 
       <div className="body" onClick={() => setRefreshData(!refreshData)}>
-        {viewStats && <TradeStats width="100%" generalManager={generalManager} season={season} stats={stats}/>}
-        <div className="trade-stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
-        <TradeGraph trades={trades} graphLayout={graphLayout} viewStats={viewStats} viewDetails={viewDetails} myCyRef={myCyRef}></TradeGraph>
+        {viewStats && <Stats width="100%" generalManager={generalManager} season={season} stats={stats}/>}
+        <div className="stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
+        <Graph graphData={graphData} graphLayout={graphLayout} viewStats={viewStats} viewDetails={viewDetails} myCyRef={myCyRef}></Graph>
         <button class='show-details-button' disabled={selectedGraphItem=="none"} onClick={() => setViewDetails(!viewDetails)}>View Details</button>
       </div>
       {viewDetails && <button className="close-details-button" onClick={() => setViewDetails(!viewDetails)}>x</button>}
@@ -201,31 +203,6 @@ function App() {
 
     </div>
   );
-}
-
-function Details(props) {
-  var cols = ['Date', 'GM1', 'GM2']
-  if (props.selectedGraphItem.name) {
-    var header = 'Trade History for ' + props.selectedGraphItem.name
-  } else {
-    var header = 'Trade History between ' + props.selectedGraphItem.source + ' and ' + props.selectedGraphItem.target
-  }
-
-  return (
-    <div className="view-details-display">
-      <h2>{header}</h2>
-      <table>
-        <tr>
-          { cols.map(x => <th>{x}</th>) }
-        </tr>
-        { props.details.map( row => 
-          <tr>
-            { row.map( element => <td>{ element }</td> ) }
-          </tr>
-        ) }
-      </table>
-    </div>
-  )
 }
 
 function Navbar(props) {
@@ -287,7 +264,8 @@ function DropdownItem(props) {
   )
 }
 
-function TradeStats(props) {
+function Stats(props) {
+  /* TODO: use 'map' to display these items */
   var statsParsed = JSON.parse(props.stats);
 
   /* season stats */
@@ -303,7 +281,7 @@ function TradeStats(props) {
   var connectivityGM = statsParsed['connectivityGM']
 
   return (
-    <div className="trade-stats">
+    <div className="stats-list">
       <h1>Season: {props.season}</h1>
       <ul>
         <li>Total Trades: {totalTradesSzn}</li>
@@ -322,7 +300,7 @@ function TradeStats(props) {
   )
 }
 
-function TradeGraph(props) {
+function Graph(props) {
   // need layout var to change 'coolingFactor' so that we can force trade graph to refresh
   // without slight change, nodes will be stacked ontop of eachother when we select a new season/gm
   var layout = layout = {
@@ -364,10 +342,35 @@ function TradeGraph(props) {
 
   return (
     <div>
-      <CytoscapeComponent className="trade-graph" elements={props.trades} layout={layout} style={style} 
+      <CytoscapeComponent className="graph" elements={props.graphData} layout={layout} style={style} 
                             stylesheet={stylesheet} minZoom={.5} maxZoom={4} cy={(cy) => { props.myCyRef.current = cy._private.elements }} />
     </div>
   );
+}
+
+function Details(props) {
+  var cols = ['Date', 'GM1', 'GM2']
+  if (props.selectedGraphItem.name) {
+    var header = 'Trade History for ' + props.selectedGraphItem.name
+  } else {
+    var header = 'Trade History between ' + props.selectedGraphItem.source + ' and ' + props.selectedGraphItem.target
+  }
+
+  return (
+    <div className="view-details-display">
+      <h2>{header}</h2>
+      <table>
+        <tr>
+          { cols.map(x => <th>{x}</th>) }
+        </tr>
+        { props.details.map( row => 
+          <tr>
+            { row.map( element => <td>{ element }</td> ) }
+          </tr>
+        ) }
+      </table>
+    </div>
+  )
 }
 
 export default App;

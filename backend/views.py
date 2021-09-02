@@ -59,7 +59,7 @@ def trades():
 def trades_by_gm():
     '''Returns list of all trades matching gm name
     Team name is passed in as a query string parameter'''
-    gm_name = request.args.get('name')
+    gm_name = request.args.get('name1')
     season = request.args.get('season')
 
     logging.warning('gmName: ' + gm_name)
@@ -75,7 +75,7 @@ def trades_by_gm():
                     )
 
     # return jsonify({'trades': trades})
-    return jsonify({'trades': convert_to_cytoscape_json(trades, True)})
+    return jsonify({'graphData': convert_to_cytoscape_json(trades, True)})
 
 
 @main.route('/trades/list')
@@ -112,7 +112,7 @@ def stats_by_gm():
     stats = {} # dict to hold data
 
     # get query string params
-    gm_name = request.args.get('name')
+    gm_name = request.args.get('name1')
     season = request.args.get('season')
 
     # calculate szn stats
