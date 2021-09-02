@@ -10,7 +10,10 @@ def create_app():
 
     db.init_app(app)
 
-    from .views import main
-    app.register_blueprint(main)
+    from .trades import trades
+    app.register_blueprint(trades.trade_bp)
+
+    from .staff import staff
+    app.register_blueprint(staff.staff_bp)
     
     return app
