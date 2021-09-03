@@ -42,7 +42,7 @@ import cola from 'cytoscape-cola';
 cytoscape.use( cola );
 
 function App() {
-  const [category, setCategory] = useState('trades') /* i.e. 'trades', 'staff', ... */
+  const [category, setCategory] = useState('staff') /* i.e. 'trades', 'staff', ... */
   const [graphData, setGraphData] = useState([]);
   const [generalManager, setGeneralManager] = useState('All');
   const [season, setSeason] = useState('2021-22');
@@ -59,7 +59,7 @@ function App() {
   useEffect(() => {
     // update graph data
     var gm_str = `${generalManager}`.replace(' ', '+')
-    fetch(`/${category}/gm?name1=${gm_str}&season=${season}`).then(response => 
+    fetch(`/${category}/name?name1=${gm_str}&season=${season}`).then(response => 
       response.json().then(data => {;
         setGraphData(data.graphData)
     }));
@@ -304,13 +304,13 @@ function Graph(props) {
   // need layout var to change 'coolingFactor' so that we can force trade graph to refresh
   // without slight change, nodes will be stacked ontop of eachother when we select a new season/gm
   var layout = layout = {
-                  name: 'cola',
+                  name: 'preset',
                   componentSpacing: 40,
                   coolingFactor: 0.98
                 }
   if (props.graphLayout) {
     layout = {
-      name: 'cola',
+      name: 'preset',
       componentSpacing: 40,
       coolingFactor: 0.99
     }
@@ -328,7 +328,8 @@ function Graph(props) {
         width: 20,
         height: 20,
         color: 'white',
-        label: 'data(id)'
+        label: 'data(id)',
+        "background-color": "data(nodeColor)"
       }
     },
     {
@@ -336,6 +337,13 @@ function Graph(props) {
       style: {
         width: 2,
         "curve-style": 'bezier'
+      }
+    },
+    {
+      selector: ':selected',
+      css: {
+        'background-color': '#FFB81C',
+        'line-color': '#FFB81C'
       }
     }
   ]

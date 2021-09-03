@@ -17,5 +17,6 @@ class Staff(db.Model):
     team = db.Column(db.String(100))
     league = db.Column(db.String(50))
     title = db.Column(db.String(100))
+    title_category = db.Column(db.String(100))
     notes = db.Column(db.String(100))
     headshot_link = db.Column(db.String(100))
