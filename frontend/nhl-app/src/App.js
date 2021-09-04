@@ -195,7 +195,7 @@ function App() {
       <div className="body" onClick={() => setRefreshData(!refreshData)}>
         {viewStats && <Stats width="100%" generalManager={generalManager} season={season} stats={stats}/>}
         <div className="stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
-        <Graph graphData={graphData} graphLayout={graphLayout} viewStats={viewStats} viewDetails={viewDetails} myCyRef={myCyRef}></Graph>
+        <Graph category={category} graphData={graphData} graphLayout={graphLayout} viewStats={viewStats} viewDetails={viewDetails} myCyRef={myCyRef}></Graph>
         <button class='show-details-button' disabled={selectedGraphItem=="none"} onClick={() => setViewDetails(!viewDetails)}>View Details</button>
       </div>
       {viewDetails && <button className="close-details-button" onClick={() => setViewDetails(!viewDetails)}>x</button>}
@@ -303,14 +303,18 @@ function Stats(props) {
 function Graph(props) {
   // need layout var to change 'coolingFactor' so that we can force trade graph to refresh
   // without slight change, nodes will be stacked ontop of eachother when we select a new season/gm
+  var layout_name = 'cola';
+  if (props.category=='staff'){
+    layout_name = 'preset'
+  }
   var layout = layout = {
-                  name: 'preset',
+                  name: layout_name,
                   componentSpacing: 40,
                   coolingFactor: 0.98
                 }
   if (props.graphLayout) {
     layout = {
-      name: 'preset',
+      name: layout_name,
       componentSpacing: 40,
       coolingFactor: 0.99
     }
@@ -329,7 +333,8 @@ function Graph(props) {
         height: 20,
         color: 'white',
         label: 'data(id)',
-        "background-color": "data(nodeColor)"
+        "background-color": "data(nodeColor)",
+        "font-size": "10px"
       }
     },
     {
