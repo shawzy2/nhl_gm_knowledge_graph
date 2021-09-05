@@ -105,26 +105,28 @@ def trades_by_gm_list():
 
 @trade_bp.route('/trades/stats')
 def stats_by_gm():
-    stats = {} # dict to hold data
-
     # get query string params
     gm_name = request.args.get('name1')
     season = request.args.get('season')
 
     # calculate szn stats
     trade_list = get_trade_list("All", season)
-    stats['totalTradesSzn'] = len(trade_list)
-    stats['avgTradesSzn'] = get_avg_trades_per_gm(stats['totalTradesSzn'], season)
-    stats['mostActiveManagerSzn'] = get_most_active_gm(trade_list)
+    season_stats = []
+    season_stats.append('Total Trades: ' + str(len(trade_list)))
+    season_stats.append('Average Trades per GM: ' + str(get_avg_trades_per_gm(len(trade_list), season)))
+    season_stats.append('Most Active GM: ' + get_most_active_gm(trade_list))
 
     # calculate gm stats
     trade_list = get_trade_list(gm_name, season)
-    stats['totalTradesGM'] = len(trade_list)
-    stats['shareOfTradesGM'] = str(round(100 * stats['totalTradesGM'] / stats['totalTradesSzn'], 1)) + '%'
-    stats['tradePartnerGM'] = get_favorite_trade_partner(gm_name, trade_list)
+    name_stats = []
+    name_stats.append('Total Trades: ' + str(len(trade_list)))
+    name_stats.append('Favorite Trade Partner: ' + get_favorite_trade_partner(gm_name, trade_list))
 
-    logging.warning('this is the output: ' + json.dumps(stats))
-    return jsonify({'stats': json.dumps(stats)})
+    all_stats = []
+    all_stats.append(season_stats)
+    all_stats.append(name_stats)
+    return jsonify({'stats': all_stats})
+
 
 
 @trade_bp.route('/trades/scrape', methods=['POST'])
@@ -280,7 +282,7 @@ def convert_to_cytoscape_json(data, get_gm):
     for trade in data:
         items.add(trade[key1])
         items.add(trade[key2])    
-    nodes = [({ 'data': { 'id': item, 'name': item } }) for item in items]
+    nodes = [({ 'data': { 'id': item, 'name': item, "nodeColor": "grey" } }) for item in items]
 
     # get edges
     edges = [({'data': { 'source': trade[key1], 'target': trade[key2]}}) for trade in data]

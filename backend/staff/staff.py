@@ -79,24 +79,27 @@ def staff_by_name():
         }]})
 
 
-    teams_this_season = set(s.team for s in Staff.query.filter( (Staff.name==name) & (Staff.season==season) ))
+    teams_this_season = set(s.team for s in Staff.query.filter( (Staff.name==name) & (Staff.season==season) & (Staff.league=='NHL') ))
     
     staff_list = []
     for t in teams_this_season:
         staff_list.extend(Staff.query.filter( (Staff.team==t) & (Staff.season==season) ).order_by(Staff.title_category))
 
+    if len(staff_list) == 0:
+        return jsonify({"graphData": [
+        {
+            "data": {
+                "id": "No Staff Found for this Season",
+                "name": "No Staff Found for this Season"
+            }
+        }]}) 
+
     return jsonify({'graphData': convert_to_cytoscape_json([{'name': s.name, 'title_category': s.title_category} for s in staff_list], name)})
 
 def convert_to_cytoscape_json(data, name, organize='intamacy'):
     '''Returns cytoscapejs graph data given list of coworkers and person-of-interest name'''
-    nodes_and_edges = []
-
-    n = len(data)
-
-
     df = pd.DataFrame(data)
     df['years_together'] = np.array([staff_years_together(name, person['name']) for person in data])
-    # df.sort_values(['title_category'], ascending=False, inplace=True)
 
     angle = np.linspace(0, (2-1/len(data))*np.pi, len(data)) 
     max_radius = 400
@@ -104,51 +107,11 @@ def convert_to_cytoscape_json(data, name, organize='intamacy'):
     df['x_pos'] = np.abs(year_factor * df['years_together'] - max_radius) * np.cos(angle)
     df['y_pos'] = np.abs(year_factor * df['years_together'] - max_radius) * np.sin(angle)
 
-    # df['x_pos'] = [100*level*np.cos(angle) for angle in np.linspace(0 , 2 * np.pi , level*8) for level in df['level'].unique()]
-    # x = []
-    # for row in df['level'].index.values:
-    #     if row < 8:
-    #         x_pos = np.cos(2*np.pi / 8 * row) * 100
-    #     elif row < 20:
-    #         x_pos = 2*np.pi / 12 * (row-8) * 200
-    #     elif row < 30:
-    #         x_pos = 2*np.pi / 30 * (row-20) * 300
-    #     else:
-    #         x_pos = 2*np.pi / 40 * (row-30) * 400
-    #     x.append(x_pos)
-
-
-    
-    # df['x_pos'] = [100*level*np.cos(angle) for level in df['level'].unique() for angle in np.linspace(0 , 2 * np.pi , level*8)][:len(df)]
-    # df['y_pos'] = [100*level*np.sin(angle) for level in df['level'].unique() for angle in np.linspace(0 , 2 * np.pi , level*8)][:len(df)]
-    # return df[['name', 'years_together','x_pos', 'y_pos']].values.tolist()
-
-    # x = radius * np.cos( angle ) 
-    # y = radius * np.sin( angle ) 
-
-    # for i in range(len(data)):
-    #     data[i]['x_pos'] = x[i]
-    #     data[i]['y_pos'] = y[i]   
-
-    # i = 0
-    # for person in data:
-    #     if person['name'] != name:
-    #         person['x_pos'] = x[i]
-    #         person['y_pos'] = y[i]
-    #         i += 1
-
     cyto = [{ 'data': { 'id': row['name'], 'name': row['name'], 'nodeColor': get_node_color(row['title_category'])}, 'position': {'x': row['x_pos'], 'y': row['y_pos']} } if row['name'] != name 
             else { 'data': { 'id': row['name'], 'name': row['name'], 'nodeColor': get_node_color(row['title_category'])}, 'position': {'x': 0, 'y': 0} }
             for index, row in df.iterrows()]
     cyto.extend([{ 'data': { 'source': name, 'target': coworker } } for coworker in set(row['name'] for index, row in df.iterrows()) if coworker != name])
 
-    # nodes_and_edges.extend([
-    #     { 'data': { 'id': person['name'], 'name': person['name'], 'nodeColor': get_node_color(person['title_category'])}, 'position': {'x': person['x_pos'], 'y': person['y_pos']} } if person['name'] != name
-    #         else { 'data': { 'id': name, 'name': name, 'nodeColor': get_node_color(person['title_category'])}, 'position': {'x': 0, 'y': 0} }
-    #             for person in data])
-    # nodes_and_edges.extend([{ 'data': { 'source': name, 'target': coworker } } for coworker in set(person['name'] for person in data) if coworker != name])
-
-    # return df.values.tolist()
     return cyto
 
 
@@ -251,13 +214,13 @@ def get_title_category(title):
 
 def get_node_color(title):
     if title == 'HockeyOps':
-        return 'red'
+        return '#C8102E'
     elif title == 'Coaching':
-        return 'blue'
+        return '#99D9D9'
     elif title == 'Ownership':
-        return 'green'
+        return '#A2AAAD'
     elif title == 'Scouting':
-        return 'yellow'
+        return '#F1BE48'
     elif title == 'Support':
-        return 'white'
+        return '#DDCBA4'
     return 'grey'

@@ -142,18 +142,36 @@ a {
 
 /* Dropdown Menu */
 
-.dropdown {
+.dropdown-open-right {
     position: absolute;
     top: 58px;
-    width: 300px;
-    transform: translateX(-25%);
+    min-width: 200px;
+    max-width: 300px;
+    transform: translateX(-15%);
     background-color: var(--bg);
     border: var(--border);
     border-radius: var(--border-radius);
     padding: 1rem;
     overflow: hidden;
     transition: height var(--speed) ease;
-    height: 600px;
+    max-height: 70vh;
+    overflow-y: scroll;
+    z-index: 1;
+}
+
+.dropdown-open-left {
+    position: absolute;
+    top: 58px;
+    min-width: 100px;
+    max-width: 300px;
+    transform: translateX(50%);
+    background-color: var(--bg);
+    border: var(--border);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    overflow: hidden;
+    transition: height var(--speed) ease;
+    max-height: 70vh;
     overflow-y: scroll;
     z-index: 1;
 }
@@ -256,6 +274,84 @@ a {
     font-family: "Sintony", Arial, sans-serif;
     /* font-family: "Oswald", Arial, sans-serif; */
     font-weight: bold;
+    text-indent: 10px;
+}
+
+.stats-list-staff-legend {
+    border: 1px solid var(--bruins-gold);
+    border-radius: 12px;
+    background-color: var(--bg-accent);
+    margin: 15px;
+    bottom: 0;
+    position: absolute;
+    min-width: 317px;
+    /* text-indent: 10px; */
+    /* padding: 5px; */
+}
+
+.stats-list-staff-legend-circle-hockeyops {
+    height: 12px;
+    width: 12px;
+    background-color: #C8102E;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 20px;
+    text-indent: 20px;
+    white-space: nowrap;
+  }
+
+.stats-list-staff-legend-circle-coaching {
+    height: 12px;
+    width: 12px;
+    background-color: #99D9D9;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 20px;
+    text-indent: 20px;
+    white-space: nowrap;
+  }
+
+.stats-list-staff-legend-circle-ownership {
+    height: 12px;
+    width: 12px;
+    background-color: #A2AAAD;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 20px;
+    text-indent: 20px;
+    white-space: nowrap;
+}
+
+.stats-list-staff-legend-circle-scouting {
+    height: 12px;
+    width: 12px;
+    background-color: #F1BE48;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 20px;
+    text-indent: 20px;
+    white-space: nowrap;
+  }
+
+.stats-list-staff-legend-circle-support {
+    height: 12px;
+    width: 12px;
+    background-color: #DDCBA4;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: 20px;
+    text-indent: 20px;
+    white-space: nowrap;
+}
+
+.stats-list-staff-legend-circle-text {
+    position: relative;
+    bottom: 18px;
+}
+
+.stats-list-staff-legend-text {
+    font-size: 12px;
+    text-align: center;
 }
 
 .graph {
