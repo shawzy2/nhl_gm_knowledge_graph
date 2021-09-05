@@ -38,6 +38,10 @@ a {
     ;
 }
 
+h2 {
+    margin-bottom: 2px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -351,6 +355,12 @@ a {
 
 .stats-list-staff-legend-text {
     font-size: 12px;
+    text-align: center;
+}
+
+.stats-list-note-italic-text {
+    font-size: 9px;
+    font-style: italic;
     text-align: center;
 }
 

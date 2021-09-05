@@ -96,6 +96,49 @@ def staff_by_name():
 
     return jsonify({'graphData': convert_to_cytoscape_json([{'name': s.name, 'title_category': s.title_category} for s in staff_list], name)})
 
+@staff_bp.route('/staff/stats')
+def staff_stats():
+    '''Returns a list of stats to give context to staff directories across the league '''
+    name = request.args.get('name1')
+    season = request.args.get('season')
+    connection = db.session.connection()
+
+    # get num teams this season
+    result = db.engine.execute(f"SELECT count(DISTINCT team) FROM staff WHERE league='NHL' and season='{season}' ORDER BY team;")
+    num_teams = [row[0] for row in result][0]
+
+    # get avg number of staff on each team
+    result = db.engine.execute(f"SELECT title_category, count(*) as count FROM ( \
+                                    SELECT team, title_category \
+                                    FROM staff WHERE league='NHL' and season='{season}' \
+                                    GROUP BY team, name) \
+                                GROUP BY title_category;")       
+    data = [[row[0],row[1]] for row in result]
+    df = pd.DataFrame()
+    df['category'] = [row[0] for row in data]
+    df['total'] = [row[1] for row in data]
+    df['average'] = round(df['total'] / num_teams, 1)
+    df['string'] = 'Average ' + df.category + ': ' + df.average.map(str)
+    season_stats = df[df['category'] != 'Other']['string'].values.tolist()
+
+
+    # get number of staff for this person's team
+    result = db.engine.execute(f"SELECT title_category, count(*) as count \
+                                FROM staff \
+                                WHERE league='NHL' and season='{season}' and team in ( \
+                                    SELECT team \
+                                    FROM staff \
+                                    WHERE league='NHL' and season='{season}' and name='{name}') \
+                                GROUP BY title_category;")       
+    data = [[row[0],row[1]] for row in result]
+    df = pd.DataFrame()
+    df['category'] = [row[0] for row in data]
+    df['total'] = [row[1] for row in data]
+    df['string'] = df.category + ': ' + df.total.map(str)
+    name_stats = df[df['category'] != 'Other']['string'].values.tolist()
+
+    return jsonify({'stats': [season_stats, name_stats]})
+
 def convert_to_cytoscape_json(data, name, organize='intamacy'):
     '''Returns cytoscapejs graph data given list of coworkers and person-of-interest name'''
     df = pd.DataFrame(data)

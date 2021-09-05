@@ -297,15 +297,16 @@ function Stats(props) {
       <ul>
         {nameStats.map(s => <li>{s}</li>)}
       </ul>
+      {props.category=="staff" && <p className="stats-list-note-italic-text">**Note: some staff occupy multiple roles which are are counted in the above counts, but not represented visually in graph</p>}
 
       {props.category=="staff" && 
         <div className="stats-list-staff-legend">
           <p className="stats-list-staff-legend-text">Nodes closer to center indicate longer relationships</p>
-          <div className="stats-list-staff-legend-circle-hockeyops"><p className="stats-list-staff-legend-circle-text">Hockey Ops</p></div>
           <div className="stats-list-staff-legend-circle-coaching"><p className="stats-list-staff-legend-circle-text">Coaching Staff</p></div>
+          <div className="stats-list-staff-legend-circle-hockeyops"><p className="stats-list-staff-legend-circle-text">Hockey Ops</p></div>
+          <div className="stats-list-staff-legend-circle-ownership"><p className="stats-list-staff-legend-circle-text">Ownership / Executive</p></div>
           <div className="stats-list-staff-legend-circle-scouting"><p className="stats-list-staff-legend-circle-text">Scouting</p></div>
           <div className="stats-list-staff-legend-circle-support"><p className="stats-list-staff-legend-circle-text">Support</p></div>
-          <div className="stats-list-staff-legend-circle-ownership"><p className="stats-list-staff-legend-circle-text">Ownership / Executive</p></div>
         </div>}
     </div>
     
