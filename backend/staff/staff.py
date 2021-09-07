@@ -34,6 +34,7 @@ def staff_load():
         )) for s in staff_list]
 
     db.session.commit()
+    db.engine.execute("UPDATE staff SET name = 'Jarmo Kekalainen' WHERE name='Jarmo Kekäläinen';") # get rid of special characters for CBJ's GM
     return 'Successfully loaded ' + str(len(staff_list)) + ' staff members', 201
 
 @staff_bp.route('/staff')
@@ -101,6 +102,9 @@ def staff_stats():
     '''Returns a list of stats to give context to staff directories across the league '''
     name = request.args.get('name1')
     season = request.args.get('season')
+    if season == 'All':
+        return jsonify({'stats': [[''], ['']]})
+
     connection = db.session.connection()
 
     # get num teams this season
