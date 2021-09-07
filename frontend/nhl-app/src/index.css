@@ -359,7 +359,7 @@ h2 {
 }
 
 .stats-list-note-italic-text {
-    font-size: 9px;
+    font-size: 10px;
     font-style: italic;
     text-align: center;
 }
@@ -407,6 +407,15 @@ h2 {
     background-color: var(--bg);
     color: white;
     text-align: center;
+}
+
+.view-details-display-table {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: block;
+    height: 70vh;
+    overflow-y: scroll;
+    border: 2px solid var(--bruins-gold);
 }
 
 .close-details-button {

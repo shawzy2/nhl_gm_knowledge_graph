@@ -94,7 +94,7 @@ def staff_by_name():
             }
         }]}) 
 
-    return jsonify({'graphData': convert_to_cytoscape_json([{'name': s.name, 'title_category': s.title_category} for s in staff_list], name)})
+    return jsonify({'graphData': convert_to_cytoscape_json([{'name': s.name, 'title_category': s.title_category} for s in staff_list], name, season)})
 
 @staff_bp.route('/staff/stats')
 def staff_stats():
@@ -139,10 +139,33 @@ def staff_stats():
 
     return jsonify({'stats': [season_stats, name_stats]})
 
-def convert_to_cytoscape_json(data, name, organize='intamacy'):
+@staff_bp.route('/staff/list')
+def staff_list():
+    name1 = request.args.get('name1')
+    name2 = request.args.get('name2')
+    connection = db.session.connection()
+
+    if(name2 is None):
+        result = db.engine.execute(f"SELECT season, team, league, title FROM staff WHERE name='{name1}' ORDER BY season DESC, league ASC;")
+        history = [row[0:len(row)] for row in result]
+        return jsonify(history)
+    else:
+        result = db.engine.execute(f"SELECT A.season, A.team, A.league, A.title, IFNULL(B.title, '') \
+                                    FROM staff as A \
+                                    LEFT JOIN ( \
+                                        SELECT season, team, title \
+                                        FROM staff \
+                                        WHERE name='{name2}' \
+                                        ) AS B ON A.season=B.season and A.team=B.team \
+                                    WHERE A.name='{name1}' \
+                                    ORDER BY A.season DESC, A.league ASC;")
+        history = [row[0:len(row)] for row in result]
+        return jsonify(history)
+
+def convert_to_cytoscape_json(data, name, season):
     '''Returns cytoscapejs graph data given list of coworkers and person-of-interest name'''
     df = pd.DataFrame(data)
-    df['years_together'] = np.array([staff_years_together(name, person['name']) for person in data])
+    df['years_together'] = np.array([staff_years_together(name, person['name'], season) for person in data])
 
     angle = np.linspace(0, (2-1/len(data))*np.pi, len(data)) 
     max_radius = 400
@@ -158,14 +181,14 @@ def convert_to_cytoscape_json(data, name, organize='intamacy'):
     return cyto
 
 
-def staff_years_together(name1=None, name2=None):
+def staff_years_together(name1=None, name2=None, season="2021-22"):
     # name1 = 'Rod Brind\'Amour'
     # name2 = 'Kevyn Adams'
     connection = db.session.connection()
     result = db.engine.execute(f"SELECT count(*) FROM ( \
                                 SELECT team, season, count(DISTINCT name) as uniqueNames \
                                 FROM staff \
-                                WHERE name=\"{name1}\" or name=\"{name2}\" \
+                                WHERE (name=\"{name1}\" or name=\"{name2}\") and season<=\"{season}\" \
                                 GROUP BY team, season) \
                                 WHERE uniqueNames > 1;")
     return int([row[0] for row in result][0])
@@ -208,13 +231,13 @@ coaching = {
     'Skills Coach',
     'Special Assignment Coach',
     'Video Coach',
+    'Coach',
+    'Conditioning Coach',
+    'Development Coach',
 }
 ownership = { 
     'CEO',
     'Chairman',
-    'Coach',
-    'Conditioning Coach',
-    'Development Coach',
     'Franchise Owner',
     'Senior Advisor',
 }

@@ -212,7 +212,7 @@ function App() {
         <button class='show-details-button' disabled={selectedGraphItem=="none"} onClick={() => setViewDetails(!viewDetails)}>View Details</button>
       </div>
       {viewDetails && <button className="close-details-button" onClick={() => setViewDetails(!viewDetails)}>x</button>}
-      {viewDetails && <Details selectedGraphItem={selectedGraphItem} details={details}></Details>}
+      {viewDetails && <Details category={category} selectedGraphItem={selectedGraphItem} details={details}></Details>}
 
     </div>
   );
@@ -384,16 +384,24 @@ function Graph(props) {
 
 function Details(props) {
   var cols = ['Date', 'GM1', 'GM2']
+  var categoryString = 'Trade'
+  if (props.category == 'staff') {
+    cols = ['Season', 'Team', 'League', 'Title']
+    categoryString = 'Staff'
+  }
   if (props.selectedGraphItem.name) {
-    var header = 'Trade History for ' + props.selectedGraphItem.name
+    var header = `${categoryString} History for ` + props.selectedGraphItem.name
   } else {
-    var header = 'Trade History between ' + props.selectedGraphItem.source + ' and ' + props.selectedGraphItem.target
+    var header = `${categoryString} History between ` + props.selectedGraphItem.source + ' and ' + props.selectedGraphItem.target
+    if (props.category == 'staff') {
+      cols = ['Season', 'Team', 'League', `${props.selectedGraphItem.source} Title`, `${props.selectedGraphItem.target} Title`]
+    }
   }
 
   return (
     <div className="view-details-display">
       <h2>{header}</h2>
-      <table>
+      <table className="view-details-display-table">
         <tr>
           { cols.map(x => <th>{x}</th>) }
         </tr>
