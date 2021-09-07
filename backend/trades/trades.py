@@ -105,27 +105,30 @@ def trades_by_gm_list():
 
 @trade_bp.route('/trades/stats')
 def stats_by_gm():
-    # get query string params
-    gm_name = request.args.get('name1')
-    season = request.args.get('season')
+    try:
+        # get query string params
+        gm_name = request.args.get('name1')
+        season = request.args.get('season')
 
-    # calculate szn stats
-    trade_list = get_trade_list("All", season)
-    season_stats = []
-    season_stats.append('Total Trades: ' + str(len(trade_list)))
-    season_stats.append('Average Trades per GM: ' + str(get_avg_trades_per_gm(len(trade_list), season)))
-    season_stats.append('Most Active GM: ' + get_most_active_gm(trade_list))
+        # calculate szn stats
+        trade_list = get_trade_list("All", season)
+        season_stats = []
+        season_stats.append('Total Trades: ' + str(len(trade_list)))
+        season_stats.append('Average Trades per GM: ' + str(get_avg_trades_per_gm(len(trade_list), season)))
+        season_stats.append('Most Active GM: ' + get_most_active_gm(trade_list))
 
-    # calculate gm stats
-    trade_list = get_trade_list(gm_name, season)
-    name_stats = []
-    name_stats.append('Total Trades: ' + str(len(trade_list)))
-    name_stats.append('Favorite Trade Partner: ' + get_favorite_trade_partner(gm_name, trade_list))
+        # calculate gm stats
+        trade_list = get_trade_list(gm_name, season)
+        name_stats = []
+        name_stats.append('Total Trades: ' + str(len(trade_list)))
+        name_stats.append('Favorite Trade Partner: ' + get_favorite_trade_partner(gm_name, trade_list))
 
-    all_stats = []
-    all_stats.append(season_stats)
-    all_stats.append(name_stats)
-    return jsonify({'stats': all_stats})
+        all_stats = []
+        all_stats.append(season_stats)
+        all_stats.append(name_stats)
+        return jsonify({'stats': all_stats})
+    except Exception as e:
+        return jsonify({'stats': [[''], ['No Trades on record for this season']]})
 
 
 
