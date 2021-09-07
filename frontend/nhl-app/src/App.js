@@ -42,10 +42,11 @@ import cola from 'cytoscape-cola';
 cytoscape.use( cola );
 
 function App() {
-  const [trades, setTrades] = useState([]);
+  const [category, setCategory] = useState('staff') /* i.e. 'trades', 'staff', ... */
+  const [graphData, setGraphData] = useState([]);
   const [generalManager, setGeneralManager] = useState('All');
   const [season, setSeason] = useState('2021-22');
-  const [stats, setStats] = useState('{}')
+  const [stats, setStats] = useState([]);
   const [viewStats, setViewStats] = useState(true);
   const [details, setDetails] = useState([[]]);
   const [viewDetails, setViewDetails] = useState(false);
@@ -56,25 +57,26 @@ function App() {
   // const seasons = ["All","2020-21", "2019-20"]
 
   useEffect(() => {
-    // update trade data
+    // update graph data
     var gm_str = `${generalManager}`.replace(' ', '+')
-    fetch(`/trades/gm?name=${gm_str}&season=${season}`).then(response => 
-      response.json().then(data => {;
-        setTrades(data.trades)
+    fetch(`/${category}/name?name1=${gm_str}&season=${season}`).then(response => 
+      response.json().then(data => {
+        setGraphData(data.graphData)
     }));
 
-    fetch(`/trades/stats?name=${gm_str}&season=${season}`).then(response => 
-      response.json().then(data => {;
+    fetch(`/${category}/stats?name1=${gm_str}&season=${season}`).then(response => 
+      response.json().then(data => {
         setStats(data.stats)
     }));
-  }, [generalManager, season])
+  }, [generalManager, season, category])
 
   useEffect(() => {
     // force graph to re-render
     setGraphLayout(!graphLayout)
-  }, [trades])
+  }, [graphData])
 
   useEffect(() => {
+    // get selected node/edge in graph
     var noSelection = true;
     for (const element of myCyRef.current) { 
       if (element._private.selected) { 
@@ -89,20 +91,20 @@ function App() {
 
   useEffect(() => {
     var name = selectedGraphItem.name; 
-    var apiEndpoint =  `/trades/list?name1=${name}`;
+    var apiEndpoint =  `/${category}/list?name1=${name}`;
     if (!name) {
       var source = selectedGraphItem.source;
       var target = selectedGraphItem.target;
-      apiEndpoint = `/trades/list?name1=${source}&name2=${target}`;
+      apiEndpoint = `/${category}/list?name1=${source}&name2=${target}`;
     } 
 
     fetch(apiEndpoint).then(response => 
       response.json().then(data => 
         setDetails(data)
     ));
-  }, [selectedGraphItem]);
+  }, [selectedGraphItem, category]);
 
-  console.log(trades);
+  console.log(graphData);
   console.log(stats);
   console.log('gm: ' + generalManager);
   console.log('season: ' + season);
@@ -111,15 +113,28 @@ function App() {
   console.log(graphLayout);
   console.log(selectedGraphItem)
   console.log(details)
+  stats.map((list) => {
+    if (list){
+    list.map((item) => {
+      console.log(item)
+    })}
+  })
 
   return (
     <div className="App">      
       <Navbar>
-        {/* {generalManager}'s Trade Graph */}
-        <NavTitle >NHL Trade Graph</NavTitle>
+        <NavItem icon="Select Data">
+          <DropdownMenu sideToOpenTo="left">
+            <DropdownItem onClick={() => setCategory("trades")}>Trades</DropdownItem>
+            <DropdownItem onClick={() => setCategory("staff")}>Staff</DropdownItem>
+          </DropdownMenu>
+        </NavItem>
+
+        {category=="trades" && <NavTitle>Trade Relationships</NavTitle>}
+        {category=="staff" && <NavTitle>Staff Relationships</NavTitle>}
 
         <NavItem icon="Select Season">
-          <DropdownMenu>
+          <DropdownMenu sideToOpenTo="right">
             {/* { seasons.map(x => <DropdownItem onClick={() => setSeason(x)}>{ x }</DropdownItem>) } */}
             <DropdownItem onClick={() => setSeason("All")}>All</DropdownItem>
             <DropdownItem onClick={() => setSeason("2021-22")}>2021-22</DropdownItem>
@@ -148,7 +163,7 @@ function App() {
         </NavItem>
 
         <NavItem icon="Select GM">
-          <DropdownMenu>
+          <DropdownMenu sideToOpenTo="right">
             <DropdownItem onClick={() => setGeneralManager("All")} leftIcon={<Nhl />} >All</DropdownItem> 
 
             {/* Current GMs in alphabetical order by team name */}
@@ -191,41 +206,16 @@ function App() {
       </Navbar>
 
       <div className="body" onClick={() => setRefreshData(!refreshData)}>
-        {viewStats && <TradeStats width="100%" generalManager={generalManager} season={season} stats={stats}/>}
-        <div className="trade-stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
-        <TradeGraph trades={trades} graphLayout={graphLayout} viewStats={viewStats} viewDetails={viewDetails} myCyRef={myCyRef}></TradeGraph>
+        {viewStats && <Stats width="100%" generalManager={generalManager} season={season} stats={stats} category={category}/>}
+        <div className="stats-accordian" onClick={() => setViewStats(!viewStats)}>view stats</div>
+        <Graph category={category} graphData={graphData} graphLayout={graphLayout} viewStats={viewStats} viewDetails={viewDetails} myCyRef={myCyRef}></Graph>
         <button class='show-details-button' disabled={selectedGraphItem=="none"} onClick={() => setViewDetails(!viewDetails)}>View Details</button>
       </div>
       {viewDetails && <button className="close-details-button" onClick={() => setViewDetails(!viewDetails)}>x</button>}
-      {viewDetails && <Details selectedGraphItem={selectedGraphItem} details={details}></Details>}
+      {viewDetails && <Details category={category} selectedGraphItem={selectedGraphItem} details={details}></Details>}
 
     </div>
   );
-}
-
-function Details(props) {
-  var cols = ['Date', 'GM1', 'GM2']
-  if (props.selectedGraphItem.name) {
-    var header = 'Trade History for ' + props.selectedGraphItem.name
-  } else {
-    var header = 'Trade History between ' + props.selectedGraphItem.source + ' and ' + props.selectedGraphItem.target
-  }
-
-  return (
-    <div className="view-details-display">
-      <h2>{header}</h2>
-      <table>
-        <tr>
-          { cols.map(x => <th>{x}</th>) }
-        </tr>
-        { props.details.map( row => 
-          <tr>
-            { row.map( element => <td>{ element }</td> ) }
-          </tr>
-        ) }
-      </table>
-    </div>
-  )
 }
 
 function Navbar(props) {
@@ -262,7 +252,7 @@ function DropdownMenu(props) {
   const [activeMenu, setActiveMenu] = useState('main');
 
   return (
-    <div className="dropdown">
+    <div className={"dropdown-open-"+props.sideToOpenTo}>
       <CSSTransition in={activeMenu === 'main'} unmountOnExit timeout={500} classNames="menu-primary">
         <div className="menu">
           {props.children}
@@ -287,52 +277,57 @@ function DropdownItem(props) {
   )
 }
 
-function TradeStats(props) {
-  var statsParsed = JSON.parse(props.stats);
-
-  /* season stats */
-  var totalTradesSzn = statsParsed['totalTradesSzn']
-  var avgTradesSzn = statsParsed['avgTradesSzn']
-  var mostActiveManagerSzn = statsParsed['mostActiveManagerSzn']
-
-  /* gm stats */
-  var totalTradesGM = statsParsed['totalTradesGM']
-  var shareOfTradesGM = statsParsed['shareOfTradesGM']
-  var avgTradesGM = statsParsed['avgTradesGM']
-  var tradePartnerGM = statsParsed['tradePartnerGM']
-  var connectivityGM = statsParsed['connectivityGM']
-
+function Stats(props) {
+  var seasonStats = []
+  var nameStats = []
+  if (props.stats[0]) {
+    seasonStats = props.stats[0]
+  }
+  if (props.stats[1]) {
+    nameStats = props.stats[1]
+  }
+  
   return (
-    <div className="trade-stats">
-      <h1>Season: {props.season}</h1>
+    <div className="stats-list">      
+      <h2>Season: {props.season}</h2>
       <ul>
-        <li>Total Trades: {totalTradesSzn}</li>
-        <li>Average Trades per GM this Season: {avgTradesSzn}</li>
-        <li>Most Active GM: {mostActiveManagerSzn}</li>
+        {seasonStats.map(s => <li>{s}</li>)}
       </ul>
-      <h1>GM: {props.generalManager}</h1>
+      <h2>GM: {props.generalManager}</h2>
       <ul>
-        <li>Total Trades: {totalTradesGM}</li>
-        <li>Share of Trades: {shareOfTradesGM}</li>
-        <li>Average Trades per Season: {avgTradesGM}</li>
-        <li>Favorite Trade Partner: {tradePartnerGM}</li>
+        {nameStats.map(s => <li>{s}</li>)}
       </ul>
+      {props.category=="staff" && <p className="stats-list-note-italic-text">**Note: some staff occupy multiple roles which are are counted in the above counts, but not represented visually in graph</p>}
+
+      {props.category=="staff" && 
+        <div className="stats-list-staff-legend">
+          <p className="stats-list-staff-legend-text">Nodes closer to center indicate longer relationships</p>
+          <div className="stats-list-staff-legend-circle-coaching"><p className="stats-list-staff-legend-circle-text">Coaching Staff</p></div>
+          <div className="stats-list-staff-legend-circle-hockeyops"><p className="stats-list-staff-legend-circle-text">Hockey Ops</p></div>
+          <div className="stats-list-staff-legend-circle-ownership"><p className="stats-list-staff-legend-circle-text">Ownership / Executive</p></div>
+          <div className="stats-list-staff-legend-circle-scouting"><p className="stats-list-staff-legend-circle-text">Scouting</p></div>
+          <div className="stats-list-staff-legend-circle-support"><p className="stats-list-staff-legend-circle-text">Support</p></div>
+        </div>}
     </div>
     
   )
 }
 
-function TradeGraph(props) {
+function Graph(props) {
   // need layout var to change 'coolingFactor' so that we can force trade graph to refresh
   // without slight change, nodes will be stacked ontop of eachother when we select a new season/gm
+  var layout_name = 'cola';
+  if (props.category=='staff'){
+    layout_name = 'preset'
+  }
   var layout = layout = {
-                  name: 'cola',
+                  name: layout_name,
                   componentSpacing: 40,
                   coolingFactor: 0.98
                 }
   if (props.graphLayout) {
     layout = {
-      name: 'cola',
+      name: layout_name,
       componentSpacing: 40,
       coolingFactor: 0.99
     }
@@ -350,7 +345,9 @@ function TradeGraph(props) {
         width: 20,
         height: 20,
         color: 'white',
-        label: 'data(id)'
+        label: 'data(id)',
+        "background-color": "data(nodeColor)",
+        "font-size": "10px"
       }
     },
     {
@@ -359,15 +356,63 @@ function TradeGraph(props) {
         width: 2,
         "curve-style": 'bezier'
       }
+    },
+    {
+      selector: 'node:selected',
+      css: {
+        'background-color': 'blue',
+        width: 40,
+        height: 40
+      }
+    },
+    {
+      selector: 'edge:selected',
+      css: {
+        'line-color': 'blue',
+        width: 4,
+      }
     }
   ]
 
   return (
     <div>
-      <CytoscapeComponent className="trade-graph" elements={props.trades} layout={layout} style={style} 
+      <CytoscapeComponent className="graph" elements={props.graphData} layout={layout} style={style} 
                             stylesheet={stylesheet} minZoom={.5} maxZoom={4} cy={(cy) => { props.myCyRef.current = cy._private.elements }} />
     </div>
   );
+}
+
+function Details(props) {
+  var cols = ['Date', 'GM1', 'GM2']
+  var categoryString = 'Trade'
+  if (props.category == 'staff') {
+    cols = ['Season', 'Team', 'League', 'Title']
+    categoryString = 'Staff'
+  }
+  if (props.selectedGraphItem.name) {
+    var header = `${categoryString} History for ` + props.selectedGraphItem.name
+  } else {
+    var header = `${categoryString} History between ` + props.selectedGraphItem.source + ' and ' + props.selectedGraphItem.target
+    if (props.category == 'staff') {
+      cols = ['Season', 'Team', 'League', `${props.selectedGraphItem.source} Title`, `${props.selectedGraphItem.target} Title`]
+    }
+  }
+
+  return (
+    <div className="view-details-display">
+      <h2>{header}</h2>
+      <table className="view-details-display-table">
+        <tr>
+          { cols.map(x => <th>{x}</th>) }
+        </tr>
+        { props.details.map( row => 
+          <tr>
+            { row.map( element => <td>{ element }</td> ) }
+          </tr>
+        ) }
+      </table>
+    </div>
+  )
 }
 
 export default App;
