@@ -15,5 +15,11 @@ def create_app():
 
     from .staff import staff
     app.register_blueprint(staff.staff_bp)
+
+    from .standings import standing
+    app.register_blueprint(standing.standing_bp)
+
+    from .thresholds import threshold
+    app.register_blueprint(threshold.threshold_bp)
     
     return app

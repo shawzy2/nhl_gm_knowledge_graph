@@ -20,3 +20,19 @@ class Staff(db.Model):
     title_category = db.Column(db.String(100))
     notes = db.Column(db.String(100))
     headshot_link = db.Column(db.String(100))
+
+class Standing(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    season = db.Column(db.String(100))
+    date = db.Column(db.Date)
+    team = db.Column(db.String(100))
+    division = db.Column(db.String(100))
+    conference = db.Column(db.String(100))
+    points = db.Column(db.Integer)
+    
+class PlayoffThreshold(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    season = db.Column(db.String(100))
+    date = db.Column(db.Date)
+    div_conf = db.Column(db.String(100))
+    threshold = db.Column(db.Integer)
