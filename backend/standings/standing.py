@@ -55,7 +55,14 @@ def trades_all():
             SELECT *
             FROM playoff_threshold
             )
-        SELECT s.season, s.date, s.points, (s.points-cd.threshold) as divThreshold, (s.points-cc.threshold) as confThreshold
+        SELECT s.season, 
+                s.date, 
+                s.points, 
+                (s.points-cd.threshold) as divThreshold, 
+                CASE 
+                    WHEN s.season = '2020-21' THEN 0 
+                    ELSE (s.points-cc.threshold) 
+                END as confThreshold
         FROM standings s 
         LEFT JOIN cutoffs cd ON s.date = cd.date AND s.division = cd.div_conf
         LEFT JOIN cutoffs cc ON s.date = cc.date AND s.conference = cc.div_conf;""")
