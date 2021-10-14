@@ -38,6 +38,7 @@ import { CSSTransition } from 'react-transition-group';
 import CytoscapeComponent from 'react-cytoscapejs';
 import cytoscape from 'cytoscape';
 import cola from 'cytoscape-cola';
+import TradeTimeline from './components/TradeTimeline'
 
 cytoscape.use( cola );
 
@@ -54,6 +55,8 @@ function App() {
   const [graphLayout, setGraphLayout] = useState(false);
   const myCyRef = useRef([]);
   const [refreshData, setRefreshData] = useState(false);
+  const [tradeTimelineLabels, setTradeTimelineLabels] = useState([1,2,3]);
+  const [tradeTimelineData, setTradeTimelineData] = useState([['season', [0,0,0]]]);
   // const seasons = ["All","2020-21", "2019-20"]
 
   useEffect(() => {
@@ -102,6 +105,13 @@ function App() {
       response.json().then(data => 
         setDetails(data)
     ));
+
+    //fetch timeline data update
+    fetch(`/standing/graph?name1=${name}`).then(response => 
+      response.json().then(data => {
+        setTradeTimelineLabels(data.labels);
+        setTradeTimelineData(data.seasons);
+      }));
   }, [selectedGraphItem, category]);
 
   console.log(graphData);
@@ -119,6 +129,8 @@ function App() {
       console.log(item)
     })}
   })
+  console.log(tradeTimelineLabels)
+  console.log(tradeTimelineData)
 
   return (
     <div className="App">      
@@ -212,7 +224,8 @@ function App() {
         <button class='show-details-button' disabled={selectedGraphItem=="none"} onClick={() => setViewDetails(!viewDetails)}>View Details</button>
       </div>
       {viewDetails && <button className="close-details-button" onClick={() => setViewDetails(!viewDetails)}>x</button>}
-      {viewDetails && <Details category={category} selectedGraphItem={selectedGraphItem} details={details}></Details>}
+      {viewDetails && <Details category={category} selectedGraphItem={selectedGraphItem} details={details} 
+                        tradeTimelineLabels={tradeTimelineLabels} tradeTimelineData={tradeTimelineData}></Details>}
 
     </div>
   );
@@ -399,18 +412,22 @@ function Details(props) {
   }
 
   return (
-    <div className="view-details-display">
-      <h2>{header}</h2>
-      <table className="view-details-display-table">
-        <tr>
-          { cols.map(x => <th>{x}</th>) }
-        </tr>
-        { props.details.map( row => 
+    <div>
+      <div className="view-details-display">
+        <h2>{header}</h2>
+        {/* <table className="view-details-display-table">
           <tr>
-            { row.map( element => <td>{ element }</td> ) }
+            { cols.map(x => <th>{x}</th>) }
           </tr>
-        ) }
-      </table>
+          { props.details.map( row => 
+            <tr>
+              { row.map( element => <td>{ element }</td> ) }
+            </tr>
+          ) }
+        </table> */}
+        <TradeTimeline tradeTimelineLabels={props.tradeTimelineLabels} tradeTimelineData={props.tradeTimelineData}/>
+      </div>
+      
     </div>
   )
 }

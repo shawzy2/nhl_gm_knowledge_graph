@@ -36,3 +36,9 @@ class PlayoffThreshold(db.Model):
     date = db.Column(db.Date)
     div_conf = db.Column(db.String(100))
     threshold = db.Column(db.Integer)
+
+class Dates(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    season = db.Column(db.String(50))
+    type = db.Column(db.String(50))
+    date = db.Column(db.Date)

@@ -21,5 +21,8 @@ def create_app():
 
     from .thresholds import threshold
     app.register_blueprint(threshold.threshold_bp)
+
+    from .dates import dates
+    app.register_blueprint(dates.dates_bp)
     
     return app
