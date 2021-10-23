@@ -11,18 +11,29 @@ function TradeTimeline(props) {
     const datasets = []
     var i = 0
     for (const season of props.tradeTimelineData){
-        console.log(season);
         datasets.push({
             type: 'line',
                 label: season[0],
                 data: season[1],
                 fill: false,
                 borderColor: colors[i++],
+                borderWidth: 1.5,
                 tension: 0.1,
                 pointRadius: 0
         })
     }
-    console.log(datasets)
+    var i = 0
+    for (const season of props.tradeTimelineTrades){
+        datasets.push({
+            type: 'scatter',
+                label: season[0] + ' Trades',
+                data: season[1],
+                fill: false,
+                borderColor: colors[i++],
+                backgroundColor: 'white',
+                pointRadius: 7
+        })
+    }
 
     const data = {
       labels: props.tradeTimelineLabels,
@@ -32,20 +43,39 @@ function TradeTimeline(props) {
     <div>
         <Line
             data={data}
-            height={400}
+            height={props.height}
             width={400}
             options={{
+                responsive: true,
                 maintainAspectRatio: false,
-                // scales: {
-                //     x: {
-                //         beginAtZero: false
-                //     },
-                //     y: {
-                //         beginAtZero: false
-                //     }
-                // },
+                scales: {
+                    xAxis: {
+                        title: {
+                            display: true,
+                            align: 'center',
+                            text: 'Days till Trade Deadline'
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            display: true,
+                            align: 'center',
+                            text: `Points Above ${props.name} Playoff Spot`
+                        }
+                    }
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'In-Season Trades by GM',
+                        font: {weight: 'bold', size: 18}
+                    }, 
+                    legend: {
+                        position: 'right'
+                    }
+                },
                 layout: {
-                    padding: 10
+                    padding: 25
                 }
                 
             }}

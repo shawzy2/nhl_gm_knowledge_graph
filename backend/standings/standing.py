@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import datetime
 import os
 import pandas as pd
+import numpy as np
 import logging
 import ssl
 
@@ -72,14 +73,18 @@ def trades_all():
     return jsonify(standings)
 
 @standing_bp.route('/standing/graph')
-def daily_standings():
+def daily_standings(conf_or_div = 'pointsAboveConf'):
     '''Returns list of Standings in db for name1 when name1 is gm of a team'''
     name1 = request.args.get('name1')
     if name1 is None or name1 == 'undefined':
         return jsonify({
             'labels': [1,2,3],
-            'seasons': [['season', []]]
+            'seasons': [['season', []]],
+            'trades': [['seasonTrades', []]]
         })
+
+    if request.args.get('confOrDiv') == 'pointsAboveDiv':
+        conf_or_div = 'pointsAboveDiv'
 
     db.session.connection()
     result = db.engine.execute(
@@ -133,7 +138,7 @@ def daily_standings():
             LEFT JOIN tradeDeadlines tdl ON s.season = tdl.season
             LEFT JOIN openingDay od ON s.season = od.season
             LEFT JOIN trades tr ON s.date = tr.date
-            WHERE (JULIANDAY(s.date) - JULIANDAY(od.date)) >= 0 AND (JULIANDAY(s.date) - JULIANDAY(tdl.date)) < 60;
+            WHERE (JULIANDAY(s.date) - JULIANDAY(od.date)) >= 0 AND (JULIANDAY(s.date) - JULIANDAY(tdl.date)) < 45;
         """)
 
     # list of rows, each row is ['season', 'date', 'days_til_trade_deadline', 'days_since_opening_day', 
@@ -146,13 +151,17 @@ def daily_standings():
                 'pointsAboveDiv', 'pointsAboveConf', 'madeTrade']
 
     # extract point thresholds for conf/div over each season
-    conf_or_div = 'pointsAboveDiv'
-    tbl = df.pivot_table(index='daysTillTDL', columns='season', values=conf_or_div, fill_value=0)
+    tbl = df.pivot_table(index='daysTillTDL', columns='season', values=[conf_or_div, 'madeTrade'], fill_value='NaN')
 
     # return list of lables (daysTillTDL) and values for each season
     r = {
         'labels': tbl.index.values.tolist(),
-        'seasons': [[season, tbl[season].values.tolist()] for season in tbl.columns.values]
+        'seasons': [[season, tbl[conf_or_div][season].values.tolist()] 
+                            for season in tbl[conf_or_div].columns.values],
+        'trades': [[season, np.where(tbl['madeTrade'][season]==1, 
+                                    tbl[conf_or_div][season], 
+                                    'NaN').tolist()] 
+                        for season in tbl['madeTrade'].columns.values]
     }
 
     return jsonify(r)

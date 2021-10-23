@@ -56,7 +56,10 @@ function App() {
   const myCyRef = useRef([]);
   const [refreshData, setRefreshData] = useState(false);
   const [tradeTimelineLabels, setTradeTimelineLabels] = useState([1,2,3]);
-  const [tradeTimelineData, setTradeTimelineData] = useState([['season', [0,0,0]]]);
+  const [tradeTimelineDataConference, setTradeTimelineDataConference] = useState([['season', [0,0,0]]]);
+  const [tradeTimelineTradesConference, setTradeTimelineTradesConference] = useState([['seasonTrades', [0,0,0]]]);
+  const [tradeTimelineDataDivision, setTradeTimelineDataDivision] = useState([['season', [0,0,0]]]);
+  const [tradeTimelineTradesDivision, setTradeTimelineTradesDivision] = useState([['seasonTrades', [0,0,0]]]);
   // const seasons = ["All","2020-21", "2019-20"]
 
   useEffect(() => {
@@ -110,7 +113,15 @@ function App() {
     fetch(`/standing/graph?name1=${name}`).then(response => 
       response.json().then(data => {
         setTradeTimelineLabels(data.labels);
-        setTradeTimelineData(data.seasons);
+        setTradeTimelineDataConference(data.seasons);
+        setTradeTimelineTradesConference(data.trades);
+      }));
+    
+    fetch(`/standing/graph?name1=${name}&confOrDiv=pointsAboveDiv`).then(response => 
+      response.json().then(data => {
+        // setTradeTimelineLabels(data.labels);
+        setTradeTimelineDataDivision(data.seasons);
+        setTradeTimelineTradesDivision(data.trades);
       }));
   }, [selectedGraphItem, category]);
 
@@ -130,7 +141,8 @@ function App() {
     })}
   })
   console.log(tradeTimelineLabels)
-  console.log(tradeTimelineData)
+  console.log(tradeTimelineDataConference)
+  console.log(tradeTimelineTradesConference)
 
   return (
     <div className="App">      
@@ -224,8 +236,15 @@ function App() {
         <button class='show-details-button' disabled={selectedGraphItem=="none"} onClick={() => setViewDetails(!viewDetails)}>View Details</button>
       </div>
       {viewDetails && <button className="close-details-button" onClick={() => setViewDetails(!viewDetails)}>x</button>}
-      {viewDetails && <Details category={category} selectedGraphItem={selectedGraphItem} details={details} 
-                        tradeTimelineLabels={tradeTimelineLabels} tradeTimelineData={tradeTimelineData}></Details>}
+      {viewDetails && <Details category={category} 
+                        selectedGraphItem={selectedGraphItem} 
+                        details={details} 
+                        tradeTimelineLabels={tradeTimelineLabels} 
+                        tradeTimelineDataConference={tradeTimelineDataConference}
+                        tradeTimelineTradesConference={tradeTimelineTradesConference} 
+                        tradeTimelineDataDivision={tradeTimelineDataDivision}
+                        tradeTimelineTradesDivision={tradeTimelineTradesDivision} 
+                      ></Details>}
 
     </div>
   );
@@ -396,6 +415,7 @@ function Graph(props) {
 }
 
 function Details(props) {
+  const [viewDetailsTab, setViewDetailsTab] = useState('list');
   var cols = ['Date', 'GM1', 'GM2']
   var categoryString = 'Trade'
   if (props.category == 'staff') {
@@ -415,17 +435,42 @@ function Details(props) {
     <div>
       <div className="view-details-display">
         <h2>{header}</h2>
-        {/* <table className="view-details-display-table">
-          <tr>
-            { cols.map(x => <th>{x}</th>) }
-          </tr>
-          { props.details.map( row => 
+        <div className="view-details-tabs">
+          <button onClick={() => setViewDetailsTab('conferenceTimeline')}>conferenceTimeline</button>
+          <button onClick={() => setViewDetailsTab('divisionTimeline')}>divisionTimeline</button>
+          <button onClick={() => setViewDetailsTab('list')}>list</button>
+        </div>
+
+        { viewDetailsTab=='list' &&
+          <table className="view-details-display-table">
             <tr>
-              { row.map( element => <td>{ element }</td> ) }
+              { cols.map(x => <th>{x}</th>) }
             </tr>
-          ) }
-        </table> */}
-        <TradeTimeline tradeTimelineLabels={props.tradeTimelineLabels} tradeTimelineData={props.tradeTimelineData}/>
+            { props.details.map( row => 
+              <tr>
+                { row.map( element => <td>{ element }</td> ) }
+              </tr>
+            ) }
+          </table>
+        }
+        { viewDetailsTab=='conferenceTimeline' &&
+          <div className="view-details-display-plot">
+            <TradeTimeline name={'Conference'} 
+                height={document.documentElement.clientHeight * 0.7}
+                tradeTimelineLabels={props.tradeTimelineLabels} 
+                tradeTimelineData={props.tradeTimelineDataConference}
+                tradeTimelineTrades={props.tradeTimelineTradesConference}/>
+          </div>
+        }
+        { viewDetailsTab=='divisionTimeline' &&
+          <div className="view-details-display-plot">
+            <TradeTimeline name={'Division'} 
+                height={document.documentElement.clientHeight * 0.7}
+                tradeTimelineLabels={props.tradeTimelineLabels} 
+                tradeTimelineData={props.tradeTimelineDataDivision}
+                tradeTimelineTrades={props.tradeTimelineTradesDivision}/>
+          </div>
+        }
       </div>
       
     </div>
