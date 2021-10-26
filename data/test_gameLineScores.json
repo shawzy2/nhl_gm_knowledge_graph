@@ -1,0 +1,8658 @@
+[
+  [
+    "2019-10-02T23:13:27Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Ottawa Senators",
+    5,
+    3
+  ],
+  [
+    "2019-10-03T00:21:40Z",
+    "OVERTIME",
+    "St. Louis Blues",
+    "Washington Capitals",
+    2,
+    3
+  ],
+  [
+    "2019-10-03T02:14:41Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Vancouver Canucks",
+    3,
+    2
+  ],
+  [
+    "2019-10-03T02:44:36Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "San Jose Sharks",
+    4,
+    1
+  ],
+  [
+    "2019-10-03T23:15:59Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Florida Panthers",
+    5,
+    2
+  ],
+  [
+    "2019-10-03T23:15:57Z",
+    "REGULAR",
+    "New York Rangers",
+    "Winnipeg Jets",
+    6,
+    4
+  ],
+  [
+    "2019-10-03T23:12:20Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Buffalo Sabres",
+    1,
+    3
+  ],
+  [
+    "2019-10-03T23:15:35Z",
+    "OVERTIME",
+    "Carolina Hurricanes",
+    "Montr\u00e9al Canadiens",
+    4,
+    3
+  ],
+  [
+    "2019-10-04T00:14:50Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Minnesota Wild",
+    5,
+    2
+  ],
+  [
+    "2019-10-04T00:41:57Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Boston Bruins",
+    1,
+    2
+  ],
+  [
+    "2019-10-04T01:18:24Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Calgary Flames",
+    5,
+    3
+  ],
+  [
+    "2019-10-04T02:13:12Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Arizona Coyotes",
+    2,
+    1
+  ],
+  [
+    "2019-10-04T23:12:58Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Winnipeg Jets",
+    4,
+    5
+  ],
+  [
+    "2019-10-04T23:10:12Z",
+    "REGULAR",
+    "New York Islanders",
+    "Washington Capitals",
+    1,
+    2
+  ],
+  [
+    "2019-10-04T23:15:53Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Toronto Maple Leafs",
+    1,
+    4
+  ],
+  [
+    "2019-10-05T00:13:26Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Chicago Blackhawks",
+    4,
+    3
+  ],
+  [
+    "2019-10-05T02:43:02Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Vegas Golden Knights",
+    1,
+    5
+  ],
+  [
+    "2019-10-05T23:22:58Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "New Jersey Devils",
+    7,
+    2
+  ],
+  [
+    "2019-10-05T23:14:34Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Montr\u00e9al Canadiens",
+    5,
+    6
+  ],
+  [
+    "2019-10-05T23:24:05Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "New York Rangers",
+    1,
+    4
+  ],
+  [
+    "2019-10-05T23:17:10Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Tampa Bay Lightning",
+    4,
+    3
+  ],
+  [
+    "2019-10-05T23:08:07Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Columbus Blue Jackets",
+    7,
+    2
+  ],
+  [
+    "2019-10-05T23:16:01Z",
+    "OVERTIME",
+    "Washington Capitals",
+    "Carolina Hurricanes",
+    2,
+    3
+  ],
+  [
+    "2019-10-06T00:07:40Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Dallas Stars",
+    3,
+    2
+  ],
+  [
+    "2019-10-06T00:08:22Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Detroit Red Wings",
+    3,
+    5
+  ],
+  [
+    "2019-10-06T01:08:42Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Minnesota Wild",
+    4,
+    2
+  ],
+  [
+    "2019-10-06T01:13:10Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Boston Bruins",
+    0,
+    1
+  ],
+  [
+    "2019-10-06T02:15:59Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Vancouver Canucks",
+    3,
+    0
+  ],
+  [
+    "2019-10-06T02:09:44Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Los Angeles Kings",
+    6,
+    5
+  ],
+  [
+    "2019-10-06T02:09:49Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "San Jose Sharks",
+    3,
+    1
+  ],
+  [
+    "2019-10-06T21:08:04Z",
+    "OVERTIME",
+    "Carolina Hurricanes",
+    "Tampa Bay Lightning",
+    4,
+    3
+  ],
+  [
+    "2019-10-06T23:10:26Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Dallas Stars",
+    4,
+    3
+  ],
+  [
+    "2019-10-06T23:08:11Z",
+    "REGULAR",
+    "New York Islanders",
+    "Winnipeg Jets",
+    4,
+    1
+  ],
+  [
+    "2019-10-07T23:07:12Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "St. Louis Blues",
+    2,
+    3
+  ],
+  [
+    "2019-10-07T23:08:12Z",
+    "OVERTIME",
+    "Columbus Blue Jackets",
+    "Buffalo Sabres",
+    4,
+    3
+  ],
+  [
+    "2019-10-08T23:10:58Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Carolina Hurricanes",
+    3,
+    6
+  ],
+  [
+    "2019-10-08T23:07:06Z",
+    "REGULAR",
+    "New York Islanders",
+    "Edmonton Oilers",
+    2,
+    5
+  ],
+  [
+    "2019-10-08T23:13:27Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Winnipeg Jets",
+    1,
+    4
+  ],
+  [
+    "2019-10-08T23:08:10Z",
+    "OVERTIME",
+    "Washington Capitals",
+    "Dallas Stars",
+    3,
+    4
+  ],
+  [
+    "2019-10-08T23:38:19Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Anaheim Ducks",
+    1,
+    3
+  ],
+  [
+    "2019-10-09T00:10:04Z",
+    "REGULAR",
+    "Nashville Predators",
+    "San Jose Sharks",
+    5,
+    2
+  ],
+  [
+    "2019-10-09T01:07:30Z",
+    "OVERTIME",
+    "Calgary Flames",
+    "Los Angeles Kings",
+    3,
+    4
+  ],
+  [
+    "2019-10-09T02:07:21Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Boston Bruins",
+    3,
+    4
+  ],
+  [
+    "2019-10-09T23:11:51Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "Montr\u00e9al Canadiens",
+    5,
+    4
+  ],
+  [
+    "2019-10-09T23:40:50Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "New Jersey Devils",
+    4,
+    0
+  ],
+  [
+    "2019-10-10T02:17:02Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Los Angeles Kings",
+    8,
+    2
+  ],
+  [
+    "2019-10-10T23:05:25Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Tampa Bay Lightning",
+    3,
+    7
+  ],
+  [
+    "2019-10-10T23:20:51Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Detroit Red Wings",
+    2,
+    4
+  ],
+  [
+    "2019-10-10T23:07:31Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Edmonton Oilers",
+    3,
+    4
+  ],
+  [
+    "2019-10-10T23:08:30Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Anaheim Ducks",
+    2,
+    1
+  ],
+  [
+    "2019-10-10T23:38:03Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "St. Louis Blues",
+    4,
+    6
+  ],
+  [
+    "2019-10-11T00:08:42Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Washington Capitals",
+    6,
+    5
+  ],
+  [
+    "2019-10-11T00:15:14Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Minnesota Wild",
+    5,
+    2
+  ],
+  [
+    "2019-10-11T00:43:03Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "San Jose Sharks",
+    4,
+    5
+  ],
+  [
+    "2019-10-11T00:39:09Z",
+    "OVERTIME",
+    "Dallas Stars",
+    "Calgary Flames",
+    2,
+    3
+  ],
+  [
+    "2019-10-11T01:08:05Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Boston Bruins",
+    4,
+    2
+  ],
+  [
+    "2019-10-11T02:07:37Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Vegas Golden Knights",
+    4,
+    1
+  ],
+  [
+    "2019-10-11T23:07:38Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "Florida Panthers",
+    3,
+    2
+  ],
+  [
+    "2019-10-11T23:08:46Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Anaheim Ducks",
+    1,
+    2
+  ],
+  [
+    "2019-10-11T23:38:30Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "New York Islanders",
+    5,
+    2
+  ],
+  [
+    "2019-10-12T17:08:22Z",
+    "REGULAR",
+    "New York Rangers",
+    "Edmonton Oilers",
+    1,
+    4
+  ],
+  [
+    "2019-10-12T20:08:30Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Tampa Bay Lightning",
+    4,
+    2
+  ],
+  [
+    "2019-10-12T22:15:03Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Nashville Predators",
+    7,
+    4
+  ],
+  [
+    "2019-10-12T23:08:36Z",
+    "REGULAR",
+    "Boston Bruins",
+    "New Jersey Devils",
+    3,
+    0
+  ],
+  [
+    "2019-10-12T23:15:14Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "St. Louis Blues",
+    6,
+    3
+  ],
+  [
+    "2019-10-12T23:15:17Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Toronto Maple Leafs",
+    2,
+    5
+  ],
+  [
+    "2019-10-12T23:06:56Z",
+    "OVERTIME",
+    "New York Islanders",
+    "Florida Panthers",
+    3,
+    2
+  ],
+  [
+    "2019-10-12T23:07:59Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Columbus Blue Jackets",
+    2,
+    3
+  ],
+  [
+    "2019-10-12T23:15:55Z",
+    "OVERTIME",
+    "Chicago Blackhawks",
+    "Winnipeg Jets",
+    2,
+    3
+  ],
+  [
+    "2019-10-13T00:08:02Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Washington Capitals",
+    1,
+    4
+  ],
+  [
+    "2019-10-13T00:45:28Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Pittsburgh Penguins",
+    4,
+    7
+  ],
+  [
+    "2019-10-13T01:10:33Z",
+    "OVERTIME",
+    "Colorado Avalanche",
+    "Arizona Coyotes",
+    3,
+    2
+  ],
+  [
+    "2019-10-13T02:09:31Z",
+    "OVERTIME",
+    "Vancouver Canucks",
+    "Philadelphia Flyers",
+    3,
+    2
+  ],
+  [
+    "2019-10-13T02:09:07Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Calgary Flames",
+    6,
+    2
+  ],
+  [
+    "2019-10-13T23:11:31Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Pittsburgh Penguins",
+    2,
+    7
+  ],
+  [
+    "2019-10-14T02:08:53Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Vegas Golden Knights",
+    2,
+    5
+  ],
+  [
+    "2019-10-14T02:08:16Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Calgary Flames",
+    3,
+    1
+  ],
+  [
+    "2019-10-14T17:09:15Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Anaheim Ducks",
+    4,
+    2
+  ],
+  [
+    "2019-10-14T17:07:52Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Minnesota Wild",
+    0,
+    2
+  ],
+  [
+    "2019-10-14T17:08:00Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Florida Panthers",
+    4,
+    6
+  ],
+  [
+    "2019-10-14T17:06:33Z",
+    "OVERTIME",
+    "New York Islanders",
+    "St. Louis Blues",
+    3,
+    2
+  ],
+  [
+    "2019-10-14T19:07:50Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Dallas Stars",
+    4,
+    0
+  ],
+  [
+    "2019-10-14T21:08:04Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Colorado Avalanche",
+    3,
+    6
+  ],
+  [
+    "2019-10-15T00:38:57Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Edmonton Oilers",
+    3,
+    1
+  ],
+  [
+    "2019-10-15T23:06:57Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Minnesota Wild",
+    4,
+    2
+  ],
+  [
+    "2019-10-15T23:10:09Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Tampa Bay Lightning",
+    1,
+    3
+  ],
+  [
+    "2019-10-16T00:08:00Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Arizona Coyotes",
+    2,
+    4
+  ],
+  [
+    "2019-10-16T01:08:03Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Philadelphia Flyers",
+    3,
+    1
+  ],
+  [
+    "2019-10-16T02:07:47Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Detroit Red Wings",
+    5,
+    1
+  ],
+  [
+    "2019-10-16T02:07:01Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Nashville Predators",
+    2,
+    5
+  ],
+  [
+    "2019-10-16T02:38:17Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Carolina Hurricanes",
+    0,
+    2
+  ],
+  [
+    "2019-10-16T23:10:29Z",
+    "OVERTIME",
+    "Pittsburgh Penguins",
+    "Colorado Avalanche",
+    3,
+    2
+  ],
+  [
+    "2019-10-16T23:13:01Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Toronto Maple Leafs",
+    4,
+    3
+  ],
+  [
+    "2019-10-16T23:08:10Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Dallas Stars",
+    3,
+    2
+  ],
+  [
+    "2019-10-17T01:45:42Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Philadelphia Flyers",
+    6,
+    3
+  ],
+  [
+    "2019-10-17T02:08:40Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Buffalo Sabres",
+    5,
+    2
+  ],
+  [
+    "2019-10-17T02:38:02Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Carolina Hurricanes",
+    5,
+    2
+  ],
+  [
+    "2019-10-17T23:09:36Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "Tampa Bay Lightning",
+    3,
+    4
+  ],
+  [
+    "2019-10-17T23:08:10Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Minnesota Wild",
+    4,
+    0
+  ],
+  [
+    "2019-10-17T23:09:58Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "New York Rangers",
+    5,
+    2
+  ],
+  [
+    "2019-10-18T00:08:18Z",
+    "OVERTIME",
+    "St. Louis Blues",
+    "Vancouver Canucks",
+    3,
+    4
+  ],
+  [
+    "2019-10-18T00:07:57Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "New York Islanders",
+    1,
+    3
+  ],
+  [
+    "2019-10-18T01:07:41Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Detroit Red Wings",
+    5,
+    1
+  ],
+  [
+    "2019-10-18T02:07:42Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Nashville Predators",
+    5,
+    2
+  ],
+  [
+    "2019-10-18T02:07:09Z",
+    "OVERTIME",
+    "Vegas Golden Knights",
+    "Ottawa Senators",
+    3,
+    2
+  ],
+  [
+    "2019-10-18T02:38:23Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Buffalo Sabres",
+    0,
+    3
+  ],
+  [
+    "2019-10-18T23:09:29Z",
+    "OVERTIME",
+    "Florida Panthers",
+    "Colorado Avalanche",
+    4,
+    5
+  ],
+  [
+    "2019-10-18T23:08:02Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Dallas Stars",
+    4,
+    2
+  ],
+  [
+    "2019-10-18T23:09:16Z",
+    "REGULAR",
+    "Washington Capitals",
+    "New York Rangers",
+    5,
+    2
+  ],
+  [
+    "2019-10-19T00:39:00Z",
+    "OVERTIME",
+    "Chicago Blackhawks",
+    "Columbus Blue Jackets",
+    3,
+    2
+  ],
+  [
+    "2019-10-19T01:07:42Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Detroit Red Wings",
+    2,
+    1
+  ],
+  [
+    "2019-10-19T02:07:53Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Carolina Hurricanes",
+    4,
+    2
+  ],
+  [
+    "2019-10-19T17:07:24Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Vancouver Canucks",
+    1,
+    0
+  ],
+  [
+    "2019-10-19T19:07:08Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Montr\u00e9al Canadiens",
+    2,
+    5
+  ],
+  [
+    "2019-10-19T23:17:38Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Boston Bruins",
+    4,
+    3
+  ],
+  [
+    "2019-10-19T23:09:12Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Colorado Avalanche",
+    2,
+    6
+  ],
+  [
+    "2019-10-19T23:08:18Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Dallas Stars",
+    1,
+    4
+  ],
+  [
+    "2019-10-19T23:08:08Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Vegas Golden Knights",
+    0,
+    3
+  ],
+  [
+    "2019-10-19T23:09:36Z",
+    "OVERTIME",
+    "Columbus Blue Jackets",
+    "New York Islanders",
+    2,
+    3
+  ],
+  [
+    "2019-10-19T23:20:11Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Ottawa Senators",
+    5,
+    2
+  ],
+  [
+    "2019-10-20T00:08:33Z",
+    "OVERTIME",
+    "Nashville Predators",
+    "Florida Panthers",
+    2,
+    3
+  ],
+  [
+    "2019-10-20T02:10:07Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Calgary Flames",
+    4,
+    1
+  ],
+  [
+    "2019-10-20T02:38:48Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Buffalo Sabres",
+    3,
+    4
+  ],
+  [
+    "2019-10-20T17:07:51Z",
+    "REGULAR",
+    "New York Rangers",
+    "Vancouver Canucks",
+    2,
+    3
+  ],
+  [
+    "2019-10-20T21:08:06Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Montr\u00e9al Canadiens",
+    4,
+    3
+  ],
+  [
+    "2019-10-20T23:07:45Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Washington Capitals",
+    3,
+    5
+  ],
+  [
+    "2019-10-20T23:09:57Z",
+    "OVERTIME",
+    "Winnipeg Jets",
+    "Edmonton Oilers",
+    1,
+    0
+  ],
+  [
+    "2019-10-21T01:07:39Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Calgary Flames",
+    1,
+    2
+  ],
+  [
+    "2019-10-21T23:07:04Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Columbus Blue Jackets",
+    3,
+    4
+  ],
+  [
+    "2019-10-21T23:08:07Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Vegas Golden Knights",
+    6,
+    2
+  ],
+  [
+    "2019-10-22T00:08:23Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Colorado Avalanche",
+    3,
+    1
+  ],
+  [
+    "2019-10-22T00:39:29Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Ottawa Senators",
+    2,
+    1
+  ],
+  [
+    "2019-10-22T23:07:48Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Toronto Maple Leafs",
+    4,
+    2
+  ],
+  [
+    "2019-10-22T23:07:50Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "San Jose Sharks",
+    4,
+    3
+  ],
+  [
+    "2019-10-22T23:09:38Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Pittsburgh Penguins",
+    4,
+    2
+  ],
+  [
+    "2019-10-22T23:07:26Z",
+    "OVERTIME",
+    "New York Rangers",
+    "Arizona Coyotes",
+    2,
+    3
+  ],
+  [
+    "2019-10-22T23:39:11Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Vancouver Canucks",
+    2,
+    5
+  ],
+  [
+    "2019-10-23T00:09:13Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Anaheim Ducks",
+    6,
+    1
+  ],
+  [
+    "2019-10-23T00:08:05Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Edmonton Oilers",
+    3,
+    0
+  ],
+  [
+    "2019-10-23T00:08:04Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Los Angeles Kings",
+    2,
+    3
+  ],
+  [
+    "2019-10-23T00:38:32Z",
+    "OVERTIME",
+    "Chicago Blackhawks",
+    "Vegas Golden Knights",
+    1,
+    2
+  ],
+  [
+    "2019-10-23T01:07:48Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Washington Capitals",
+    3,
+    5
+  ],
+  [
+    "2019-10-23T23:46:10Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Detroit Red Wings",
+    5,
+    2
+  ],
+  [
+    "2019-10-24T00:15:55Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Pittsburgh Penguins",
+    3,
+    2
+  ],
+  [
+    "2019-10-24T23:08:18Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "San Jose Sharks",
+    2,
+    4
+  ],
+  [
+    "2019-10-24T23:07:25Z",
+    "REGULAR",
+    "New York Islanders",
+    "Arizona Coyotes",
+    4,
+    2
+  ],
+  [
+    "2019-10-24T23:07:20Z",
+    "REGULAR",
+    "New York Rangers",
+    "Buffalo Sabres",
+    6,
+    2
+  ],
+  [
+    "2019-10-24T23:08:14Z",
+    "OVERTIME",
+    "Columbus Blue Jackets",
+    "Carolina Hurricanes",
+    4,
+    3
+  ],
+  [
+    "2019-10-25T00:08:02Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Los Angeles Kings",
+    5,
+    2
+  ],
+  [
+    "2019-10-25T00:07:55Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Minnesota Wild",
+    4,
+    0
+  ],
+  [
+    "2019-10-25T00:37:37Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Philadelphia Flyers",
+    1,
+    4
+  ],
+  [
+    "2019-10-25T00:37:54Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Anaheim Ducks",
+    2,
+    1
+  ],
+  [
+    "2019-10-25T01:07:29Z",
+    "OVERTIME",
+    "Calgary Flames",
+    "Florida Panthers",
+    6,
+    5
+  ],
+  [
+    "2019-10-25T01:07:17Z",
+    "OVERTIME",
+    "Edmonton Oilers",
+    "Washington Capitals",
+    4,
+    3
+  ],
+  [
+    "2019-10-25T22:08:11Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Colorado Avalanche",
+    1,
+    6
+  ],
+  [
+    "2019-10-25T23:07:13Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "San Jose Sharks",
+    4,
+    1
+  ],
+  [
+    "2019-10-25T23:07:18Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Arizona Coyotes",
+    3,
+    5
+  ],
+  [
+    "2019-10-25T23:38:52Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "New York Islanders",
+    2,
+    4
+  ],
+  [
+    "2019-10-25T23:38:14Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Buffalo Sabres",
+    0,
+    2
+  ],
+  [
+    "2019-10-26T02:07:54Z",
+    "OVERTIME",
+    "Vancouver Canucks",
+    "Washington Capitals",
+    5,
+    6
+  ],
+  [
+    "2019-10-26T17:08:26Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Chicago Blackhawks",
+    4,
+    0
+  ],
+  [
+    "2019-10-26T23:10:46Z",
+    "REGULAR",
+    "Boston Bruins",
+    "St. Louis Blues",
+    3,
+    0
+  ],
+  [
+    "2019-10-26T23:15:12Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Toronto Maple Leafs",
+    5,
+    2
+  ],
+  [
+    "2019-10-26T23:08:11Z",
+    "OVERTIME",
+    "Tampa Bay Lightning",
+    "Nashville Predators",
+    2,
+    3
+  ],
+  [
+    "2019-10-26T23:08:11Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Columbus Blue Jackets",
+    7,
+    4
+  ],
+  [
+    "2019-10-27T00:07:33Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Pittsburgh Penguins",
+    0,
+    3
+  ],
+  [
+    "2019-10-27T00:08:15Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Los Angeles Kings",
+    5,
+    1
+  ],
+  [
+    "2019-10-27T01:16:21Z",
+    "OVERTIME",
+    "Winnipeg Jets",
+    "Calgary Flames",
+    2,
+    1
+  ],
+  [
+    "2019-10-27T01:08:20Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Anaheim Ducks",
+    2,
+    5
+  ],
+  [
+    "2019-10-27T20:07:37Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Florida Panthers",
+    2,
+    6
+  ],
+  [
+    "2019-10-27T21:08:22Z",
+    "OVERTIME",
+    "Detroit Red Wings",
+    "St. Louis Blues",
+    4,
+    5
+  ],
+  [
+    "2019-10-27T23:10:23Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "San Jose Sharks",
+    5,
+    2
+  ],
+  [
+    "2019-10-27T23:07:11Z",
+    "REGULAR",
+    "New York Islanders",
+    "Philadelphia Flyers",
+    5,
+    3
+  ],
+  [
+    "2019-10-27T23:08:01Z",
+    "REGULAR",
+    "New York Rangers",
+    "Boston Bruins",
+    4,
+    7
+  ],
+  [
+    "2019-10-27T23:09:25Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Los Angeles Kings",
+    5,
+    1
+  ],
+  [
+    "2019-10-28T00:08:18Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Anaheim Ducks",
+    5,
+    2
+  ],
+  [
+    "2019-10-28T23:07:40Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "Arizona Coyotes",
+    2,
+    3
+  ],
+  [
+    "2019-10-29T02:08:04Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Florida Panthers",
+    7,
+    2
+  ],
+  [
+    "2019-10-29T23:12:41Z",
+    "REGULAR",
+    "Boston Bruins",
+    "San Jose Sharks",
+    5,
+    1
+  ],
+  [
+    "2019-10-29T23:07:18Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Washington Capitals",
+    3,
+    4
+  ],
+  [
+    "2019-10-29T23:45:11Z",
+    "REGULAR",
+    "New York Rangers",
+    "Tampa Bay Lightning",
+    4,
+    1
+  ],
+  [
+    "2019-10-29T23:08:36Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Philadelphia Flyers",
+    7,
+    1
+  ],
+  [
+    "2019-10-29T23:08:57Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Calgary Flames",
+    2,
+    1
+  ],
+  [
+    "2019-10-29T23:37:55Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Edmonton Oilers",
+    3,
+    1
+  ],
+  [
+    "2019-10-30T00:07:58Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Chicago Blackhawks",
+    3,
+    0
+  ],
+  [
+    "2019-10-30T00:38:07Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Minnesota Wild",
+    6,
+    3
+  ],
+  [
+    "2019-10-30T02:07:32Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Winnipeg Jets",
+    7,
+    4
+  ],
+  [
+    "2019-10-30T23:08:16Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Tampa Bay Lightning",
+    6,
+    7
+  ],
+  [
+    "2019-10-30T23:43:58Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Edmonton Oilers",
+    1,
+    4
+  ],
+  [
+    "2019-10-31T00:12:23Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Minnesota Wild",
+    2,
+    1
+  ],
+  [
+    "2019-10-31T02:09:41Z",
+    "OVERTIME",
+    "Colorado Avalanche",
+    "Florida Panthers",
+    3,
+    4
+  ],
+  [
+    "2019-10-31T02:08:12Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Montr\u00e9al Canadiens",
+    1,
+    4
+  ],
+  [
+    "2019-10-31T02:40:46Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Vancouver Canucks",
+    3,
+    5
+  ],
+  [
+    "2019-11-01T00:07:30Z",
+    "OVERTIME",
+    "Nashville Predators",
+    "Calgary Flames",
+    5,
+    6
+  ],
+  [
+    "2019-11-01T02:07:45Z",
+    "OVERTIME",
+    "Vegas Golden Knights",
+    "Montr\u00e9al Canadiens",
+    4,
+    5
+  ],
+  [
+    "2019-11-01T23:07:39Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Philadelphia Flyers",
+    3,
+    4
+  ],
+  [
+    "2019-11-01T23:08:40Z",
+    "REGULAR",
+    "New York Islanders",
+    "Tampa Bay Lightning",
+    5,
+    2
+  ],
+  [
+    "2019-11-01T23:08:58Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Buffalo Sabres",
+    6,
+    1
+  ],
+  [
+    "2019-11-01T23:39:03Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Detroit Red Wings",
+    7,
+    3
+  ],
+  [
+    "2019-11-02T00:08:25Z",
+    "OVERTIME",
+    "St. Louis Blues",
+    "Columbus Blue Jackets",
+    4,
+    3
+  ],
+  [
+    "2019-11-02T01:08:27Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Dallas Stars",
+    1,
+    2
+  ],
+  [
+    "2019-11-02T02:08:12Z",
+    "OVERTIME",
+    "Anaheim Ducks",
+    "Vancouver Canucks",
+    2,
+    1
+  ],
+  [
+    "2019-11-02T02:39:25Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Winnipeg Jets",
+    2,
+    3
+  ],
+  [
+    "2019-11-02T17:08:23Z",
+    "OVERTIME",
+    "Pittsburgh Penguins",
+    "Edmonton Oilers",
+    1,
+    2
+  ],
+  [
+    "2019-11-02T18:11:10Z",
+    "REGULAR",
+    "Nashville Predators",
+    "New York Rangers",
+    1,
+    2
+  ],
+  [
+    "2019-11-02T23:15:27Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Ottawa Senators",
+    5,
+    2
+  ],
+  [
+    "2019-11-02T23:09:24Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "New York Islanders",
+    0,
+    1
+  ],
+  [
+    "2019-11-02T23:09:30Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Detroit Red Wings",
+    4,
+    0
+  ],
+  [
+    "2019-11-02T23:15:25Z",
+    "OVERTIME",
+    "Philadelphia Flyers",
+    "Toronto Maple Leafs",
+    3,
+    4
+  ],
+  [
+    "2019-11-02T23:08:12Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "New Jersey Devils",
+    3,
+    5
+  ],
+  [
+    "2019-11-02T23:14:59Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Calgary Flames",
+    0,
+    3
+  ],
+  [
+    "2019-11-02T23:14:36Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Montr\u00e9al Canadiens",
+    4,
+    1
+  ],
+  [
+    "2019-11-03T00:08:42Z",
+    "OVERTIME",
+    "Minnesota Wild",
+    "St. Louis Blues",
+    3,
+    4
+  ],
+  [
+    "2019-11-03T01:08:07Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Colorado Avalanche",
+    3,
+    0
+  ],
+  [
+    "2019-11-03T02:09:41Z",
+    "OVERTIME",
+    "Vegas Golden Knights",
+    "Winnipeg Jets",
+    3,
+    4
+  ],
+  [
+    "2019-11-03T02:13:50Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Vancouver Canucks",
+    2,
+    5
+  ],
+  [
+    "2019-11-03T02:38:42Z",
+    "OVERTIME",
+    "Los Angeles Kings",
+    "Chicago Blackhawks",
+    4,
+    3
+  ],
+  [
+    "2019-11-04T00:11:51Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Calgary Flames",
+    4,
+    2
+  ],
+  [
+    "2019-11-04T01:07:48Z",
+    "OVERTIME",
+    "Anaheim Ducks",
+    "Chicago Blackhawks",
+    2,
+    3
+  ],
+  [
+    "2019-11-05T00:08:02Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Pittsburgh Penguins",
+    6,
+    4
+  ],
+  [
+    "2019-11-05T00:09:15Z",
+    "REGULAR",
+    "New York Rangers",
+    "Ottawa Senators",
+    2,
+    6
+  ],
+  [
+    "2019-11-05T00:39:01Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Nashville Predators",
+    1,
+    6
+  ],
+  [
+    "2019-11-05T02:08:58Z",
+    "OVERTIME",
+    "Edmonton Oilers",
+    "Arizona Coyotes",
+    2,
+    3
+  ],
+  [
+    "2019-11-06T00:41:36Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Boston Bruins",
+    5,
+    4
+  ],
+  [
+    "2019-11-06T00:07:08Z",
+    "REGULAR",
+    "New York Islanders",
+    "Ottawa Senators",
+    4,
+    1
+  ],
+  [
+    "2019-11-06T00:08:22Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Carolina Hurricanes",
+    4,
+    1
+  ],
+  [
+    "2019-11-06T00:08:01Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Vegas Golden Knights",
+    1,
+    2
+  ],
+  [
+    "2019-11-06T00:40:23Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Los Angeles Kings",
+    3,
+    1
+  ],
+  [
+    "2019-11-06T01:08:21Z",
+    "OVERTIME",
+    "Winnipeg Jets",
+    "New Jersey Devils",
+    1,
+    2
+  ],
+  [
+    "2019-11-06T01:37:55Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Colorado Avalanche",
+    4,
+    1
+  ],
+  [
+    "2019-11-06T02:10:23Z",
+    "OVERTIME",
+    "Calgary Flames",
+    "Arizona Coyotes",
+    4,
+    3
+  ],
+  [
+    "2019-11-06T03:11:09Z",
+    "OVERTIME",
+    "Vancouver Canucks",
+    "St. Louis Blues",
+    1,
+    2
+  ],
+  [
+    "2019-11-06T03:14:16Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Minnesota Wild",
+    2,
+    4
+  ],
+  [
+    "2019-11-06T03:15:30Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Chicago Blackhawks",
+    4,
+    2
+  ],
+  [
+    "2019-11-07T01:09:48Z",
+    "REGULAR",
+    "New York Rangers",
+    "Detroit Red Wings",
+    5,
+    1
+  ],
+  [
+    "2019-11-07T01:42:00Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "St. Louis Blues",
+    2,
+    5
+  ],
+  [
+    "2019-11-08T00:07:43Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Vegas Golden Knights",
+    2,
+    1
+  ],
+  [
+    "2019-11-08T00:09:48Z",
+    "OVERTIME",
+    "Florida Panthers",
+    "Washington Capitals",
+    4,
+    5
+  ],
+  [
+    "2019-11-08T00:07:44Z",
+    "OVERTIME",
+    "New York Islanders",
+    "Pittsburgh Penguins",
+    3,
+    4
+  ],
+  [
+    "2019-11-08T00:08:18Z",
+    "OVERTIME",
+    "Philadelphia Flyers",
+    "Montr\u00e9al Canadiens",
+    3,
+    2
+  ],
+  [
+    "2019-11-08T00:08:21Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "New York Rangers",
+    2,
+    4
+  ],
+  [
+    "2019-11-08T00:38:55Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "Los Angeles Kings",
+    3,
+    2
+  ],
+  [
+    "2019-11-08T01:39:17Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Vancouver Canucks",
+    5,
+    2
+  ],
+  [
+    "2019-11-08T02:08:04Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Nashville Predators",
+    9,
+    4
+  ],
+  [
+    "2019-11-08T02:07:38Z",
+    "REGULAR",
+    "Calgary Flames",
+    "New Jersey Devils",
+    5,
+    2
+  ],
+  [
+    "2019-11-08T02:07:33Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Columbus Blue Jackets",
+    2,
+    3
+  ],
+  [
+    "2019-11-08T03:37:51Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Minnesota Wild",
+    6,
+    5
+  ],
+  [
+    "2019-11-09T00:40:30Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Boston Bruins",
+    4,
+    2
+  ],
+  [
+    "2019-11-09T01:16:32Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Tampa Bay Lightning",
+    2,
+    3
+  ],
+  [
+    "2019-11-09T01:08:18Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Vancouver Canucks",
+    4,
+    1
+  ],
+  [
+    "2019-11-09T02:13:17Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "New Jersey Devils",
+    4,
+    0
+  ],
+  [
+    "2019-11-09T18:09:16Z",
+    "REGULAR",
+    "New York Islanders",
+    "Florida Panthers",
+    2,
+    1
+  ],
+  [
+    "2019-11-10T00:11:20Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Philadelphia Flyers",
+    2,
+    3
+  ],
+  [
+    "2019-11-10T00:19:33Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Los Angeles Kings",
+    3,
+    2
+  ],
+  [
+    "2019-11-10T00:14:48Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Carolina Hurricanes",
+    4,
+    1
+  ],
+  [
+    "2019-11-10T00:16:30Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Buffalo Sabres",
+    5,
+    3
+  ],
+  [
+    "2019-11-10T00:08:11Z",
+    "OVERTIME",
+    "Pittsburgh Penguins",
+    "Chicago Blackhawks",
+    3,
+    2
+  ],
+  [
+    "2019-11-10T00:08:10Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Vegas Golden Knights",
+    5,
+    2
+  ],
+  [
+    "2019-11-10T01:09:10Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Minnesota Wild",
+    3,
+    4
+  ],
+  [
+    "2019-11-10T02:08:01Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Columbus Blue Jackets",
+    4,
+    2
+  ],
+  [
+    "2019-11-10T03:15:39Z",
+    "OVERTIME",
+    "Calgary Flames",
+    "St. Louis Blues",
+    2,
+    3
+  ],
+  [
+    "2019-11-10T03:40:59Z",
+    "OVERTIME",
+    "San Jose Sharks",
+    "Nashville Predators",
+    2,
+    1
+  ],
+  [
+    "2019-11-10T18:08:05Z",
+    "OVERTIME",
+    "New York Rangers",
+    "Florida Panthers",
+    5,
+    6
+  ],
+  [
+    "2019-11-10T19:11:42Z",
+    "OVERTIME",
+    "Winnipeg Jets",
+    "Dallas Stars",
+    3,
+    2
+  ],
+  [
+    "2019-11-10T21:10:17Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "New Jersey Devils",
+    1,
+    2
+  ],
+  [
+    "2019-11-10T22:09:08Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Vegas Golden Knights",
+    3,
+    2
+  ],
+  [
+    "2019-11-11T00:08:20Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "Philadelphia Flyers",
+    2,
+    3
+  ],
+  [
+    "2019-11-11T00:11:11Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Toronto Maple Leafs",
+    5,
+    4
+  ],
+  [
+    "2019-11-11T02:12:24Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Edmonton Oilers",
+    2,
+    6
+  ],
+  [
+    "2019-11-12T00:10:13Z",
+    "OVERTIME",
+    "Washington Capitals",
+    "Arizona Coyotes",
+    3,
+    4
+  ],
+  [
+    "2019-11-12T00:08:31Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Ottawa Senators",
+    8,
+    2
+  ],
+  [
+    "2019-11-13T00:08:23Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "Florida Panthers",
+    4,
+    5
+  ],
+  [
+    "2019-11-13T00:08:08Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Columbus Blue Jackets",
+    3,
+    2
+  ],
+  [
+    "2019-11-13T00:40:12Z",
+    "OVERTIME",
+    "New York Rangers",
+    "Pittsburgh Penguins",
+    3,
+    2
+  ],
+  [
+    "2019-11-13T01:07:26Z",
+    "OVERTIME",
+    "St. Louis Blues",
+    "Arizona Coyotes",
+    2,
+    3
+  ],
+  [
+    "2019-11-13T01:13:58Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Colorado Avalanche",
+    0,
+    4
+  ],
+  [
+    "2019-11-13T03:07:58Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Nashville Predators",
+    5,
+    3
+  ],
+  [
+    "2019-11-13T03:07:57Z",
+    "OVERTIME",
+    "Anaheim Ducks",
+    "Detroit Red Wings",
+    3,
+    4
+  ],
+  [
+    "2019-11-13T03:39:21Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Minnesota Wild",
+    3,
+    1
+  ],
+  [
+    "2019-11-13T03:38:17Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Edmonton Oilers",
+    6,
+    3
+  ],
+  [
+    "2019-11-14T00:11:39Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Ottawa Senators",
+    2,
+    4
+  ],
+  [
+    "2019-11-14T00:10:42Z",
+    "REGULAR",
+    "New York Islanders",
+    "Toronto Maple Leafs",
+    5,
+    4
+  ],
+  [
+    "2019-11-14T00:40:08Z",
+    "OVERTIME",
+    "Philadelphia Flyers",
+    "Washington Capitals",
+    1,
+    2
+  ],
+  [
+    "2019-11-14T02:37:15Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Dallas Stars",
+    1,
+    3
+  ],
+  [
+    "2019-11-14T03:15:49Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Chicago Blackhawks",
+    3,
+    5
+  ],
+  [
+    "2019-11-15T00:09:01Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "Carolina Hurricanes",
+    4,
+    5
+  ],
+  [
+    "2019-11-15T00:13:11Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "New York Rangers",
+    9,
+    3
+  ],
+  [
+    "2019-11-15T00:09:37Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Winnipeg Jets",
+    3,
+    4
+  ],
+  [
+    "2019-11-15T01:09:34Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Arizona Coyotes",
+    3,
+    2
+  ],
+  [
+    "2019-11-15T02:08:14Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Colorado Avalanche",
+    6,
+    2
+  ],
+  [
+    "2019-11-15T03:11:49Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Dallas Stars",
+    2,
+    4
+  ],
+  [
+    "2019-11-15T03:08:40Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "San Jose Sharks",
+    3,
+    5
+  ],
+  [
+    "2019-11-15T03:40:09Z",
+    "OVERTIME",
+    "Los Angeles Kings",
+    "Detroit Red Wings",
+    3,
+    2
+  ],
+  [
+    "2019-11-16T00:18:55Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Boston Bruins",
+    2,
+    4
+  ],
+  [
+    "2019-11-16T00:07:36Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Pittsburgh Penguins",
+    2,
+    1
+  ],
+  [
+    "2019-11-16T00:08:02Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Montr\u00e9al Canadiens",
+    2,
+    5
+  ],
+  [
+    "2019-11-16T00:14:24Z",
+    "OVERTIME",
+    "Columbus Blue Jackets",
+    "St. Louis Blues",
+    3,
+    2
+  ],
+  [
+    "2019-11-16T00:38:12Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Philadelphia Flyers",
+    2,
+    1
+  ],
+  [
+    "2019-11-16T19:09:11Z",
+    "OVERTIME",
+    "Minnesota Wild",
+    "Carolina Hurricanes",
+    3,
+    4
+  ],
+  [
+    "2019-11-16T21:10:34Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Winnipeg Jets",
+    3,
+    4
+  ],
+  [
+    "2019-11-16T21:11:18Z",
+    "OVERTIME",
+    "Edmonton Oilers",
+    "Dallas Stars",
+    4,
+    5
+  ],
+  [
+    "2019-11-16T21:10:27Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Calgary Flames",
+    3,
+    0
+  ],
+  [
+    "2019-11-17T00:11:15Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "Washington Capitals",
+    2,
+    3
+  ],
+  [
+    "2019-11-17T00:23:08Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Ottawa Senators",
+    4,
+    2
+  ],
+  [
+    "2019-11-17T00:16:29Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "New Jersey Devils",
+    3,
+    4
+  ],
+  [
+    "2019-11-17T00:12:24Z",
+    "REGULAR",
+    "Florida Panthers",
+    "New York Rangers",
+    4,
+    3
+  ],
+  [
+    "2019-11-17T00:08:57Z",
+    "OVERTIME",
+    "Philadelphia Flyers",
+    "New York Islanders",
+    3,
+    4
+  ],
+  [
+    "2019-11-17T00:16:19Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Toronto Maple Leafs",
+    6,
+    1
+  ],
+  [
+    "2019-11-17T01:09:26Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Anaheim Ducks",
+    1,
+    4
+  ],
+  [
+    "2019-11-17T01:09:15Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Chicago Blackhawks",
+    2,
+    7
+  ],
+  [
+    "2019-11-17T03:10:43Z",
+    "OVERTIME",
+    "Vancouver Canucks",
+    "Colorado Avalanche",
+    4,
+    5
+  ],
+  [
+    "2019-11-16T21:10:30Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Vegas Golden Knights",
+    4,
+    3
+  ],
+  [
+    "2019-11-17T03:39:30Z",
+    "OVERTIME",
+    "San Jose Sharks",
+    "Detroit Red Wings",
+    4,
+    3
+  ],
+  [
+    "2019-11-18T00:09:08Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Buffalo Sabres",
+    4,
+    1
+  ],
+  [
+    "2019-11-18T00:09:33Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Calgary Flames",
+    6,
+    0
+  ],
+  [
+    "2019-11-19T00:08:04Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Anaheim Ducks",
+    5,
+    2
+  ],
+  [
+    "2019-11-19T02:08:01Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Los Angeles Kings",
+    3,
+    0
+  ],
+  [
+    "2019-11-20T00:07:35Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Minnesota Wild",
+    1,
+    4
+  ],
+  [
+    "2019-11-20T00:09:22Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Philadelphia Flyers",
+    5,
+    2
+  ],
+  [
+    "2019-11-20T00:07:43Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Boston Bruins",
+    1,
+    5
+  ],
+  [
+    "2019-11-20T00:08:05Z",
+    "OVERTIME",
+    "Pittsburgh Penguins",
+    "New York Islanders",
+    4,
+    5
+  ],
+  [
+    "2019-11-20T00:07:48Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Montr\u00e9al Canadiens",
+    5,
+    2
+  ],
+  [
+    "2019-11-20T00:38:01Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Ottawa Senators",
+    3,
+    4
+  ],
+  [
+    "2019-11-20T01:08:11Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Tampa Bay Lightning",
+    3,
+    1
+  ],
+  [
+    "2019-11-20T01:07:51Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Winnipeg Jets",
+    1,
+    2
+  ],
+  [
+    "2019-11-20T01:37:53Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Carolina Hurricanes",
+    2,
+    4
+  ],
+  [
+    "2019-11-20T01:39:01Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Vancouver Canucks",
+    6,
+    1
+  ],
+  [
+    "2019-11-20T02:07:24Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Colorado Avalanche",
+    2,
+    3
+  ],
+  [
+    "2019-11-20T03:07:49Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Toronto Maple Leafs",
+    4,
+    2
+  ],
+  [
+    "2019-11-20T03:46:05Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Edmonton Oilers",
+    2,
+    5
+  ],
+  [
+    "2019-11-21T00:50:12Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Ottawa Senators",
+    1,
+    2
+  ],
+  [
+    "2019-11-21T01:09:22Z",
+    "REGULAR",
+    "New York Rangers",
+    "Washington Capitals",
+    4,
+    1
+  ],
+  [
+    "2019-11-22T00:07:48Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Buffalo Sabres",
+    3,
+    2
+  ],
+  [
+    "2019-11-22T00:10:01Z",
+    "OVERTIME",
+    "Florida Panthers",
+    "Anaheim Ducks",
+    5,
+    4
+  ],
+  [
+    "2019-11-22T00:07:46Z",
+    "OVERTIME",
+    "New York Islanders",
+    "Pittsburgh Penguins",
+    4,
+    3
+  ],
+  [
+    "2019-11-22T00:08:20Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Philadelphia Flyers",
+    3,
+    5
+  ],
+  [
+    "2019-11-22T00:08:02Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Detroit Red Wings",
+    5,
+    4
+  ],
+  [
+    "2019-11-22T01:07:55Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Calgary Flames",
+    5,
+    0
+  ],
+  [
+    "2019-11-22T01:07:22Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Vancouver Canucks",
+    3,
+    6
+  ],
+  [
+    "2019-11-22T01:08:31Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Colorado Avalanche",
+    3,
+    2
+  ],
+  [
+    "2019-11-22T01:39:18Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Tampa Bay Lightning",
+    2,
+    4
+  ],
+  [
+    "2019-11-22T01:36:52Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Winnipeg Jets",
+    5,
+    3
+  ],
+  [
+    "2019-11-22T02:07:10Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Toronto Maple Leafs",
+    1,
+    3
+  ],
+  [
+    "2019-11-22T03:10:43Z",
+    "OVERTIME",
+    "Vegas Golden Knights",
+    "San Jose Sharks",
+    1,
+    2
+  ],
+  [
+    "2019-11-22T03:47:22Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Edmonton Oilers",
+    5,
+    1
+  ],
+  [
+    "2019-11-23T00:08:09Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "New Jersey Devils",
+    4,
+    1
+  ],
+  [
+    "2019-11-23T00:41:11Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "New York Rangers",
+    4,
+    1
+  ],
+  [
+    "2019-11-23T17:41:05Z",
+    "OVERTIME",
+    "Washington Capitals",
+    "Vancouver Canucks",
+    1,
+    2
+  ],
+  [
+    "2019-11-23T18:08:15Z",
+    "OVERTIME",
+    "Philadelphia Flyers",
+    "Calgary Flames",
+    2,
+    3
+  ],
+  [
+    "2019-11-23T21:08:54Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Arizona Coyotes",
+    2,
+    3
+  ],
+  [
+    "2019-11-24T00:07:52Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "Minnesota Wild",
+    5,
+    4
+  ],
+  [
+    "2019-11-24T00:18:52Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "New York Rangers",
+    5,
+    6
+  ],
+  [
+    "2019-11-24T00:08:14Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Anaheim Ducks",
+    6,
+    2
+  ],
+  [
+    "2019-11-24T00:08:22Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Detroit Red Wings",
+    5,
+    1
+  ],
+  [
+    "2019-11-24T00:10:50Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Florida Panthers",
+    4,
+    2
+  ],
+  [
+    "2019-11-24T00:23:15Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Columbus Blue Jackets",
+    4,
+    3
+  ],
+  [
+    "2019-11-24T00:19:23Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Toronto Maple Leafs",
+    3,
+    5
+  ],
+  [
+    "2019-11-24T01:07:58Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Nashville Predators",
+    2,
+    4
+  ],
+  [
+    "2019-11-24T01:13:38Z",
+    "OVERTIME",
+    "Dallas Stars",
+    "Chicago Blackhawks",
+    2,
+    1
+  ],
+  [
+    "2019-11-24T03:09:38Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Edmonton Oilers",
+    2,
+    4
+  ],
+  [
+    "2019-11-24T03:38:18Z",
+    "OVERTIME",
+    "San Jose Sharks",
+    "New York Islanders",
+    2,
+    1
+  ],
+  [
+    "2019-11-24T22:09:02Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Buffalo Sabres",
+    2,
+    5
+  ],
+  [
+    "2019-11-25T00:08:02Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Carolina Hurricanes",
+    0,
+    2
+  ],
+  [
+    "2019-11-25T01:08:30Z",
+    "OVERTIME",
+    "Arizona Coyotes",
+    "Edmonton Oilers",
+    3,
+    4
+  ],
+  [
+    "2019-11-26T00:12:23Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Buffalo Sabres",
+    5,
+    2
+  ],
+  [
+    "2019-11-26T00:11:56Z",
+    "OVERTIME",
+    "New York Rangers",
+    "Minnesota Wild",
+    3,
+    2
+  ],
+  [
+    "2019-11-26T00:09:29Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Vancouver Canucks",
+    2,
+    1
+  ],
+  [
+    "2019-11-26T00:08:01Z",
+    "OVERTIME",
+    "Pittsburgh Penguins",
+    "Calgary Flames",
+    3,
+    2
+  ],
+  [
+    "2019-11-26T00:07:53Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Ottawa Senators",
+    1,
+    0
+  ],
+  [
+    "2019-11-26T01:08:19Z",
+    "OVERTIME",
+    "Nashville Predators",
+    "St. Louis Blues",
+    3,
+    2
+  ],
+  [
+    "2019-11-26T01:38:21Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Vegas Golden Knights",
+    4,
+    2
+  ],
+  [
+    "2019-11-26T03:10:27Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "New York Islanders",
+    3,
+    0
+  ],
+  [
+    "2019-11-26T03:40:19Z",
+    "OVERTIME",
+    "Los Angeles Kings",
+    "San Jose Sharks",
+    3,
+    4
+  ],
+  [
+    "2019-11-27T00:08:17Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Boston Bruins",
+    1,
+    8
+  ],
+  [
+    "2019-11-27T00:08:22Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Minnesota Wild",
+    2,
+    3
+  ],
+  [
+    "2019-11-27T01:10:21Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Dallas Stars",
+    3,
+    0
+  ],
+  [
+    "2019-11-28T00:07:50Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "Calgary Flames",
+    2,
+    3
+  ],
+  [
+    "2019-11-28T00:12:18Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Boston Bruins",
+    1,
+    2
+  ],
+  [
+    "2019-11-28T00:12:00Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Toronto Maple Leafs",
+    0,
+    6
+  ],
+  [
+    "2019-11-28T00:08:33Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "St. Louis Blues",
+    3,
+    4
+  ],
+  [
+    "2019-11-28T00:07:58Z",
+    "REGULAR",
+    "New York Rangers",
+    "Carolina Hurricanes",
+    3,
+    2
+  ],
+  [
+    "2019-11-28T00:12:03Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Vancouver Canucks",
+    8,
+    6
+  ],
+  [
+    "2019-11-28T00:08:26Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Florida Panthers",
+    4,
+    3
+  ],
+  [
+    "2019-11-28T00:10:17Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Philadelphia Flyers",
+    2,
+    3
+  ],
+  [
+    "2019-11-28T01:07:46Z",
+    "OVERTIME",
+    "Nashville Predators",
+    "Vegas Golden Knights",
+    3,
+    4
+  ],
+  [
+    "2019-11-28T02:38:08Z",
+    "OVERTIME",
+    "Arizona Coyotes",
+    "Anaheim Ducks",
+    4,
+    3
+  ],
+  [
+    "2019-11-28T03:08:45Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Edmonton Oilers",
+    4,
+    1
+  ],
+  [
+    "2019-11-28T03:38:25Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "New York Islanders",
+    4,
+    1
+  ],
+  [
+    "2019-11-28T03:38:18Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Winnipeg Jets",
+    1,
+    5
+  ],
+  [
+    "2019-11-29T00:42:17Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "New Jersey Devils",
+    4,
+    6
+  ],
+  [
+    "2019-11-29T18:22:08Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "New York Rangers",
+    3,
+    2
+  ],
+  [
+    "2019-11-29T21:08:13Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Toronto Maple Leafs",
+    6,
+    4
+  ],
+  [
+    "2019-11-29T21:08:07Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Detroit Red Wings",
+    6,
+    1
+  ],
+  [
+    "2019-11-29T21:07:51Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Colorado Avalanche",
+    2,
+    5
+  ],
+  [
+    "2019-11-29T21:08:03Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Ottawa Senators",
+    7,
+    2
+  ],
+  [
+    "2019-11-29T21:07:45Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Winnipeg Jets",
+    0,
+    3
+  ],
+  [
+    "2019-11-29T21:08:47Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Los Angeles Kings",
+    4,
+    1
+  ],
+  [
+    "2019-11-29T22:08:23Z",
+    "OVERTIME",
+    "Washington Capitals",
+    "Tampa Bay Lightning",
+    4,
+    3
+  ],
+  [
+    "2019-11-29T23:07:43Z",
+    "OVERTIME",
+    "Vegas Golden Knights",
+    "Arizona Coyotes",
+    2,
+    1
+  ],
+  [
+    "2019-11-30T00:06:51Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Pittsburgh Penguins",
+    5,
+    2
+  ],
+  [
+    "2019-11-30T00:38:18Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Nashville Predators",
+    0,
+    3
+  ],
+  [
+    "2019-11-30T01:38:00Z",
+    "REGULAR",
+    "Dallas Stars",
+    "St. Louis Blues",
+    1,
+    3
+  ],
+  [
+    "2019-11-30T18:08:23Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "New York Rangers",
+    0,
+    4
+  ],
+  [
+    "2019-11-30T20:08:14Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Philadelphia Flyers",
+    3,
+    4
+  ],
+  [
+    "2019-12-01T00:16:59Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Buffalo Sabres",
+    2,
+    1
+  ],
+  [
+    "2019-12-01T00:08:26Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Washington Capitals",
+    2,
+    5
+  ],
+  [
+    "2019-12-01T00:09:18Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Carolina Hurricanes",
+    2,
+    3
+  ],
+  [
+    "2019-12-01T00:09:18Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Nashville Predators",
+    3,
+    0
+  ],
+  [
+    "2019-12-01T00:07:35Z",
+    "REGULAR",
+    "New York Islanders",
+    "Columbus Blue Jackets",
+    2,
+    0
+  ],
+  [
+    "2019-12-01T00:14:40Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Ottawa Senators",
+    3,
+    1
+  ],
+  [
+    "2019-12-01T01:07:53Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Pittsburgh Penguins",
+    5,
+    2
+  ],
+  [
+    "2019-12-01T01:08:16Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "San Jose Sharks",
+    2,
+    4
+  ],
+  [
+    "2019-12-01T02:08:15Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Chicago Blackhawks",
+    7,
+    3
+  ],
+  [
+    "2019-12-01T03:10:04Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Vancouver Canucks",
+    2,
+    5
+  ],
+  [
+    "2019-12-01T03:11:21Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Winnipeg Jets",
+    2,
+    1
+  ],
+  [
+    "2019-12-01T20:08:25Z",
+    "OVERTIME",
+    "Minnesota Wild",
+    "Dallas Stars",
+    3,
+    2
+  ],
+  [
+    "2019-12-02T00:10:57Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Montr\u00e9al Canadiens",
+    3,
+    1
+  ],
+  [
+    "2019-12-02T03:07:53Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Edmonton Oilers",
+    2,
+    3
+  ],
+  [
+    "2019-12-03T00:12:51Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "New Jersey Devils",
+    7,
+    1
+  ],
+  [
+    "2019-12-03T00:07:51Z",
+    "REGULAR",
+    "New York Rangers",
+    "Vegas Golden Knights",
+    1,
+    4
+  ],
+  [
+    "2019-12-03T00:38:04Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "New York Islanders",
+    1,
+    4
+  ],
+  [
+    "2019-12-03T01:37:49Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "St. Louis Blues",
+    0,
+    4
+  ],
+  [
+    "2019-12-03T03:08:07Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Los Angeles Kings",
+    4,
+    2
+  ],
+  [
+    "2019-12-04T00:08:26Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Carolina Hurricanes",
+    2,
+    0
+  ],
+  [
+    "2019-12-04T00:21:58Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "New York Islanders",
+    4,
+    2
+  ],
+  [
+    "2019-12-04T00:09:03Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Minnesota Wild",
+    2,
+    4
+  ],
+  [
+    "2019-12-04T00:08:17Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Vegas Golden Knights",
+    3,
+    4
+  ],
+  [
+    "2019-12-04T00:08:09Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Toronto Maple Leafs",
+    6,
+    1
+  ],
+  [
+    "2019-12-04T00:08:07Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Arizona Coyotes",
+    2,
+    4
+  ],
+  [
+    "2019-12-04T01:09:53Z",
+    "OVERTIME",
+    "Nashville Predators",
+    "Tampa Bay Lightning",
+    2,
+    3
+  ],
+  [
+    "2019-12-04T01:10:59Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Dallas Stars",
+    5,
+    1
+  ],
+  [
+    "2019-12-04T03:22:09Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Ottawa Senators",
+    5,
+    2
+  ],
+  [
+    "2019-12-04T03:38:26Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Washington Capitals",
+    2,
+    5
+  ],
+  [
+    "2019-12-05T00:11:24Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Colorado Avalanche",
+    1,
+    3
+  ],
+  [
+    "2019-12-05T01:10:08Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "St. Louis Blues",
+    3,
+    0
+  ],
+  [
+    "2019-12-05T02:39:14Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Ottawa Senators",
+    2,
+    5
+  ],
+  [
+    "2019-12-05T03:08:50Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Washington Capitals",
+    1,
+    3
+  ],
+  [
+    "2019-12-06T00:08:37Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "Chicago Blackhawks",
+    3,
+    4
+  ],
+  [
+    "2019-12-06T00:09:28Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Colorado Avalanche",
+    2,
+    3
+  ],
+  [
+    "2019-12-06T00:07:59Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Minnesota Wild",
+    4,
+    5
+  ],
+  [
+    "2019-12-06T00:06:32Z",
+    "OVERTIME",
+    "New York Islanders",
+    "Vegas Golden Knights",
+    3,
+    2
+  ],
+  [
+    "2019-12-06T00:08:05Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Arizona Coyotes",
+    1,
+    3
+  ],
+  [
+    "2019-12-06T00:08:41Z",
+    "OVERTIME",
+    "Carolina Hurricanes",
+    "San Jose Sharks",
+    3,
+    2
+  ],
+  [
+    "2019-12-06T00:08:52Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "New York Rangers",
+    2,
+    3
+  ],
+  [
+    "2019-12-06T01:39:18Z",
+    "OVERTIME",
+    "Dallas Stars",
+    "Winnipeg Jets",
+    3,
+    2
+  ],
+  [
+    "2019-12-06T02:11:03Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Buffalo Sabres",
+    4,
+    3
+  ],
+  [
+    "2019-12-07T00:07:28Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Chicago Blackhawks",
+    1,
+    2
+  ],
+  [
+    "2019-12-07T00:07:58Z",
+    "REGULAR",
+    "New York Rangers",
+    "Montr\u00e9al Canadiens",
+    1,
+    2
+  ],
+  [
+    "2019-12-07T00:08:05Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Arizona Coyotes",
+    2,
+    0
+  ],
+  [
+    "2019-12-07T02:07:21Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Los Angeles Kings",
+    2,
+    1
+  ],
+  [
+    "2019-12-07T03:07:50Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Washington Capitals",
+    2,
+    3
+  ],
+  [
+    "2019-12-07T18:08:21Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Ottawa Senators",
+    4,
+    3
+  ],
+  [
+    "2019-12-07T21:12:31Z",
+    "OVERTIME",
+    "Vancouver Canucks",
+    "Buffalo Sabres",
+    6,
+    5
+  ],
+  [
+    "2019-12-08T00:08:28Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Colorado Avalanche",
+    1,
+    4
+  ],
+  [
+    "2019-12-08T00:08:16Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Pittsburgh Penguins",
+    3,
+    5
+  ],
+  [
+    "2019-12-08T00:08:57Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "San Jose Sharks",
+    7,
+    1
+  ],
+  [
+    "2019-12-08T00:09:38Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Columbus Blue Jackets",
+    4,
+    1
+  ],
+  [
+    "2019-12-08T00:08:20Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Minnesota Wild",
+    6,
+    2
+  ],
+  [
+    "2019-12-08T00:14:18Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Toronto Maple Leafs",
+    2,
+    5
+  ],
+  [
+    "2019-12-08T01:07:45Z",
+    "REGULAR",
+    "Nashville Predators",
+    "New Jersey Devils",
+    6,
+    4
+  ],
+  [
+    "2019-12-08T02:08:14Z",
+    "REGULAR",
+    "Dallas Stars",
+    "New York Islanders",
+    3,
+    1
+  ],
+  [
+    "2019-12-08T03:10:22Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Los Angeles Kings",
+    4,
+    3
+  ],
+  [
+    "2019-12-08T20:07:57Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Anaheim Ducks",
+    3,
+    2
+  ],
+  [
+    "2019-12-08T22:09:15Z",
+    "REGULAR",
+    "Florida Panthers",
+    "San Jose Sharks",
+    5,
+    1
+  ],
+  [
+    "2019-12-09T00:08:56Z",
+    "OVERTIME",
+    "Chicago Blackhawks",
+    "Arizona Coyotes",
+    3,
+    4
+  ],
+  [
+    "2019-12-09T00:07:44Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "New York Rangers",
+    0,
+    5
+  ],
+  [
+    "2019-12-09T01:10:01Z",
+    "OVERTIME",
+    "Edmonton Oilers",
+    "Buffalo Sabres",
+    2,
+    3
+  ],
+  [
+    "2019-12-10T00:09:07Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "New York Islanders",
+    1,
+    5
+  ],
+  [
+    "2019-12-10T00:08:03Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Columbus Blue Jackets",
+    2,
+    5
+  ],
+  [
+    "2019-12-10T00:39:15Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Boston Bruins",
+    5,
+    2
+  ],
+  [
+    "2019-12-10T02:07:41Z",
+    "OVERTIME",
+    "Colorado Avalanche",
+    "Calgary Flames",
+    4,
+    5
+  ],
+  [
+    "2019-12-11T00:39:57Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "St. Louis Blues",
+    5,
+    2
+  ],
+  [
+    "2019-12-11T00:08:54Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Tampa Bay Lightning",
+    1,
+    2
+  ],
+  [
+    "2019-12-11T00:08:03Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Montr\u00e9al Canadiens",
+    1,
+    4
+  ],
+  [
+    "2019-12-11T01:07:50Z",
+    "REGULAR",
+    "Nashville Predators",
+    "San Jose Sharks",
+    3,
+    1
+  ],
+  [
+    "2019-12-11T01:18:29Z",
+    "OVERTIME",
+    "Minnesota Wild",
+    "Anaheim Ducks",
+    2,
+    3
+  ],
+  [
+    "2019-12-11T01:08:18Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Detroit Red Wings",
+    5,
+    1
+  ],
+  [
+    "2019-12-11T01:38:05Z",
+    "REGULAR",
+    "Dallas Stars",
+    "New Jersey Devils",
+    2,
+    0
+  ],
+  [
+    "2019-12-11T02:07:46Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Carolina Hurricanes",
+    3,
+    6
+  ],
+  [
+    "2019-12-11T02:07:58Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Calgary Flames",
+    2,
+    5
+  ],
+  [
+    "2019-12-11T03:07:59Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Toronto Maple Leafs",
+    1,
+    4
+  ],
+  [
+    "2019-12-11T03:08:11Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Chicago Blackhawks",
+    5,
+    1
+  ],
+  [
+    "2019-12-11T03:40:41Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "New York Rangers",
+    3,
+    1
+  ],
+  [
+    "2019-12-12T00:12:21Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Boston Bruins",
+    3,
+    2
+  ],
+  [
+    "2019-12-12T00:42:59Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Ottawa Senators",
+    3,
+    2
+  ],
+  [
+    "2019-12-12T02:44:55Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Philadelphia Flyers",
+    3,
+    1
+  ],
+  [
+    "2019-12-13T00:07:58Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Nashville Predators",
+    4,
+    3
+  ],
+  [
+    "2019-12-13T00:07:58Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Boston Bruins",
+    3,
+    2
+  ],
+  [
+    "2019-12-13T00:09:11Z",
+    "REGULAR",
+    "Florida Panthers",
+    "New York Islanders",
+    1,
+    3
+  ],
+  [
+    "2019-12-13T00:08:05Z",
+    "OVERTIME",
+    "Pittsburgh Penguins",
+    "Columbus Blue Jackets",
+    1,
+    0
+  ],
+  [
+    "2019-12-13T00:40:04Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Winnipeg Jets",
+    5,
+    2
+  ],
+  [
+    "2019-12-13T01:08:01Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Vegas Golden Knights",
+    4,
+    2
+  ],
+  [
+    "2019-12-13T01:08:13Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Edmonton Oilers",
+    6,
+    5
+  ],
+  [
+    "2019-12-13T02:07:43Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Toronto Maple Leafs",
+    4,
+    2
+  ],
+  [
+    "2019-12-13T02:08:06Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Chicago Blackhawks",
+    5,
+    2
+  ],
+  [
+    "2019-12-13T03:12:18Z",
+    "OVERTIME",
+    "Vancouver Canucks",
+    "Carolina Hurricanes",
+    1,
+    0
+  ],
+  [
+    "2019-12-13T03:08:03Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Los Angeles Kings",
+    1,
+    2
+  ],
+  [
+    "2019-12-13T03:38:50Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "New York Rangers",
+    3,
+    6
+  ],
+  [
+    "2019-12-14T01:18:22Z",
+    "OVERTIME",
+    "Dallas Stars",
+    "Vegas Golden Knights",
+    2,
+    3
+  ],
+  [
+    "2019-12-14T02:07:53Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "New Jersey Devils",
+    3,
+    1
+  ],
+  [
+    "2019-12-14T18:10:48Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "Columbus Blue Jackets",
+    4,
+    3
+  ],
+  [
+    "2019-12-14T18:06:22Z",
+    "OVERTIME",
+    "New York Islanders",
+    "Buffalo Sabres",
+    3,
+    2
+  ],
+  [
+    "2019-12-14T21:07:43Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Carolina Hurricanes",
+    0,
+    4
+  ],
+  [
+    "2019-12-14T21:08:18Z",
+    "OVERTIME",
+    "Anaheim Ducks",
+    "New York Rangers",
+    4,
+    3
+  ],
+  [
+    "2019-12-14T23:37:59Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Dallas Stars",
+    1,
+    4
+  ],
+  [
+    "2019-12-15T00:15:20Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Detroit Red Wings",
+    1,
+    2
+  ],
+  [
+    "2019-12-15T00:06:04Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Washington Capitals",
+    2,
+    5
+  ],
+  [
+    "2019-12-15T00:09:19Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Boston Bruins",
+    2,
+    4
+  ],
+  [
+    "2019-12-15T00:08:07Z",
+    "OVERTIME",
+    "Pittsburgh Penguins",
+    "Los Angeles Kings",
+    5,
+    4
+  ],
+  [
+    "2019-12-15T00:08:15Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Philadelphia Flyers",
+    4,
+    1
+  ],
+  [
+    "2019-12-15T00:14:49Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Toronto Maple Leafs",
+    1,
+    4
+  ],
+  [
+    "2019-12-15T01:07:47Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Chicago Blackhawks",
+    4,
+    3
+  ],
+  [
+    "2019-12-15T01:08:34Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "New Jersey Devils",
+    1,
+    2
+  ],
+  [
+    "2019-12-15T03:10:19Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Vancouver Canucks",
+    4,
+    2
+  ],
+  [
+    "2019-12-15T22:08:50Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Philadelphia Flyers",
+    7,
+    3
+  ],
+  [
+    "2019-12-16T00:07:57Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Los Angeles Kings",
+    2,
+    4
+  ],
+  [
+    "2019-12-16T00:08:17Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Minnesota Wild",
+    5,
+    3
+  ],
+  [
+    "2019-12-16T01:09:48Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Vancouver Canucks",
+    6,
+    3
+  ],
+  [
+    "2019-12-17T00:08:50Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Ottawa Senators",
+    6,
+    1
+  ],
+  [
+    "2019-12-17T00:12:59Z",
+    "REGULAR",
+    "New York Rangers",
+    "Nashville Predators",
+    2,
+    5
+  ],
+  [
+    "2019-12-17T00:09:03Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Washington Capitals",
+    3,
+    0
+  ],
+  [
+    "2019-12-17T01:07:58Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Colorado Avalanche",
+    5,
+    2
+  ],
+  [
+    "2019-12-17T01:37:23Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Edmonton Oilers",
+    1,
+    2
+  ],
+  [
+    "2019-12-18T00:08:05Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "Los Angeles Kings",
+    3,
+    4
+  ],
+  [
+    "2019-12-18T00:09:15Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Buffalo Sabres",
+    5,
+    3
+  ],
+  [
+    "2019-12-18T00:09:06Z",
+    "OVERTIME",
+    "Tampa Bay Lightning",
+    "Ottawa Senators",
+    4,
+    3
+  ],
+  [
+    "2019-12-18T00:07:08Z",
+    "REGULAR",
+    "New York Islanders",
+    "Nashville Predators",
+    3,
+    8
+  ],
+  [
+    "2019-12-18T00:08:02Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Anaheim Ducks",
+    4,
+    1
+  ],
+  [
+    "2019-12-18T00:38:03Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Columbus Blue Jackets",
+    3,
+    5
+  ],
+  [
+    "2019-12-18T01:07:53Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Carolina Hurricanes",
+    3,
+    6
+  ],
+  [
+    "2019-12-18T02:07:41Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Pittsburgh Penguins",
+    1,
+    4
+  ],
+  [
+    "2019-12-18T03:07:42Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Montr\u00e9al Canadiens",
+    1,
+    3
+  ],
+  [
+    "2019-12-18T03:08:06Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Minnesota Wild",
+    3,
+    2
+  ],
+  [
+    "2019-12-18T03:37:58Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Arizona Coyotes",
+    2,
+    3
+  ],
+  [
+    "2019-12-19T00:08:58Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Anaheim Ducks",
+    3,
+    1
+  ],
+  [
+    "2019-12-19T01:11:41Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Colorado Avalanche",
+    1,
+    4
+  ],
+  [
+    "2019-12-19T01:42:27Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Edmonton Oilers",
+    2,
+    1
+  ],
+  [
+    "2019-12-20T00:10:12Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "New York Islanders",
+    2,
+    3
+  ],
+  [
+    "2019-12-20T00:08:07Z",
+    "OVERTIME",
+    "Tampa Bay Lightning",
+    "Dallas Stars",
+    3,
+    4
+  ],
+  [
+    "2019-12-20T00:08:01Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Buffalo Sabres",
+    6,
+    1
+  ],
+  [
+    "2019-12-20T00:08:17Z",
+    "OVERTIME",
+    "Columbus Blue Jackets",
+    "Los Angeles Kings",
+    3,
+    2
+  ],
+  [
+    "2019-12-20T00:38:33Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "Nashville Predators",
+    5,
+    4
+  ],
+  [
+    "2019-12-20T01:07:55Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Chicago Blackhawks",
+    1,
+    4
+  ],
+  [
+    "2019-12-20T02:07:55Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Carolina Hurricanes",
+    1,
+    3
+  ],
+  [
+    "2019-12-20T02:07:39Z",
+    "OVERTIME",
+    "Calgary Flames",
+    "Montr\u00e9al Canadiens",
+    3,
+    4
+  ],
+  [
+    "2019-12-20T02:37:45Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Minnesota Wild",
+    5,
+    8
+  ],
+  [
+    "2019-12-20T03:07:45Z",
+    "OVERTIME",
+    "Vancouver Canucks",
+    "Vegas Golden Knights",
+    5,
+    4
+  ],
+  [
+    "2019-12-21T00:09:22Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Dallas Stars",
+    7,
+    4
+  ],
+  [
+    "2019-12-21T00:07:17Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Washington Capitals",
+    3,
+    6
+  ],
+  [
+    "2019-12-21T00:08:00Z",
+    "REGULAR",
+    "New York Rangers",
+    "Toronto Maple Leafs",
+    3,
+    6
+  ],
+  [
+    "2019-12-21T02:09:22Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Pittsburgh Penguins",
+    2,
+    5
+  ],
+  [
+    "2019-12-21T18:07:57Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Los Angeles Kings",
+    3,
+    2
+  ],
+  [
+    "2019-12-21T18:06:52Z",
+    "OVERTIME",
+    "New York Islanders",
+    "Anaheim Ducks",
+    5,
+    6
+  ],
+  [
+    "2019-12-21T19:09:38Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Winnipeg Jets",
+    0,
+    6
+  ],
+  [
+    "2019-12-22T00:08:38Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "Nashville Predators",
+    3,
+    4
+  ],
+  [
+    "2019-12-22T00:14:17Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Detroit Red Wings",
+    4,
+    1
+  ],
+  [
+    "2019-12-22T00:16:39Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "Philadelphia Flyers",
+    4,
+    5
+  ],
+  [
+    "2019-12-22T00:08:02Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Tampa Bay Lightning",
+    3,
+    1
+  ],
+  [
+    "2019-12-22T00:08:44Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Florida Panthers",
+    2,
+    4
+  ],
+  [
+    "2019-12-22T00:08:15Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "New Jersey Devils",
+    5,
+    1
+  ],
+  [
+    "2019-12-22T00:14:45Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Montr\u00e9al Canadiens",
+    4,
+    3
+  ],
+  [
+    "2019-12-22T02:08:42Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Chicago Blackhawks",
+    3,
+    5
+  ],
+  [
+    "2019-12-22T03:10:02Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Pittsburgh Penguins",
+    4,
+    1
+  ],
+  [
+    "2019-12-22T03:40:04Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "St. Louis Blues",
+    2,
+    5
+  ],
+  [
+    "2019-12-22T17:38:29Z",
+    "REGULAR",
+    "New York Rangers",
+    "Anaheim Ducks",
+    5,
+    1
+  ],
+  [
+    "2019-12-23T00:08:03Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Arizona Coyotes",
+    2,
+    5
+  ],
+  [
+    "2019-12-23T00:07:59Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Calgary Flames",
+    1,
+    5
+  ],
+  [
+    "2019-12-23T03:08:12Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Vegas Golden Knights",
+    1,
+    3
+  ],
+  [
+    "2019-12-23T19:07:15Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Carolina Hurricanes",
+    8,
+    6
+  ],
+  [
+    "2019-12-23T22:08:01Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Calgary Flames",
+    3,
+    0
+  ],
+  [
+    "2019-12-24T00:08:36Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Washington Capitals",
+    7,
+    3
+  ],
+  [
+    "2019-12-24T00:10:25Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Florida Panthers",
+    6,
+    1
+  ],
+  [
+    "2019-12-24T00:06:38Z",
+    "REGULAR",
+    "New York Islanders",
+    "Columbus Blue Jackets",
+    2,
+    3
+  ],
+  [
+    "2019-12-24T00:10:36Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "New York Rangers",
+    5,
+    1
+  ],
+  [
+    "2019-12-24T00:38:17Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Buffalo Sabres",
+    3,
+    1
+  ],
+  [
+    "2019-12-24T01:08:05Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Arizona Coyotes",
+    3,
+    2
+  ],
+  [
+    "2019-12-24T01:08:47Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Montr\u00e9al Canadiens",
+    2,
+    6
+  ],
+  [
+    "2019-12-24T01:37:49Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "New Jersey Devils",
+    1,
+    7
+  ],
+  [
+    "2019-12-24T03:08:27Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Edmonton Oilers",
+    4,
+    2
+  ],
+  [
+    "2019-12-24T03:07:45Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Colorado Avalanche",
+    3,
+    7
+  ],
+  [
+    "2019-12-24T03:08:40Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "St. Louis Blues",
+    1,
+    4
+  ],
+  [
+    "2019-12-28T00:08:46Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Boston Bruins",
+    0,
+    3
+  ],
+  [
+    "2019-12-28T00:07:35Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Toronto Maple Leafs",
+    4,
+    5
+  ],
+  [
+    "2019-12-28T00:08:12Z",
+    "REGULAR",
+    "New York Rangers",
+    "Carolina Hurricanes",
+    5,
+    3
+  ],
+  [
+    "2019-12-28T00:08:06Z",
+    "OVERTIME",
+    "Washington Capitals",
+    "Columbus Blue Jackets",
+    2,
+    1
+  ],
+  [
+    "2019-12-28T01:07:49Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Pittsburgh Penguins",
+    2,
+    5
+  ],
+  [
+    "2019-12-28T01:08:10Z",
+    "OVERTIME",
+    "Winnipeg Jets",
+    "St. Louis Blues",
+    4,
+    5
+  ],
+  [
+    "2019-12-28T01:10:06Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Minnesota Wild",
+    4,
+    6
+  ],
+  [
+    "2019-12-28T01:38:56Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "New York Islanders",
+    5,
+    2
+  ],
+  [
+    "2019-12-28T02:09:41Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Calgary Flames",
+    1,
+    5
+  ],
+  [
+    "2019-12-28T03:08:03Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Vegas Golden Knights",
+    4,
+    3
+  ],
+  [
+    "2019-12-28T03:08:25Z",
+    "OVERTIME",
+    "San Jose Sharks",
+    "Los Angeles Kings",
+    2,
+    3
+  ],
+  [
+    "2019-12-29T00:14:20Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "New York Rangers",
+    4,
+    5
+  ],
+  [
+    "2019-12-29T00:14:43Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Montr\u00e9al Canadiens",
+    5,
+    4
+  ],
+  [
+    "2019-12-29T00:09:06Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Detroit Red Wings",
+    5,
+    4
+  ],
+  [
+    "2019-12-29T00:08:11Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Nashville Predators",
+    6,
+    4
+  ],
+  [
+    "2019-12-29T00:08:06Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Washington Capitals",
+    6,
+    4
+  ],
+  [
+    "2019-12-29T00:08:16Z",
+    "OVERTIME",
+    "Dallas Stars",
+    "Colorado Avalanche",
+    3,
+    2
+  ],
+  [
+    "2019-12-29T03:10:13Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Los Angeles Kings",
+    3,
+    2
+  ],
+  [
+    "2019-12-29T03:07:53Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Arizona Coyotes",
+    4,
+    1
+  ],
+  [
+    "2019-12-29T03:38:10Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Philadelphia Flyers",
+    6,
+    1
+  ],
+  [
+    "2019-12-29T20:06:58Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Winnipeg Jets",
+    4,
+    1
+  ],
+  [
+    "2019-12-29T22:08:46Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "New Jersey Devils",
+    3,
+    4
+  ],
+  [
+    "2019-12-29T22:08:06Z",
+    "OVERTIME",
+    "Columbus Blue Jackets",
+    "Chicago Blackhawks",
+    2,
+    3
+  ],
+  [
+    "2019-12-29T23:08:31Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "New York Islanders",
+    1,
+    3
+  ],
+  [
+    "2019-12-30T00:08:24Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Buffalo Sabres",
+    3,
+    2
+  ],
+  [
+    "2019-12-30T00:08:45Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Detroit Red Wings",
+    2,
+    1
+  ],
+  [
+    "2019-12-30T00:11:05Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Montr\u00e9al Canadiens",
+    6,
+    5
+  ],
+  [
+    "2019-12-30T01:08:12Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Dallas Stars",
+    2,
+    4
+  ],
+  [
+    "2019-12-30T01:37:33Z",
+    "OVERTIME",
+    "Anaheim Ducks",
+    "Philadelphia Flyers",
+    1,
+    2
+  ],
+  [
+    "2019-12-30T02:37:16Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Vancouver Canucks",
+    2,
+    5
+  ],
+  [
+    "2019-12-31T00:08:03Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Ottawa Senators",
+    5,
+    2
+  ],
+  [
+    "2019-12-31T18:08:18Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Boston Bruins",
+    3,
+    2
+  ],
+  [
+    "2019-12-31T18:08:29Z",
+    "REGULAR",
+    "Washington Capitals",
+    "New York Islanders",
+    3,
+    4
+  ],
+  [
+    "2019-12-31T20:07:57Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Anaheim Ducks",
+    5,
+    2
+  ],
+  [
+    "2019-12-31T23:08:21Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Toronto Maple Leafs",
+    1,
+    4
+  ],
+  [
+    "2020-01-01T00:07:57Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Tampa Bay Lightning",
+    4,
+    6
+  ],
+  [
+    "2020-01-01T00:08:24Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Montr\u00e9al Canadiens",
+    3,
+    1
+  ],
+  [
+    "2020-01-01T00:08:11Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Florida Panthers",
+    4,
+    1
+  ],
+  [
+    "2020-01-01T00:38:18Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "San Jose Sharks",
+    2,
+    0
+  ],
+  [
+    "2020-01-01T01:07:49Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Winnipeg Jets",
+    4,
+    7
+  ],
+  [
+    "2020-01-01T02:07:37Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Chicago Blackhawks",
+    3,
+    5
+  ],
+  [
+    "2020-01-01T02:07:21Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "New York Rangers",
+    7,
+    5
+  ],
+  [
+    "2020-01-01T02:08:24Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "St. Louis Blues",
+    3,
+    1
+  ],
+  [
+    "2020-01-01T02:08:36Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Philadelphia Flyers",
+    5,
+    3
+  ],
+  [
+    "2020-01-01T19:03:11Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Nashville Predators",
+    4,
+    2
+  ],
+  [
+    "2020-01-03T00:08:35Z",
+    "OVERTIME",
+    "Boston Bruins",
+    "Columbus Blue Jackets",
+    1,
+    2
+  ],
+  [
+    "2020-01-03T00:07:36Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "Edmonton Oilers",
+    3,
+    2
+  ],
+  [
+    "2020-01-03T00:09:06Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Tampa Bay Lightning",
+    1,
+    2
+  ],
+  [
+    "2020-01-03T00:08:31Z",
+    "REGULAR",
+    "New York Islanders",
+    "New Jersey Devils",
+    1,
+    2
+  ],
+  [
+    "2020-01-03T00:08:04Z",
+    "OVERTIME",
+    "Pittsburgh Penguins",
+    "San Jose Sharks",
+    2,
+    3
+  ],
+  [
+    "2020-01-03T00:38:51Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Florida Panthers",
+    3,
+    6
+  ],
+  [
+    "2020-01-03T01:08:13Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Toronto Maple Leafs",
+    3,
+    6
+  ],
+  [
+    "2020-01-03T02:45:07Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "St. Louis Blues",
+    7,
+    3
+  ],
+  [
+    "2020-01-03T02:07:31Z",
+    "REGULAR",
+    "Calgary Flames",
+    "New York Rangers",
+    4,
+    3
+  ],
+  [
+    "2020-01-03T02:07:53Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Anaheim Ducks",
+    4,
+    2
+  ],
+  [
+    "2020-01-03T03:07:37Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Chicago Blackhawks",
+    7,
+    5
+  ],
+  [
+    "2020-01-03T03:07:47Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Philadelphia Flyers",
+    5,
+    4
+  ],
+  [
+    "2020-01-04T00:38:07Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Washington Capitals",
+    3,
+    4
+  ],
+  [
+    "2020-01-04T01:44:19Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Detroit Red Wings",
+    4,
+    1
+  ],
+  [
+    "2020-01-04T18:12:52Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Edmonton Oilers",
+    1,
+    4
+  ],
+  [
+    "2020-01-04T18:09:26Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "San Jose Sharks",
+    2,
+    3
+  ],
+  [
+    "2020-01-04T19:08:14Z",
+    "OVERTIME",
+    "Minnesota Wild",
+    "Winnipeg Jets",
+    3,
+    2
+  ],
+  [
+    "2020-01-04T21:07:48Z",
+    "OVERTIME",
+    "Vegas Golden Knights",
+    "St. Louis Blues",
+    5,
+    4
+  ],
+  [
+    "2020-01-04T18:08:10Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Florida Panthers",
+    3,
+    2
+  ],
+  [
+    "2020-01-05T00:14:03Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "New York Islanders",
+    3,
+    0
+  ],
+  [
+    "2020-01-05T00:15:10Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Pittsburgh Penguins",
+    2,
+    3
+  ],
+  [
+    "2020-01-05T00:15:04Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Tampa Bay Lightning",
+    3,
+    5
+  ],
+  [
+    "2020-01-05T00:08:44Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Colorado Avalanche",
+    2,
+    5
+  ],
+  [
+    "2020-01-05T01:08:18Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Philadelphia Flyers",
+    6,
+    2
+  ],
+  [
+    "2020-01-05T03:16:04Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "New York Rangers",
+    2,
+    1
+  ],
+  [
+    "2020-01-05T03:39:11Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Nashville Predators",
+    1,
+    4
+  ],
+  [
+    "2020-01-05T17:38:11Z",
+    "OVERTIME",
+    "Washington Capitals",
+    "San Jose Sharks",
+    5,
+    4
+  ],
+  [
+    "2020-01-05T22:08:02Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Florida Panthers",
+    1,
+    4
+  ],
+  [
+    "2020-01-05T22:08:32Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Tampa Bay Lightning",
+    1,
+    3
+  ],
+  [
+    "2020-01-06T00:13:45Z",
+    "OVERTIME",
+    "Minnesota Wild",
+    "Calgary Flames",
+    4,
+    5
+  ],
+  [
+    "2020-01-06T00:39:50Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Detroit Red Wings",
+    4,
+    2
+  ],
+  [
+    "2020-01-06T03:14:47Z",
+    "OVERTIME",
+    "Anaheim Ducks",
+    "Nashville Predators",
+    5,
+    4
+  ],
+  [
+    "2020-01-07T00:08:01Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Edmonton Oilers",
+    4,
+    6
+  ],
+  [
+    "2020-01-07T00:08:10Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Winnipeg Jets",
+    2,
+    3
+  ],
+  [
+    "2020-01-07T00:06:12Z",
+    "REGULAR",
+    "New York Islanders",
+    "Colorado Avalanche",
+    1,
+    0
+  ],
+  [
+    "2020-01-07T03:38:36Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Columbus Blue Jackets",
+    2,
+    4
+  ],
+  [
+    "2020-01-08T00:11:19Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Vancouver Canucks",
+    9,
+    2
+  ],
+  [
+    "2020-01-08T00:09:14Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Arizona Coyotes",
+    2,
+    5
+  ],
+  [
+    "2020-01-08T00:08:08Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "New York Islanders",
+    3,
+    4
+  ],
+  [
+    "2020-01-08T00:41:44Z",
+    "REGULAR",
+    "New York Rangers",
+    "Colorado Avalanche",
+    5,
+    3
+  ],
+  [
+    "2020-01-08T00:08:05Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Ottawa Senators",
+    6,
+    1
+  ],
+  [
+    "2020-01-08T00:08:02Z",
+    "OVERTIME",
+    "Carolina Hurricanes",
+    "Philadelphia Flyers",
+    5,
+    4
+  ],
+  [
+    "2020-01-08T00:37:54Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Montr\u00e9al Canadiens",
+    4,
+    3
+  ],
+  [
+    "2020-01-08T01:08:18Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "San Jose Sharks",
+    3,
+    2
+  ],
+  [
+    "2020-01-08T01:07:38Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Boston Bruins",
+    2,
+    6
+  ],
+  [
+    "2020-01-08T01:40:37Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Calgary Flames",
+    1,
+    2
+  ],
+  [
+    "2020-01-08T03:07:53Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Pittsburgh Penguins",
+    3,
+    4
+  ],
+  [
+    "2020-01-08T03:07:47Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Columbus Blue Jackets",
+    3,
+    4
+  ],
+  [
+    "2020-01-09T00:44:42Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Winnipeg Jets",
+    3,
+    4
+  ],
+  [
+    "2020-01-09T00:39:48Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Washington Capitals",
+    3,
+    2
+  ],
+  [
+    "2020-01-09T03:15:34Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Dallas Stars",
+    1,
+    2
+  ],
+  [
+    "2020-01-10T00:08:16Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Winnipeg Jets",
+    5,
+    4
+  ],
+  [
+    "2020-01-10T00:09:53Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Edmonton Oilers",
+    2,
+    4
+  ],
+  [
+    "2020-01-10T00:06:36Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Arizona Coyotes",
+    4,
+    0
+  ],
+  [
+    "2020-01-10T00:08:46Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Vancouver Canucks",
+    5,
+    2
+  ],
+  [
+    "2020-01-10T00:08:11Z",
+    "REGULAR",
+    "New York Rangers",
+    "New Jersey Devils",
+    6,
+    3
+  ],
+  [
+    "2020-01-10T01:08:17Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Buffalo Sabres",
+    5,
+    1
+  ],
+  [
+    "2020-01-10T01:40:10Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Nashville Predators",
+    2,
+    5
+  ],
+  [
+    "2020-01-10T02:08:14Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Minnesota Wild",
+    2,
+    1
+  ],
+  [
+    "2020-01-10T03:07:49Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Los Angeles Kings",
+    2,
+    5
+  ],
+  [
+    "2020-01-10T03:08:07Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Dallas Stars",
+    0,
+    3
+  ],
+  [
+    "2020-01-10T03:40:43Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Columbus Blue Jackets",
+    3,
+    1
+  ],
+  [
+    "2020-01-11T00:38:19Z",
+    "OVERTIME",
+    "Detroit Red Wings",
+    "Ottawa Senators",
+    3,
+    2
+  ],
+  [
+    "2020-01-11T00:38:12Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Arizona Coyotes",
+    3,
+    0
+  ],
+  [
+    "2020-01-11T02:07:54Z",
+    "OVERTIME",
+    "Colorado Avalanche",
+    "Pittsburgh Penguins",
+    3,
+    4
+  ],
+  [
+    "2020-01-11T18:07:51Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Vancouver Canucks",
+    3,
+    6
+  ],
+  [
+    "2020-01-12T00:16:01Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "Montr\u00e9al Canadiens",
+    1,
+    2
+  ],
+  [
+    "2020-01-12T00:07:30Z",
+    "OVERTIME",
+    "New York Islanders",
+    "Boston Bruins",
+    2,
+    3
+  ],
+  [
+    "2020-01-12T00:08:01Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Tampa Bay Lightning",
+    0,
+    1
+  ],
+  [
+    "2020-01-12T00:08:16Z",
+    "REGULAR",
+    "Washington Capitals",
+    "New Jersey Devils",
+    1,
+    5
+  ],
+  [
+    "2020-01-12T00:10:00Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Los Angeles Kings",
+    2,
+    0
+  ],
+  [
+    "2020-01-12T01:07:47Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "New York Rangers",
+    5,
+    2
+  ],
+  [
+    "2020-01-12T01:37:46Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Anaheim Ducks",
+    4,
+    2
+  ],
+  [
+    "2020-01-12T03:09:36Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Edmonton Oilers",
+    4,
+    3
+  ],
+  [
+    "2020-01-12T03:07:58Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Columbus Blue Jackets",
+    0,
+    3
+  ],
+  [
+    "2020-01-12T03:41:05Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Dallas Stars",
+    2,
+    1
+  ],
+  [
+    "2020-01-12T19:08:53Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Nashville Predators",
+    0,
+    1
+  ],
+  [
+    "2020-01-12T21:08:12Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Vancouver Canucks",
+    1,
+    4
+  ],
+  [
+    "2020-01-12T22:08:16Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Buffalo Sabres",
+    1,
+    5
+  ],
+  [
+    "2020-01-12T23:08:32Z",
+    "OVERTIME",
+    "Arizona Coyotes",
+    "Pittsburgh Penguins",
+    3,
+    4
+  ],
+  [
+    "2020-01-13T00:11:11Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Toronto Maple Leafs",
+    8,
+    4
+  ],
+  [
+    "2020-01-13T00:08:11Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Tampa Bay Lightning",
+    3,
+    1
+  ],
+  [
+    "2020-01-14T00:08:55Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Calgary Flames",
+    2,
+    0
+  ],
+  [
+    "2020-01-14T00:08:10Z",
+    "REGULAR",
+    "New York Rangers",
+    "New York Islanders",
+    6,
+    2
+  ],
+  [
+    "2020-01-14T00:08:02Z",
+    "OVERTIME",
+    "Philadelphia Flyers",
+    "Boston Bruins",
+    6,
+    5
+  ],
+  [
+    "2020-01-14T00:07:51Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Carolina Hurricanes",
+    2,
+    0
+  ],
+  [
+    "2020-01-14T01:08:28Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Anaheim Ducks",
+    4,
+    1
+  ],
+  [
+    "2020-01-15T00:07:59Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Vegas Golden Knights",
+    4,
+    2
+  ],
+  [
+    "2020-01-15T00:05:50Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "New Jersey Devils",
+    7,
+    4
+  ],
+  [
+    "2020-01-15T00:09:08Z",
+    "OVERTIME",
+    "Tampa Bay Lightning",
+    "Los Angeles Kings",
+    4,
+    3
+  ],
+  [
+    "2020-01-15T00:05:58Z",
+    "REGULAR",
+    "New York Islanders",
+    "Detroit Red Wings",
+    8,
+    2
+  ],
+  [
+    "2020-01-15T00:10:19Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Minnesota Wild",
+    7,
+    3
+  ],
+  [
+    "2020-01-15T00:08:25Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Boston Bruins",
+    3,
+    0
+  ],
+  [
+    "2020-01-15T00:37:48Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "Chicago Blackhawks",
+    2,
+    3
+  ],
+  [
+    "2020-01-15T01:07:56Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Vancouver Canucks",
+    4,
+    0
+  ],
+  [
+    "2020-01-15T02:07:48Z",
+    "OVERTIME",
+    "Colorado Avalanche",
+    "Dallas Stars",
+    2,
+    3
+  ],
+  [
+    "2020-01-15T02:09:20Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Nashville Predators",
+    4,
+    2
+  ],
+  [
+    "2020-01-15T02:08:00Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "San Jose Sharks",
+    6,
+    3
+  ],
+  [
+    "2020-01-16T00:42:14Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Chicago Blackhawks",
+    1,
+    4
+  ],
+  [
+    "2020-01-16T01:09:44Z",
+    "OVERTIME",
+    "St. Louis Blues",
+    "Philadelphia Flyers",
+    3,
+    4
+  ],
+  [
+    "2020-01-17T00:14:49Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Pittsburgh Penguins",
+    4,
+    1
+  ],
+  [
+    "2020-01-17T00:05:59Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Calgary Flames",
+    1,
+    2
+  ],
+  [
+    "2020-01-17T00:09:18Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Los Angeles Kings",
+    4,
+    3
+  ],
+  [
+    "2020-01-17T00:06:42Z",
+    "REGULAR",
+    "New York Islanders",
+    "New York Rangers",
+    2,
+    3
+  ],
+  [
+    "2020-01-17T00:08:20Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Montr\u00e9al Canadiens",
+    1,
+    4
+  ],
+  [
+    "2020-01-17T00:08:04Z",
+    "REGULAR",
+    "Washington Capitals",
+    "New Jersey Devils",
+    5,
+    2
+  ],
+  [
+    "2020-01-17T00:10:20Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Carolina Hurricanes",
+    3,
+    2
+  ],
+  [
+    "2020-01-17T00:37:58Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Vegas Golden Knights",
+    2,
+    4
+  ],
+  [
+    "2020-01-17T01:07:47Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Anaheim Ducks",
+    2,
+    4
+  ],
+  [
+    "2020-01-17T01:11:09Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Tampa Bay Lightning",
+    3,
+    2
+  ],
+  [
+    "2020-01-17T01:37:47Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Buffalo Sabres",
+    1,
+    4
+  ],
+  [
+    "2020-01-17T02:08:01Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "San Jose Sharks",
+    4,
+    0
+  ],
+  [
+    "2020-01-17T03:09:36Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Arizona Coyotes",
+    3,
+    1
+  ],
+  [
+    "2020-01-18T00:38:21Z",
+    "OVERTIME",
+    "Detroit Red Wings",
+    "Pittsburgh Penguins",
+    1,
+    2
+  ],
+  [
+    "2020-01-18T00:38:21Z",
+    "OVERTIME",
+    "Carolina Hurricanes",
+    "Anaheim Ducks",
+    1,
+    2
+  ],
+  [
+    "2020-01-18T01:13:59Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Tampa Bay Lightning",
+    1,
+    7
+  ],
+  [
+    "2020-01-18T18:05:41Z",
+    "REGULAR",
+    "New York Islanders",
+    "Washington Capitals",
+    4,
+    6
+  ],
+  [
+    "2020-01-18T20:11:57Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "St. Louis Blues",
+    5,
+    3
+  ],
+  [
+    "2020-01-18T20:08:40Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Arizona Coyotes",
+    7,
+    3
+  ],
+  [
+    "2020-01-18T21:09:38Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Calgary Flames",
+    5,
+    2
+  ],
+  [
+    "2020-01-19T00:17:55Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Chicago Blackhawks",
+    2,
+    6
+  ],
+  [
+    "2020-01-19T00:15:33Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Vegas Golden Knights",
+    5,
+    4
+  ],
+  [
+    "2020-01-19T00:10:02Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Florida Panthers",
+    1,
+    4
+  ],
+  [
+    "2020-01-19T00:08:08Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Los Angeles Kings",
+    4,
+    1
+  ],
+  [
+    "2020-01-19T00:08:16Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "New Jersey Devils",
+    5,
+    0
+  ],
+  [
+    "2020-01-19T01:07:50Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Buffalo Sabres",
+    2,
+    1
+  ],
+  [
+    "2020-01-19T02:08:44Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Dallas Stars",
+    7,
+    0
+  ],
+  [
+    "2020-01-19T03:11:15Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "San Jose Sharks",
+    4,
+    1
+  ],
+  [
+    "2020-01-19T17:38:17Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Boston Bruins",
+    4,
+    3
+  ],
+  [
+    "2020-01-19T22:10:40Z",
+    "OVERTIME",
+    "Carolina Hurricanes",
+    "New York Islanders",
+    2,
+    1
+  ],
+  [
+    "2020-01-20T00:08:23Z",
+    "REGULAR",
+    "New York Rangers",
+    "Columbus Blue Jackets",
+    1,
+    2
+  ],
+  [
+    "2020-01-20T00:10:13Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Winnipeg Jets",
+    5,
+    2
+  ],
+  [
+    "2020-01-20T20:08:37Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Detroit Red Wings",
+    6,
+    3
+  ],
+  [
+    "2020-01-21T01:08:22Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Florida Panthers",
+    4,
+    5
+  ],
+  [
+    "2020-01-22T00:08:30Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Vegas Golden Knights",
+    3,
+    2
+  ],
+  [
+    "2020-01-22T00:08:13Z",
+    "REGULAR",
+    "New York Rangers",
+    "New York Islanders",
+    2,
+    4
+  ],
+  [
+    "2020-01-22T00:40:28Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Pittsburgh Penguins",
+    3,
+    0
+  ],
+  [
+    "2020-01-22T00:08:14Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Winnipeg Jets",
+    4,
+    1
+  ],
+  [
+    "2020-01-22T01:42:28Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Florida Panthers",
+    3,
+    4
+  ],
+  [
+    "2020-01-23T00:42:05Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Winnipeg Jets",
+    4,
+    3
+  ],
+  [
+    "2020-01-23T01:12:16Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Detroit Red Wings",
+    4,
+    2
+  ],
+  [
+    "2020-01-28T00:08:31Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Washington Capitals",
+    2,
+    4
+  ],
+  [
+    "2020-01-28T00:39:45Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "New Jersey Devils",
+    3,
+    4
+  ],
+  [
+    "2020-01-28T01:08:47Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Toronto Maple Leafs",
+    2,
+    5
+  ],
+  [
+    "2020-01-28T01:11:00Z",
+    "OVERTIME",
+    "Dallas Stars",
+    "Tampa Bay Lightning",
+    3,
+    2
+  ],
+  [
+    "2020-01-28T03:08:20Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "St. Louis Blues",
+    3,
+    1
+  ],
+  [
+    "2020-01-28T03:41:50Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Anaheim Ducks",
+    4,
+    2
+  ],
+  [
+    "2020-01-29T00:09:12Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Ottawa Senators",
+    2,
+    5
+  ],
+  [
+    "2020-01-29T02:08:59Z",
+    "OVERTIME",
+    "Calgary Flames",
+    "St. Louis Blues",
+    4,
+    5
+  ],
+  [
+    "2020-01-30T00:38:02Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Nashville Predators",
+    4,
+    5
+  ],
+  [
+    "2020-01-30T00:41:51Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Toronto Maple Leafs",
+    3,
+    5
+  ],
+  [
+    "2020-01-30T03:11:29Z",
+    "OVERTIME",
+    "Edmonton Oilers",
+    "Calgary Flames",
+    3,
+    4
+  ],
+  [
+    "2020-01-30T03:13:14Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Arizona Coyotes",
+    4,
+    2
+  ],
+  [
+    "2020-01-30T03:28:45Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Tampa Bay Lightning",
+    2,
+    4
+  ],
+  [
+    "2020-01-30T03:38:06Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Vancouver Canucks",
+    2,
+    5
+  ],
+  [
+    "2020-01-31T00:07:34Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Montr\u00e9al Canadiens",
+    1,
+    3
+  ],
+  [
+    "2020-01-31T00:40:04Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Nashville Predators",
+    5,
+    6
+  ],
+  [
+    "2020-01-31T02:39:54Z",
+    "OVERTIME",
+    "Arizona Coyotes",
+    "Los Angeles Kings",
+    2,
+    3
+  ],
+  [
+    "2020-02-01T00:09:35Z",
+    "REGULAR",
+    "New York Rangers",
+    "Detroit Red Wings",
+    4,
+    2
+  ],
+  [
+    "2020-02-01T00:08:36Z",
+    "OVERTIME",
+    "Pittsburgh Penguins",
+    "Philadelphia Flyers",
+    4,
+    3
+  ],
+  [
+    "2020-02-01T00:38:20Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Washington Capitals",
+    3,
+    5
+  ],
+  [
+    "2020-02-01T00:39:51Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Vegas Golden Knights",
+    3,
+    4
+  ],
+  [
+    "2020-02-01T01:07:37Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Boston Bruins",
+    1,
+    2
+  ],
+  [
+    "2020-02-01T02:07:46Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "St. Louis Blues",
+    4,
+    2
+  ],
+  [
+    "2020-02-01T03:08:15Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Tampa Bay Lightning",
+    3,
+    4
+  ],
+  [
+    "2020-02-01T18:08:30Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "Columbus Blue Jackets",
+    2,
+    1
+  ],
+  [
+    "2020-02-01T18:08:42Z",
+    "OVERTIME",
+    "New York Islanders",
+    "Vancouver Canucks",
+    3,
+    4
+  ],
+  [
+    "2020-02-01T19:09:46Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Florida Panthers",
+    4,
+    0
+  ],
+  [
+    "2020-02-02T00:14:11Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Ottawa Senators",
+    2,
+    1
+  ],
+  [
+    "2020-02-02T00:08:04Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "New York Rangers",
+    0,
+    1
+  ],
+  [
+    "2020-02-02T00:26:45Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Dallas Stars",
+    2,
+    3
+  ],
+  [
+    "2020-02-02T00:08:16Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Colorado Avalanche",
+    6,
+    3
+  ],
+  [
+    "2020-02-02T00:14:55Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "St. Louis Blues",
+    5,
+    2
+  ],
+  [
+    "2020-02-02T01:09:15Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Vegas Golden Knights",
+    0,
+    3
+  ],
+  [
+    "2020-02-02T01:09:15Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Boston Bruins",
+    1,
+    6
+  ],
+  [
+    "2020-02-02T01:06:19Z",
+    "OVERTIME",
+    "Arizona Coyotes",
+    "Chicago Blackhawks",
+    2,
+    3
+  ],
+  [
+    "2020-02-02T03:09:56Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Edmonton Oilers",
+    3,
+    8
+  ],
+  [
+    "2020-02-02T03:39:24Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Anaheim Ducks",
+    1,
+    3
+  ],
+  [
+    "2020-02-02T03:46:38Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Tampa Bay Lightning",
+    0,
+    3
+  ],
+  [
+    "2020-02-02T17:35:05Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Pittsburgh Penguins",
+    3,
+    4
+  ],
+  [
+    "2020-02-02T19:10:08Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Columbus Blue Jackets",
+    3,
+    4
+  ],
+  [
+    "2020-02-02T19:12:05Z",
+    "OVERTIME",
+    "Carolina Hurricanes",
+    "Vancouver Canucks",
+    4,
+    3
+  ],
+  [
+    "2020-02-04T00:07:00Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Florida Panthers",
+    3,
+    5
+  ],
+  [
+    "2020-02-04T00:08:17Z",
+    "REGULAR",
+    "New York Rangers",
+    "Dallas Stars",
+    3,
+    5
+  ],
+  [
+    "2020-02-04T00:40:11Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Philadelphia Flyers",
+    0,
+    3
+  ],
+  [
+    "2020-02-05T00:08:36Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Vancouver Canucks",
+    4,
+    0
+  ],
+  [
+    "2020-02-05T00:07:27Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Colorado Avalanche",
+    1,
+    6
+  ],
+  [
+    "2020-02-05T00:08:38Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Vegas Golden Knights",
+    4,
+    2
+  ],
+  [
+    "2020-02-05T00:08:25Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Montr\u00e9al Canadiens",
+    4,
+    5
+  ],
+  [
+    "2020-02-05T00:07:57Z",
+    "OVERTIME",
+    "New York Islanders",
+    "Dallas Stars",
+    4,
+    3
+  ],
+  [
+    "2020-02-05T00:07:46Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Los Angeles Kings",
+    4,
+    2
+  ],
+  [
+    "2020-02-05T00:08:15Z",
+    "OVERTIME",
+    "Columbus Blue Jackets",
+    "Florida Panthers",
+    1,
+    0
+  ],
+  [
+    "2020-02-05T00:42:13Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "Anaheim Ducks",
+    2,
+    3
+  ],
+  [
+    "2020-02-05T01:07:48Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Carolina Hurricanes",
+    6,
+    3
+  ],
+  [
+    "2020-02-05T01:10:27Z",
+    "OVERTIME",
+    "Minnesota Wild",
+    "Chicago Blackhawks",
+    3,
+    2
+  ],
+  [
+    "2020-02-05T01:07:51Z",
+    "OVERTIME",
+    "Winnipeg Jets",
+    "Nashville Predators",
+    1,
+    2
+  ],
+  [
+    "2020-02-05T02:07:24Z",
+    "REGULAR",
+    "Calgary Flames",
+    "San Jose Sharks",
+    1,
+    3
+  ],
+  [
+    "2020-02-05T02:08:24Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Edmonton Oilers",
+    3,
+    0
+  ],
+  [
+    "2020-02-06T00:42:14Z",
+    "REGULAR",
+    "New York Rangers",
+    "Toronto Maple Leafs",
+    5,
+    3
+  ],
+  [
+    "2020-02-06T01:10:17Z",
+    "OVERTIME",
+    "Chicago Blackhawks",
+    "Boston Bruins",
+    1,
+    2
+  ],
+  [
+    "2020-02-07T00:10:02Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "Detroit Red Wings",
+    3,
+    4
+  ],
+  [
+    "2020-02-07T00:08:14Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Anaheim Ducks",
+    3,
+    2
+  ],
+  [
+    "2020-02-07T00:08:10Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Pittsburgh Penguins",
+    4,
+    2
+  ],
+  [
+    "2020-02-07T00:09:25Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Vegas Golden Knights",
+    2,
+    7
+  ],
+  [
+    "2020-02-07T00:07:53Z",
+    "REGULAR",
+    "New York Islanders",
+    "Los Angeles Kings",
+    5,
+    3
+  ],
+  [
+    "2020-02-07T00:08:12Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "New Jersey Devils",
+    0,
+    5
+  ],
+  [
+    "2020-02-07T00:40:34Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Colorado Avalanche",
+    1,
+    4
+  ],
+  [
+    "2020-02-07T01:07:39Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Winnipeg Jets",
+    2,
+    4
+  ],
+  [
+    "2020-02-07T01:08:16Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Vancouver Canucks",
+    4,
+    2
+  ],
+  [
+    "2020-02-07T02:07:33Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Nashville Predators",
+    2,
+    3
+  ],
+  [
+    "2020-02-07T02:45:04Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "San Jose Sharks",
+    3,
+    6
+  ],
+  [
+    "2020-02-07T02:08:26Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Carolina Hurricanes",
+    3,
+    5
+  ],
+  [
+    "2020-02-08T00:05:46Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Anaheim Ducks",
+    5,
+    4
+  ],
+  [
+    "2020-02-08T00:08:28Z",
+    "REGULAR",
+    "New York Rangers",
+    "Buffalo Sabres",
+    2,
+    3
+  ],
+  [
+    "2020-02-08T00:13:15Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Detroit Red Wings",
+    2,
+    0
+  ],
+  [
+    "2020-02-08T01:38:28Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Minnesota Wild",
+    2,
+    3
+  ],
+  [
+    "2020-02-08T19:12:12Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Ottawa Senators",
+    5,
+    2
+  ],
+  [
+    "2020-02-08T20:17:50Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Arizona Coyotes",
+    4,
+    2
+  ],
+  [
+    "2020-02-09T00:18:26Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Toronto Maple Leafs",
+    2,
+    1
+  ],
+  [
+    "2020-02-09T00:08:58Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "New York Islanders",
+    3,
+    1
+  ],
+  [
+    "2020-02-09T00:10:11Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Pittsburgh Penguins",
+    2,
+    3
+  ],
+  [
+    "2020-02-09T00:08:04Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Los Angeles Kings",
+    3,
+    0
+  ],
+  [
+    "2020-02-09T00:08:04Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Philadelphia Flyers",
+    2,
+    7
+  ],
+  [
+    "2020-02-09T00:08:40Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Colorado Avalanche",
+    1,
+    2
+  ],
+  [
+    "2020-02-09T00:15:01Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Nashville Predators",
+    3,
+    2
+  ],
+  [
+    "2020-02-09T01:07:43Z",
+    "OVERTIME",
+    "St. Louis Blues",
+    "Dallas Stars",
+    2,
+    3
+  ],
+  [
+    "2020-02-09T03:10:10Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Calgary Flames",
+    2,
+    6
+  ],
+  [
+    "2020-02-09T03:07:47Z",
+    "OVERTIME",
+    "Vegas Golden Knights",
+    "Carolina Hurricanes",
+    5,
+    6
+  ],
+  [
+    "2020-02-09T17:35:08Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Boston Bruins",
+    3,
+    1
+  ],
+  [
+    "2020-02-09T20:07:50Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Anaheim Ducks",
+    2,
+    3
+  ],
+  [
+    "2020-02-09T23:08:32Z",
+    "REGULAR",
+    "New York Rangers",
+    "Los Angeles Kings",
+    4,
+    1
+  ],
+  [
+    "2020-02-10T00:11:51Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Chicago Blackhawks",
+    5,
+    2
+  ],
+  [
+    "2020-02-10T00:40:38Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Colorado Avalanche",
+    2,
+    3
+  ],
+  [
+    "2020-02-11T00:11:01Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Arizona Coyotes",
+    2,
+    3
+  ],
+  [
+    "2020-02-11T00:08:24Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Florida Panthers",
+    4,
+    1
+  ],
+  [
+    "2020-02-11T00:08:08Z",
+    "REGULAR",
+    "Washington Capitals",
+    "New York Islanders",
+    3,
+    5
+  ],
+  [
+    "2020-02-11T00:42:00Z",
+    "OVERTIME",
+    "Columbus Blue Jackets",
+    "Tampa Bay Lightning",
+    1,
+    2
+  ],
+  [
+    "2020-02-11T03:15:06Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Nashville Predators",
+    6,
+    2
+  ],
+  [
+    "2020-02-11T03:38:04Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Calgary Flames",
+    2,
+    6
+  ],
+  [
+    "2020-02-12T00:07:47Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Detroit Red Wings",
+    3,
+    2
+  ],
+  [
+    "2020-02-12T00:06:56Z",
+    "OVERTIME",
+    "Toronto Maple Leafs",
+    "Arizona Coyotes",
+    3,
+    2
+  ],
+  [
+    "2020-02-12T00:08:25Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Florida Panthers",
+    3,
+    5
+  ],
+  [
+    "2020-02-12T00:09:41Z",
+    "REGULAR",
+    "New York Islanders",
+    "Philadelphia Flyers",
+    5,
+    3
+  ],
+  [
+    "2020-02-12T00:10:03Z",
+    "OVERTIME",
+    "Pittsburgh Penguins",
+    "Tampa Bay Lightning",
+    1,
+    2
+  ],
+  [
+    "2020-02-12T01:08:05Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Vegas Golden Knights",
+    4,
+    0
+  ],
+  [
+    "2020-02-12T01:18:41Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "New York Rangers",
+    1,
+    4
+  ],
+  [
+    "2020-02-12T01:39:27Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Carolina Hurricanes",
+    4,
+    1
+  ],
+  [
+    "2020-02-12T02:07:34Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Ottawa Senators",
+    3,
+    0
+  ],
+  [
+    "2020-02-12T02:07:45Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Chicago Blackhawks",
+    5,
+    3
+  ],
+  [
+    "2020-03-12T02:08:21Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "St. Louis Blues",
+    2,
+    4
+  ],
+  [
+    "2020-02-13T00:40:32Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Montr\u00e9al Canadiens",
+    4,
+    1
+  ],
+  [
+    "2020-02-13T03:14:37Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Calgary Flames",
+    5,
+    3
+  ],
+  [
+    "2020-02-13T03:44:44Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Chicago Blackhawks",
+    3,
+    0
+  ],
+  [
+    "2020-02-14T00:15:40Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "Columbus Blue Jackets",
+    4,
+    3
+  ],
+  [
+    "2020-02-14T00:07:04Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Dallas Stars",
+    2,
+    3
+  ],
+  [
+    "2020-02-14T00:07:57Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Edmonton Oilers",
+    3,
+    1
+  ],
+  [
+    "2020-02-14T00:11:32Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Philadelphia Flyers",
+    2,
+    6
+  ],
+  [
+    "2020-02-14T00:07:55Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Detroit Red Wings",
+    4,
+    1
+  ],
+  [
+    "2020-02-14T00:37:58Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Arizona Coyotes",
+    3,
+    2
+  ],
+  [
+    "2020-02-14T01:08:38Z",
+    "REGULAR",
+    "Nashville Predators",
+    "New York Islanders",
+    5,
+    0
+  ],
+  [
+    "2020-02-14T01:08:48Z",
+    "OVERTIME",
+    "Minnesota Wild",
+    "New York Rangers",
+    3,
+    4
+  ],
+  [
+    "2020-02-14T02:35:15Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Washington Capitals",
+    2,
+    3
+  ],
+  [
+    "2020-02-14T03:07:47Z",
+    "OVERTIME",
+    "Vegas Golden Knights",
+    "St. Louis Blues",
+    6,
+    5
+  ],
+  [
+    "2020-02-14T03:08:10Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Calgary Flames",
+    0,
+    6
+  ],
+  [
+    "2020-02-15T00:08:02Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Montr\u00e9al Canadiens",
+    4,
+    1
+  ],
+  [
+    "2020-02-15T00:08:11Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "New York Rangers",
+    1,
+    3
+  ],
+  [
+    "2020-02-15T00:08:17Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "San Jose Sharks",
+    2,
+    3
+  ],
+  [
+    "2020-02-15T00:09:00Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "New Jersey Devils",
+    5,
+    2
+  ],
+  [
+    "2020-02-15T18:08:13Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Detroit Red Wings",
+    4,
+    1
+  ],
+  [
+    "2020-02-15T20:07:49Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Nashville Predators",
+    3,
+    4
+  ],
+  [
+    "2020-02-15T21:05:45Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Philadelphia Flyers",
+    5,
+    3
+  ],
+  [
+    "2020-02-15T21:11:50Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Edmonton Oilers",
+    1,
+    4
+  ],
+  [
+    "2020-02-15T22:15:53Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "San Jose Sharks",
+    0,
+    2
+  ],
+  [
+    "2020-02-16T00:15:26Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Dallas Stars",
+    3,
+    4
+  ],
+  [
+    "2020-02-16T00:15:53Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Toronto Maple Leafs",
+    2,
+    4
+  ],
+  [
+    "2020-02-16T01:14:19Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Los Angeles Kings",
+    1,
+    3
+  ],
+  [
+    "2020-02-16T03:10:10Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Chicago Blackhawks",
+    4,
+    8
+  ],
+  [
+    "2020-02-16T03:08:05Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Washington Capitals",
+    3,
+    1
+  ],
+  [
+    "2020-02-16T03:38:02Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "New York Islanders",
+    1,
+    0
+  ],
+  [
+    "2020-02-16T17:42:12Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Detroit Red Wings",
+    5,
+    1
+  ],
+  [
+    "2020-02-16T20:33:15Z",
+    "REGULAR",
+    "New York Rangers",
+    "Boston Bruins",
+    1,
+    3
+  ],
+  [
+    "2020-02-16T21:08:24Z",
+    "OVERTIME",
+    "Carolina Hurricanes",
+    "Edmonton Oilers",
+    3,
+    4
+  ],
+  [
+    "2020-02-16T22:13:42Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Anaheim Ducks",
+    1,
+    5
+  ],
+  [
+    "2020-02-16T23:08:20Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "Dallas Stars",
+    4,
+    3
+  ],
+  [
+    "2020-02-16T23:08:00Z",
+    "OVERTIME",
+    "New Jersey Devils",
+    "Columbus Blue Jackets",
+    4,
+    3
+  ],
+  [
+    "2020-02-16T23:10:17Z",
+    "REGULAR",
+    "Nashville Predators",
+    "St. Louis Blues",
+    2,
+    1
+  ],
+  [
+    "2020-02-17T00:10:08Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Toronto Maple Leafs",
+    5,
+    2
+  ],
+  [
+    "2020-02-17T01:38:14Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Chicago Blackhawks",
+    3,
+    2
+  ],
+  [
+    "2020-02-17T21:08:56Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Anaheim Ducks",
+    6,
+    4
+  ],
+  [
+    "2020-02-17T21:08:08Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "New York Islanders",
+    2,
+    1
+  ],
+  [
+    "2020-02-17T21:08:33Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Florida Panthers",
+    3,
+    5
+  ],
+  [
+    "2020-02-17T23:07:38Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Washington Capitals",
+    3,
+    2
+  ],
+  [
+    "2020-02-18T02:08:04Z",
+    "OVERTIME",
+    "Colorado Avalanche",
+    "Tampa Bay Lightning",
+    3,
+    4
+  ],
+  [
+    "2020-02-19T00:08:12Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Columbus Blue Jackets",
+    5,
+    1
+  ],
+  [
+    "2020-02-19T00:10:08Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Toronto Maple Leafs",
+    5,
+    2
+  ],
+  [
+    "2020-02-19T01:05:34Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Buffalo Sabres",
+    7,
+    4
+  ],
+  [
+    "2020-02-19T00:38:21Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Montr\u00e9al Canadiens",
+    4,
+    3
+  ],
+  [
+    "2020-02-19T01:08:00Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "New Jersey Devils",
+    3,
+    0
+  ],
+  [
+    "2020-02-19T01:08:00Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Carolina Hurricanes",
+    1,
+    4
+  ],
+  [
+    "2020-02-19T01:07:35Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Los Angeles Kings",
+    6,
+    3
+  ],
+  [
+    "2020-02-20T01:12:16Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "New York Rangers",
+    3,
+    6
+  ],
+  [
+    "2020-02-20T01:38:13Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Arizona Coyotes",
+    3,
+    2
+  ],
+  [
+    "2020-02-20T01:43:56Z",
+    "OVERTIME",
+    "Edmonton Oilers",
+    "Boston Bruins",
+    1,
+    2
+  ],
+  [
+    "2020-02-20T03:08:42Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "New York Islanders",
+    3,
+    1
+  ],
+  [
+    "2020-02-20T03:08:02Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Florida Panthers",
+    1,
+    4
+  ],
+  [
+    "2020-02-20T03:38:18Z",
+    "OVERTIME",
+    "Vancouver Canucks",
+    "Minnesota Wild",
+    3,
+    4
+  ],
+  [
+    "2020-02-21T00:07:14Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Pittsburgh Penguins",
+    4,
+    0
+  ],
+  [
+    "2020-02-21T00:08:18Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "San Jose Sharks",
+    2,
+    1
+  ],
+  [
+    "2020-02-21T00:08:02Z",
+    "OVERTIME",
+    "Washington Capitals",
+    "Montr\u00e9al Canadiens",
+    3,
+    4
+  ],
+  [
+    "2020-02-21T00:08:25Z",
+    "OVERTIME",
+    "Columbus Blue Jackets",
+    "Philadelphia Flyers",
+    3,
+    4
+  ],
+  [
+    "2020-02-21T00:38:19Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Winnipeg Jets",
+    1,
+    5
+  ],
+  [
+    "2020-02-21T01:07:55Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Arizona Coyotes",
+    1,
+    0
+  ],
+  [
+    "2020-02-21T03:08:17Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Tampa Bay Lightning",
+    5,
+    3
+  ],
+  [
+    "2020-02-21T03:39:43Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Florida Panthers",
+    5,
+    4
+  ],
+  [
+    "2020-02-22T01:14:36Z",
+    "REGULAR",
+    "New York Islanders",
+    "Detroit Red Wings",
+    4,
+    1
+  ],
+  [
+    "2020-02-22T00:09:16Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "New York Rangers",
+    2,
+    5
+  ],
+  [
+    "2020-02-22T01:37:51Z",
+    "OVERTIME",
+    "Chicago Blackhawks",
+    "Nashville Predators",
+    2,
+    1
+  ],
+  [
+    "2020-02-22T01:37:57Z",
+    "REGULAR",
+    "Dallas Stars",
+    "St. Louis Blues",
+    1,
+    5
+  ],
+  [
+    "2020-02-22T02:07:43Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Boston Bruins",
+    3,
+    4
+  ],
+  [
+    "2020-02-22T02:07:46Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Minnesota Wild",
+    3,
+    5
+  ],
+  [
+    "2020-02-22T03:08:20Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Colorado Avalanche",
+    0,
+    1
+  ],
+  [
+    "2020-02-22T18:07:38Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Washington Capitals",
+    3,
+    2
+  ],
+  [
+    "2020-02-22T18:10:38Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Winnipeg Jets",
+    4,
+    2
+  ],
+  [
+    "2020-02-22T18:08:47Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Buffalo Sabres",
+    2,
+    5
+  ],
+  [
+    "2020-02-23T00:14:10Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Carolina Hurricanes",
+    3,
+    6
+  ],
+  [
+    "2020-02-23T00:15:31Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Montr\u00e9al Canadiens",
+    0,
+    3
+  ],
+  [
+    "2020-02-23T00:09:46Z",
+    "REGULAR",
+    "New York Rangers",
+    "San Jose Sharks",
+    3,
+    2
+  ],
+  [
+    "2020-02-23T01:10:43Z",
+    "OVERTIME",
+    "Nashville Predators",
+    "Columbus Blue Jackets",
+    4,
+    3
+  ],
+  [
+    "2020-02-23T01:08:28Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Tampa Bay Lightning",
+    7,
+    3
+  ],
+  [
+    "2020-02-23T03:10:03Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Boston Bruins",
+    9,
+    3
+  ],
+  [
+    "2020-02-23T03:13:15Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Florida Panthers",
+    5,
+    3
+  ],
+  [
+    "2020-02-23T03:40:04Z",
+    "OVERTIME",
+    "Los Angeles Kings",
+    "Colorado Avalanche",
+    1,
+    2
+  ],
+  [
+    "2020-02-23T17:06:25Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Pittsburgh Penguins",
+    5,
+    3
+  ],
+  [
+    "2020-02-23T20:08:16Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Winnipeg Jets",
+    2,
+    1
+  ],
+  [
+    "2020-02-23T20:13:40Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Chicago Blackhawks",
+    2,
+    1
+  ],
+  [
+    "2020-02-23T22:07:16Z",
+    "REGULAR",
+    "New York Islanders",
+    "San Jose Sharks",
+    4,
+    1
+  ],
+  [
+    "2020-02-24T00:13:02Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Calgary Flames",
+    2,
+    4
+  ],
+  [
+    "2020-02-24T00:40:37Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "St. Louis Blues",
+    1,
+    4
+  ],
+  [
+    "2020-02-24T03:13:29Z",
+    "OVERTIME",
+    "Anaheim Ducks",
+    "Vegas Golden Knights",
+    5,
+    6
+  ],
+  [
+    "2020-02-24T03:11:16Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Edmonton Oilers",
+    2,
+    4
+  ],
+  [
+    "2020-02-25T00:07:55Z",
+    "OVERTIME",
+    "Columbus Blue Jackets",
+    "Ottawa Senators",
+    4,
+    3
+  ],
+  [
+    "2020-02-26T00:14:48Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Calgary Flames",
+    2,
+    5
+  ],
+  [
+    "2020-02-26T00:08:12Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Vancouver Canucks",
+    3,
+    4
+  ],
+  [
+    "2020-02-26T00:08:10Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Toronto Maple Leafs",
+    3,
+    4
+  ],
+  [
+    "2020-02-26T00:07:16Z",
+    "OVERTIME",
+    "New York Islanders",
+    "New York Rangers",
+    3,
+    4
+  ],
+  [
+    "2020-02-26T00:08:07Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "San Jose Sharks",
+    4,
+    2
+  ],
+  [
+    "2020-02-26T00:14:33Z",
+    "OVERTIME",
+    "Washington Capitals",
+    "Winnipeg Jets",
+    4,
+    3
+  ],
+  [
+    "2020-02-26T00:08:07Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Dallas Stars",
+    1,
+    4
+  ],
+  [
+    "2020-02-26T00:37:56Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "New Jersey Devils",
+    1,
+    4
+  ],
+  [
+    "2020-02-26T01:09:43Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Chicago Blackhawks",
+    6,
+    5
+  ],
+  [
+    "2020-02-26T01:07:29Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Ottawa Senators",
+    3,
+    2
+  ],
+  [
+    "2020-02-26T01:08:23Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Columbus Blue Jackets",
+    5,
+    4
+  ],
+  [
+    "2020-02-26T02:08:11Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Florida Panthers",
+    1,
+    2
+  ],
+  [
+    "2020-02-26T03:09:36Z",
+    "OVERTIME",
+    "Anaheim Ducks",
+    "Edmonton Oilers",
+    4,
+    3
+  ],
+  [
+    "2020-02-27T01:09:38Z",
+    "REGULAR",
+    "Colorado Avalanche",
+    "Buffalo Sabres",
+    3,
+    2
+  ],
+  [
+    "2020-02-27T03:37:54Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Edmonton Oilers",
+    3,
+    0
+  ],
+  [
+    "2020-02-27T03:44:44Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Pittsburgh Penguins",
+    2,
+    1
+  ],
+  [
+    "2020-02-28T00:41:12Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Dallas Stars",
+    4,
+    3
+  ],
+  [
+    "2020-02-28T00:10:24Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "New York Rangers",
+    2,
+    5
+  ],
+  [
+    "2020-02-28T00:07:52Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Chicago Blackhawks",
+    2,
+    5
+  ],
+  [
+    "2020-02-28T00:09:26Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Toronto Maple Leafs",
+    3,
+    5
+  ],
+  [
+    "2020-02-28T00:40:14Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "Vancouver Canucks",
+    5,
+    2
+  ],
+  [
+    "2020-02-28T00:38:06Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Minnesota Wild",
+    1,
+    7
+  ],
+  [
+    "2020-02-28T01:08:47Z",
+    "OVERTIME",
+    "St. Louis Blues",
+    "New York Islanders",
+    3,
+    2
+  ],
+  [
+    "2020-02-28T01:07:22Z",
+    "OVERTIME",
+    "Nashville Predators",
+    "Calgary Flames",
+    4,
+    3
+  ],
+  [
+    "2020-02-28T01:08:25Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Washington Capitals",
+    3,
+    0
+  ],
+  [
+    "2020-02-28T03:40:36Z",
+    "OVERTIME",
+    "San Jose Sharks",
+    "New Jersey Devils",
+    3,
+    2
+  ],
+  [
+    "2020-02-29T00:09:50Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "New York Rangers",
+    5,
+    2
+  ],
+  [
+    "2020-02-29T00:08:05Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Minnesota Wild",
+    0,
+    5
+  ],
+  [
+    "2020-02-29T00:10:17Z",
+    "REGULAR",
+    "Carolina Hurricanes",
+    "Colorado Avalanche",
+    2,
+    3
+  ],
+  [
+    "2020-02-29T03:08:07Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Buffalo Sabres",
+    4,
+    2
+  ],
+  [
+    "2020-02-29T03:07:59Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Pittsburgh Penguins",
+    3,
+    2
+  ],
+  [
+    "2020-02-29T18:38:24Z",
+    "REGULAR",
+    "New York Islanders",
+    "Boston Bruins",
+    0,
+    4
+  ],
+  [
+    "2020-02-29T21:08:03Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Calgary Flames",
+    4,
+    3
+  ],
+  [
+    "2020-02-29T21:09:20Z",
+    "OVERTIME",
+    "Los Angeles Kings",
+    "New Jersey Devils",
+    2,
+    1
+  ],
+  [
+    "2020-02-29T23:09:43Z",
+    "OVERTIME",
+    "Florida Panthers",
+    "Chicago Blackhawks",
+    2,
+    3
+  ],
+  [
+    "2020-03-01T00:14:27Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Vancouver Canucks",
+    4,
+    2
+  ],
+  [
+    "2020-03-01T00:15:07Z",
+    "OVERTIME",
+    "Montr\u00e9al Canadiens",
+    "Carolina Hurricanes",
+    4,
+    3
+  ],
+  [
+    "2020-03-01T00:15:11Z",
+    "OVERTIME",
+    "Ottawa Senators",
+    "Detroit Red Wings",
+    4,
+    3
+  ],
+  [
+    "2020-03-01T01:08:07Z",
+    "OVERTIME",
+    "St. Louis Blues",
+    "Dallas Stars",
+    4,
+    3
+  ],
+  [
+    "2020-03-01T00:08:17Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Colorado Avalanche",
+    2,
+    3
+  ],
+  [
+    "2020-03-01T01:08:03Z",
+    "REGULAR",
+    "Arizona Coyotes",
+    "Buffalo Sabres",
+    5,
+    2
+  ],
+  [
+    "2020-03-01T03:11:13Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Winnipeg Jets",
+    3,
+    2
+  ],
+  [
+    "2020-03-01T03:38:11Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Pittsburgh Penguins",
+    5,
+    0
+  ],
+  [
+    "2020-03-01T17:22:15Z",
+    "REGULAR",
+    "New York Rangers",
+    "Philadelphia Flyers",
+    3,
+    5
+  ],
+  [
+    "2020-03-01T21:10:36Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Calgary Flames",
+    0,
+    3
+  ],
+  [
+    "2020-03-02T00:10:02Z",
+    "REGULAR",
+    "Columbus Blue Jackets",
+    "Vancouver Canucks",
+    5,
+    3
+  ],
+  [
+    "2020-03-02T01:10:34Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Washington Capitals",
+    3,
+    4
+  ],
+  [
+    "2020-03-02T01:07:45Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "New Jersey Devils",
+    0,
+    3
+  ],
+  [
+    "2020-03-02T03:45:06Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "Los Angeles Kings",
+    1,
+    4
+  ],
+  [
+    "2020-03-03T00:38:12Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Colorado Avalanche",
+    1,
+    2
+  ],
+  [
+    "2020-03-03T01:08:00Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Edmonton Oilers",
+    3,
+    8
+  ],
+  [
+    "2020-03-04T00:40:39Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Boston Bruins",
+    1,
+    2
+  ],
+  [
+    "2020-03-04T00:07:30Z",
+    "REGULAR",
+    "New York Islanders",
+    "Montr\u00e9al Canadiens",
+    2,
+    6
+  ],
+  [
+    "2020-03-04T00:08:36Z",
+    "REGULAR",
+    "New York Rangers",
+    "St. Louis Blues",
+    1,
+    3
+  ],
+  [
+    "2020-03-04T00:08:03Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Ottawa Senators",
+    7,
+    3
+  ],
+  [
+    "2020-03-04T01:10:35Z",
+    "REGULAR",
+    "Minnesota Wild",
+    "Nashville Predators",
+    3,
+    1
+  ],
+  [
+    "2020-03-04T01:08:52Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Buffalo Sabres",
+    3,
+    1
+  ],
+  [
+    "2020-03-04T01:38:04Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Anaheim Ducks",
+    6,
+    2
+  ],
+  [
+    "2020-03-04T01:37:45Z",
+    "OVERTIME",
+    "Dallas Stars",
+    "Edmonton Oilers",
+    1,
+    2
+  ],
+  [
+    "2020-03-04T03:07:44Z",
+    "REGULAR",
+    "Vegas Golden Knights",
+    "New Jersey Devils",
+    3,
+    0
+  ],
+  [
+    "2020-03-04T03:38:24Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Toronto Maple Leafs",
+    5,
+    2
+  ],
+  [
+    "2020-03-05T00:10:02Z",
+    "REGULAR",
+    "Washington Capitals",
+    "Philadelphia Flyers",
+    2,
+    5
+  ],
+  [
+    "2020-03-05T01:42:06Z",
+    "OVERTIME",
+    "Calgary Flames",
+    "Columbus Blue Jackets",
+    3,
+    2
+  ],
+  [
+    "2020-03-05T02:45:03Z",
+    "OVERTIME",
+    "Colorado Avalanche",
+    "Anaheim Ducks",
+    3,
+    4
+  ],
+  [
+    "2020-03-05T03:37:54Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Arizona Coyotes",
+    2,
+    4
+  ],
+  [
+    "2020-03-06T00:07:34Z",
+    "REGULAR",
+    "Buffalo Sabres",
+    "Pittsburgh Penguins",
+    2,
+    4
+  ],
+  [
+    "2020-03-06T00:08:43Z",
+    "REGULAR",
+    "Tampa Bay Lightning",
+    "Montr\u00e9al Canadiens",
+    4,
+    0
+  ],
+  [
+    "2020-03-06T00:09:03Z",
+    "OVERTIME",
+    "Florida Panthers",
+    "Boston Bruins",
+    1,
+    2
+  ],
+  [
+    "2020-03-06T00:10:20Z",
+    "OVERTIME",
+    "New York Rangers",
+    "Washington Capitals",
+    6,
+    5
+  ],
+  [
+    "2020-03-06T00:10:10Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Carolina Hurricanes",
+    4,
+    1
+  ],
+  [
+    "2020-03-06T00:39:03Z",
+    "REGULAR",
+    "Ottawa Senators",
+    "New York Islanders",
+    4,
+    3
+  ],
+  [
+    "2020-03-06T01:10:38Z",
+    "REGULAR",
+    "Nashville Predators",
+    "Dallas Stars",
+    2,
+    0
+  ],
+  [
+    "2020-03-06T01:38:53Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "Edmonton Oilers",
+    4,
+    3
+  ],
+  [
+    "2020-03-06T03:38:52Z",
+    "OVERTIME",
+    "Los Angeles Kings",
+    "Toronto Maple Leafs",
+    1,
+    0
+  ],
+  [
+    "2020-03-06T03:38:33Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Minnesota Wild",
+    2,
+    3
+  ],
+  [
+    "2020-03-07T00:07:59Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "St. Louis Blues",
+    4,
+    2
+  ],
+  [
+    "2020-03-07T00:38:15Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Chicago Blackhawks",
+    2,
+    1
+  ],
+  [
+    "2020-03-07T01:15:20Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Vegas Golden Knights",
+    4,
+    0
+  ],
+  [
+    "2020-03-07T02:09:28Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Arizona Coyotes",
+    3,
+    2
+  ],
+  [
+    "2020-03-07T03:11:38Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Colorado Avalanche",
+    6,
+    3
+  ],
+  [
+    "2020-03-07T03:07:46Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Toronto Maple Leafs",
+    2,
+    1
+  ],
+  [
+    "2020-03-07T18:07:36Z",
+    "OVERTIME",
+    "New York Islanders",
+    "Carolina Hurricanes",
+    2,
+    3
+  ],
+  [
+    "2020-03-07T18:10:02Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Washington Capitals",
+    2,
+    5
+  ],
+  [
+    "2020-03-07T19:11:07Z",
+    "REGULAR",
+    "Dallas Stars",
+    "Nashville Predators",
+    0,
+    1
+  ],
+  [
+    "2020-03-07T21:11:40Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Minnesota Wild",
+    7,
+    3
+  ],
+  [
+    "2020-03-08T00:10:08Z",
+    "REGULAR",
+    "Boston Bruins",
+    "Tampa Bay Lightning",
+    3,
+    5
+  ],
+  [
+    "2020-03-08T00:30:27Z",
+    "REGULAR",
+    "Florida Panthers",
+    "Montr\u00e9al Canadiens",
+    4,
+    1
+  ],
+  [
+    "2020-03-08T00:08:57Z",
+    "REGULAR",
+    "New York Rangers",
+    "New Jersey Devils",
+    4,
+    6
+  ],
+  [
+    "2020-03-08T00:08:01Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Buffalo Sabres",
+    3,
+    1
+  ],
+  [
+    "2020-03-08T00:16:59Z",
+    "OVERTIME",
+    "San Jose Sharks",
+    "Ottawa Senators",
+    1,
+    2
+  ],
+  [
+    "2020-03-08T03:16:02Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Columbus Blue Jackets",
+    4,
+    1
+  ],
+  [
+    "2020-03-08T17:38:12Z",
+    "REGULAR",
+    "Pittsburgh Penguins",
+    "Carolina Hurricanes",
+    2,
+    6
+  ],
+  [
+    "2020-03-08T21:08:14Z",
+    "OVERTIME",
+    "Detroit Red Wings",
+    "Tampa Bay Lightning",
+    5,
+    4
+  ],
+  [
+    "2020-03-08T23:41:10Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "St. Louis Blues",
+    0,
+    2
+  ],
+  [
+    "2020-03-08T23:10:48Z",
+    "REGULAR",
+    "Calgary Flames",
+    "Vegas Golden Knights",
+    3,
+    5
+  ],
+  [
+    "2020-03-09T01:07:59Z",
+    "OVERTIME",
+    "Anaheim Ducks",
+    "Minnesota Wild",
+    4,
+    5
+  ],
+  [
+    "2020-03-09T02:09:04Z",
+    "REGULAR",
+    "Vancouver Canucks",
+    "Columbus Blue Jackets",
+    1,
+    2
+  ],
+  [
+    "2020-03-09T02:15:22Z",
+    "REGULAR",
+    "San Jose Sharks",
+    "Colorado Avalanche",
+    3,
+    4
+  ],
+  [
+    "2020-03-09T23:07:29Z",
+    "OVERTIME",
+    "Buffalo Sabres",
+    "Washington Capitals",
+    3,
+    2
+  ],
+  [
+    "2020-03-10T00:08:42Z",
+    "REGULAR",
+    "Winnipeg Jets",
+    "Arizona Coyotes",
+    4,
+    2
+  ],
+  [
+    "2020-03-10T01:09:17Z",
+    "OVERTIME",
+    "Edmonton Oilers",
+    "Vegas Golden Knights",
+    2,
+    3
+  ],
+  [
+    "2020-03-10T02:38:25Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Colorado Avalanche",
+    3,
+    1
+  ],
+  [
+    "2020-03-10T23:07:26Z",
+    "REGULAR",
+    "Toronto Maple Leafs",
+    "Tampa Bay Lightning",
+    2,
+    1
+  ],
+  [
+    "2020-03-10T23:15:09Z",
+    "REGULAR",
+    "Montr\u00e9al Canadiens",
+    "Nashville Predators",
+    2,
+    4
+  ],
+  [
+    "2020-03-10T23:07:43Z",
+    "REGULAR",
+    "New Jersey Devils",
+    "Pittsburgh Penguins",
+    2,
+    5
+  ],
+  [
+    "2020-03-10T23:10:20Z",
+    "REGULAR",
+    "Philadelphia Flyers",
+    "Boston Bruins",
+    0,
+    2
+  ],
+  [
+    "2020-03-10T23:38:06Z",
+    "REGULAR",
+    "Detroit Red Wings",
+    "Carolina Hurricanes",
+    2,
+    5
+  ],
+  [
+    "2020-03-10T00:08:20Z",
+    "REGULAR",
+    "St. Louis Blues",
+    "Florida Panthers",
+    1,
+    2
+  ],
+  [
+    "2020-03-11T00:37:56Z",
+    "REGULAR",
+    "Dallas Stars",
+    "New York Rangers",
+    2,
+    4
+  ],
+  [
+    "2020-03-11T02:08:19Z",
+    "OVERTIME",
+    "Vancouver Canucks",
+    "New York Islanders",
+    5,
+    4
+  ],
+  [
+    "2020-03-11T02:07:38Z",
+    "REGULAR",
+    "Anaheim Ducks",
+    "Ottawa Senators",
+    5,
+    2
+  ],
+  [
+    "2020-03-12T00:10:45Z",
+    "REGULAR",
+    "Chicago Blackhawks",
+    "San Jose Sharks",
+    6,
+    2
+  ],
+  [
+    "2020-03-12T01:11:37Z",
+    "REGULAR",
+    "Edmonton Oilers",
+    "Winnipeg Jets",
+    2,
+    4
+  ],
+  [
+    "2020-03-12T02:07:39Z",
+    "OVERTIME",
+    "Colorado Avalanche",
+    "New York Rangers",
+    3,
+    2
+  ],
+  [
+    "2020-03-12T02:38:08Z",
+    "REGULAR",
+    "Los Angeles Kings",
+    "Ottawa Senators",
+    3,
+    2
+  ]
+]

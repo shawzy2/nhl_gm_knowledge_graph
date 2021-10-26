@@ -413,9 +413,16 @@ h2 {
     margin-left: 2vw;
     margin-right: 2vw;
     display: block;
-    height: 70vh;
+    height: 65vh;
     overflow-y: scroll;
     border: 2px solid var(--bruins-gold);
+}
+
+.view-details-display-plot {
+    position: relative;
+    margin: auto;
+    height: 80vh;
+    width: 80vw;
 }
 
 .close-details-button {
