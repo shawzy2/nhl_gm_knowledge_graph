@@ -43,7 +43,7 @@ import TradeTimeline from './components/TradeTimeline'
 cytoscape.use( cola );
 
 function App() {
-  const [category, setCategory] = useState('staff') /* i.e. 'trades', 'staff', ... */
+  const [category, setCategory] = useState('trades') /* i.e. 'trades', 'staff', ... */
   const [graphData, setGraphData] = useState([]);
   const [generalManager, setGeneralManager] = useState('All');
   const [season, setSeason] = useState('2021-22');

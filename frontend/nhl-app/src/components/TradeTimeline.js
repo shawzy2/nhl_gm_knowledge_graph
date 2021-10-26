@@ -7,7 +7,7 @@ function TradeTimeline(props) {
         labels.push(i.toString());
     }
     {/* { seasons.map(x => <DropdownItem onClick={() => setSeason(x)}>{ x }</DropdownItem>) } */}
-    const colors = ['#6F263D', '#236192', '#FFB81C', '#002654', '#154734', '#B9975B', '#00539B', '#F47D30', '#C2912C', '#C52032']
+    const colors = ['#6F263D', '#236192', '#FFB81C', '#8F8F8C', '#154734', '#B9975B', '#00539B', '#F47D30', '#C2912C', '#C52032']
     const datasets = []
     var i = 0
     for (const season of props.tradeTimelineData){
